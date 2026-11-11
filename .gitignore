@@ -1,0 +1,37 @@
+# 原始数据和处理后的大数据
+data/raw/
+data/processed/
+
+# 含原始影像内容的中间预览
+data/interim/image_previews/
+
+# 报告图片先排除；保留不含原始影像的网格分布图
+reports/figures/*
+!reports/figures/uav_grid_components.png
+
+# 实验输出和日志
+experiments/
+logs/
+
+# 模型权重和常见大文件
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.tif
+*.tiff
+*.zip
+
+# Python 缓存与本地环境
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# 凭据与本地配置
+.env
+.env.*
+*.pem
+*.key
