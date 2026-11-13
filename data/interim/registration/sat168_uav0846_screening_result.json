@@ -1,0 +1,26 @@
+{
+  "satellite_image": "Moxitaidi_Satellite168.tif",
+  "uav_image": "luding_UAV0846.tif",
+  "status": "model_estimated_requires_review",
+  "ratio_threshold": 0.75,
+  "ransac_threshold_uav_pixels": 3.0,
+  "random_seed": 42,
+  "satellite_keypoints": 2766,
+  "uav_keypoints": 1585,
+  "candidate_matches": 27,
+  "ransac_inliers": 8,
+  "transform_satellite_to_uav": [
+    [
+      8.844287324596461e-20,
+      1.6970540178903555e-20,
+      394.6907958984375
+    ],
+    [
+      -1.6970540178903555e-20,
+      8.844287324596461e-20,
+      445.4171447753906
+    ]
+  ],
+  "median_inlier_error_uav_pixels": 0.0,
+  "note": "Exploratory registration. Inlier error is not an independent accuracy assessment."
+}

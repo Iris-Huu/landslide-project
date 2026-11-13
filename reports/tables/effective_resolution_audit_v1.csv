@@ -1,0 +1,5 @@
+satellite,uav,window_row_start,window_col_start,best_sigma_uav_pixels,score_without_blur,best_score,at_search_boundary,absolute_effective_resolution_m,status
+Moxitaidi_Satellite001.tif,luding_UAV0011.tif,0,0,1.1,0.7998839972800228,0.03177771898718088,False,not_determined,exploratory_single_satellite_tile
+Moxitaidi_Satellite001.tif,luding_UAV0011.tif,0,256,0.9,0.356984728260223,0.02020096719316525,False,not_determined,exploratory_single_satellite_tile
+Moxitaidi_Satellite001.tif,luding_UAV0001.tif,256,0,1.1,0.7623755595317375,0.03377045840371384,False,not_determined,exploratory_single_satellite_tile
+Moxitaidi_Satellite001.tif,luding_UAV0001.tif,256,256,0.9,0.3587537148286415,0.011778104335166148,False,not_determined,exploratory_single_satellite_tile

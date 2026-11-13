@@ -1,0 +1,18 @@
+﻿archive,image_count,mask_count,label_count,matched_pairs,missing_mask,extra_mask,duplicate_keys,sampled_pairs,sample_errors,status,detail
+Hokkaido Iburi-Tobu.zip,1484,1484,1484,1484,0,0,0,30,0,ok,
+Jiuzhai valley (UAV-0.2m).zip,5925,5925,5925,5925,0,0,0,30,0,ok,
+Jiuzhai valley (UAV-0.5m).zip,1752,1752,1752,1752,0,0,0,30,0,ok,
+Lombok.zip,436,436,436,436,0,0,0,30,0,ok,
+Longxi River(SAT).zip,1769,1769,1769,1769,0,0,0,30,0,ok,
+Longxi River（UAV）.zip,2504,2504,2553,2504,0,0,0,30,0,ok,
+Mengdong Township.zip,1155,1155,1155,1155,0,0,0,30,0,ok,
+Moxi town（UAV-0.2m）.zip,1635,1635,1635,1635,0,0,0,30,0,ok,
+Moxi town（UAV-1m）.zip,160,160,160,160,0,0,0,30,0,ok,
+Moxitaidi (SAT).zip,652,652,652,652,0,0,0,30,0,ok,
+Moxitaidi (UAV-0.6m).zip,984,984,984,984,0,0,0,30,0,ok,
+Moxitaidi (UAV-1m).zip,483,483,483,483,0,0,0,30,0,ok,
+Tiburon Peninsula（Sentinel）.zip,606,606,591,606,0,0,0,30,0,ok,
+Tiburon Peninsula（planet）.zip,325,325,325,325,0,0,0,30,0,ok,
+Wenchuan.zip,178,178,178,178,0,0,0,30,0,ok,
+palu.zip,817,817,817,817,0,0,0,30,0,ok,
+study_areas_shp.zip,0,0,0,0,0,0,0,0,0,no_recognized_tiff_folders,check archive layout manually

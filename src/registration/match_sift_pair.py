@@ -190,8 +190,22 @@ def main():
             if best.distance < RATIO_THRESHOLD * second.distance:
                 candidates.append(best)
 
+    ratio_match_count = len(candidates)
+
+    # 多个卫星特征可能指向同一个无人机特征：
+    # 按描述子距离排序，每个无人机特征只保留最优匹配。
+    best_by_target = {}
+    for match in sorted(candidates, key=lambda item: item.distance):
+        if match.trainIdx not in best_by_target:
+            best_by_target[match.trainIdx] = match
+
+    candidates = list(best_by_target.values())
+
+    result["ratio_matches_before_deduplication"] = ratio_match_count
     result["candidate_matches"] = len(candidates)
-    print(f"比例筛选后的候选匹配：{len(candidates)}")
+
+    print(f"比例筛选后的候选匹配：{ratio_match_count}")
+    print(f"目标特征去重后的候选匹配：{len(candidates)}")
 
     if len(candidates) >= 4:
         satellite_xy = np.float32([
@@ -214,6 +228,34 @@ def main():
             maxIters=5000,
             confidence=0.99,
         )
+
+        # 防止把几乎压缩到一个点的退化变换当作有效配准。
+        if matrix is not None and inlier_mask is not None:
+            scale = float(np.hypot(matrix[0, 0], matrix[0, 1]))
+            result["estimated_scale"] = scale
+
+            if not np.isfinite(matrix).all() or not (1e-3 <= scale <= 1e3):
+                result["degenerate_transform_rejected"] = True
+                print("已拒绝数值退化的变换；不能据此判断同址。")
+                matrix = None
+                inlier_mask = None
+            else:
+                result["degenerate_transform_rejected"] = False
+
+        # 至少需要多个一致点才能进入后续人工核验。
+        # 4 是最低检查门槛，不代表 4 个点就足以证明配准正确。
+        if matrix is not None and inlier_mask is not None:
+            inlier_count = int(np.count_nonzero(inlier_mask))
+            result["raw_ransac_inliers"] = inlier_count
+
+            if inlier_count < 4:
+                result["rejection_reason"] = "fewer_than_4_ransac_inliers"
+                print(
+                    f"已拒绝变换：RANSAC 内点只有 {inlier_count} 个，"
+                    "证据不足。"
+                )
+                matrix = None
+                inlier_mask = None
 
         if matrix is not None and inlier_mask is not None:
             flags = inlier_mask.ravel().astype(bool)

@@ -1,0 +1,12 @@
+{
+  "cas_dir": "data/raw/CAS",
+  "archives": 17,
+  "sample_per_archive": 30,
+  "seed": 42,
+  "scope": "ZIP entry names inventoried; image and mask pixels sampled only. No ZIP integrity, ground resolution, no-data, leakage, or georeferencing verification.",
+  "selection": "sorted matches; Python random.sample sequentially using seeded RNG; sample=0 selects all",
+  "statuses": {
+    "ok": 16,
+    "no_recognized_tiff_folders": 1
+  }
+}

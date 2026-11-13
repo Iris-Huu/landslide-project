@@ -1,0 +1,41 @@
+{
+  "satellite": "Moxitaidi_Satellite001.tif",
+  "uav": "luding_UAV0001.tif",
+  "transform_record": "data/interim/registration/sat001_uav0001_min_inliers_check_result.json",
+  "sigma_search_uav_pixels": [
+    0.0,
+    4.0,
+    0.1
+  ],
+  "fit_frequency_cycles_per_uav_pixel": [
+    0.04,
+    0.2
+  ],
+  "results": [
+    {
+      "row_start": 256,
+      "col_start": 0,
+      "window_size": 256,
+      "geometric_coverage": 1.0,
+      "sat_black_white_percent_after_warp": 0.0,
+      "uav_black_white_percent": 3.20587158203125,
+      "best_sigma_uav_pixels": 1.1,
+      "score_without_blur": 0.7623755595317375,
+      "best_score": 0.03377045840371384,
+      "at_search_boundary": false
+    },
+    {
+      "row_start": 256,
+      "col_start": 256,
+      "window_size": 256,
+      "geometric_coverage": 1.0,
+      "sat_black_white_percent_after_warp": 0.13885498046875,
+      "uav_black_white_percent": 1.99737548828125,
+      "best_sigma_uav_pixels": 0.9,
+      "score_without_blur": 0.3587537148286415,
+      "best_score": 0.011778104335166148,
+      "at_search_boundary": false
+    }
+  ],
+  "note": "Exploratory local fit; black and white pixels are not a definitive validity mask. Sigma is not absolute ground resolution."
+}
