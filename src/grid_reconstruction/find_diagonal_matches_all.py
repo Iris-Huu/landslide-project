@@ -250,4 +250,37 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="查找 Moxitaidi 切片的对角重叠候选。"
+    )
+
+    parser.add_argument(
+        "--dataset",
+        required=True,
+        choices=["uav", "satellite"],
+        help="选择无人机或卫星子集",
+    )
+
+    parser.add_argument(
+        "--output",
+        required=True,
+        type=Path,
+        help="输出 CSV 路径；不能覆盖已有文件",
+    )
+
+    args = parser.parse_args()
+
+    subset = (
+        "Moxitaidi_UAV_0.6m"
+        if args.dataset == "uav"
+        else "Moxitaidi_SAT"
+    )
+
+    IMAGE_DIR = (
+        PROJECT_DIR / "data" / "raw" / "CAS" / subset / "img"
+    )
+
+    OUTPUT_PATH = args.output
     main()

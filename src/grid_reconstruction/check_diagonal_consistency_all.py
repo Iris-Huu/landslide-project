@@ -17,9 +17,9 @@ GRID_DIR = (
     PROJECT / "data" / "interim" / "reconstructed_grids"
 )
 
-COORD_PATH = GRID_DIR / "satellite_grid_coordinates_v1.csv"
-DIAG_PATH = GRID_DIR / "satellite_diagonal_candidates.csv"
-OUTPUT_PATH = GRID_DIR / "satellite_diagonal_diagnostics.csv"
+COORD_PATH = GRID_DIR / "uav_grid_coordinates_v1.csv"
+DIAG_PATH = GRID_DIR / "uav_diagonal_candidates.csv"
+OUTPUT_PATH = GRID_DIR / "uav_diagonal_diagnostics.csv"
 
 
 def read_csv(path):
@@ -170,4 +170,32 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="检查对角候选与已有网格的关系。"
+    )
+
+    parser.add_argument(
+        "--dataset",
+        required=True,
+        choices=["uav", "satellite"],
+        help="选择无人机或卫星结果",
+    )
+
+    parser.add_argument(
+        "--output",
+        required=True,
+        type=Path,
+        help="新的诊断 CSV 路径",
+    )
+
+    args = parser.parse_args()
+
+    prefix = "uav" if args.dataset == "uav" else "satellite"
+
+    COORD_PATH = GRID_DIR / f"{prefix}_grid_coordinates_v1.csv"
+    DIAG_PATH = GRID_DIR / f"{prefix}_diagonal_candidates.csv"
+    OUTPUT_PATH = args.output
+
     main()

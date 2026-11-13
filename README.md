@@ -70,3 +70,18 @@ Satellite-to-UAV Landslide Segmentation: Decomposing and Bridging the Cross-Plat
 - GDCLD：https://doi.org/10.5281/zenodo.13612636
 
 使用数据前，请阅读数据发布页面及各子集的许可和使用条件。
+
+
+## 当前代码入口
+
+- `src/data_audit/audit_moxitaidi_basics.py`：Moxitaidi 核心子集基础审计。
+- `src/data_audit/audit_cas_zips.py`：CAS 压缩包清点和抽样检查。
+- `src/data_audit/audit_nodata_candidate.py`：无数据候选规则审计；该规则存在已知误判，不能作为最终掩码。
+- `src/grid_reconstruction/find_horizontal_vertical_matches.py`：水平与垂直重叠候选匹配。
+- `src/grid_reconstruction/find_diagonal_matches_all.py`：对角重叠候选匹配。
+- `src/grid_reconstruction/check_diagonal_consistency_all.py`：对角候选与已有网格的一致性检查。
+- `src/grid_reconstruction/build_grid.py`：根据候选关系生成相对网格。
+- `src/grid_reconstruction/validate_grid_overlaps.py`：检查组内重叠并与已有验证表对照。
+- `src/registration/match_sift_pair.py`：指定卫星和无人机切片进行 SIFT 配准试验。
+
+网格坐标不代表地理坐标；组内验证通过不代表不同连通组之间不存在重叠。

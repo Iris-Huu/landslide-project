@@ -1,0 +1,57 @@
+{
+  "satellite_image": "Moxitaidi_Satellite001.tif",
+  "uav_image": "luding_UAV0011.tif",
+  "ratio_threshold": 0.75,
+  "ransac_threshold_uav_pixels": 3.0,
+  "random_seed": 42,
+  "ratio_matches": 141,
+  "unique_target_matches": 138,
+  "split_x_satellite_pixels": 167.97434997558594,
+  "results": [
+    {
+      "name": "左侧拟合，右侧留出",
+      "training_candidates": 69,
+      "holdout_candidates": 69,
+      "status": "estimated_requires_review",
+      "training_ransac_inliers": 39,
+      "holdout_median_error_uav_pixels": 2.6417406997872637,
+      "holdout_90th_percentile_error_uav_pixels": 468.5824628450414,
+      "holdout_within_3_pixels_percent": 55.072463768115945,
+      "transform_satellite_to_uav": [
+        [
+          1.9932027594294048,
+          0.012928248491536712,
+          -92.51060508401281
+        ],
+        [
+          -0.012928248491536712,
+          1.9932027594294048,
+          -507.9721066785085
+        ]
+      ]
+    },
+    {
+      "name": "右侧拟合，左侧留出",
+      "training_candidates": 69,
+      "holdout_candidates": 69,
+      "status": "estimated_requires_review",
+      "training_ransac_inliers": 32,
+      "holdout_median_error_uav_pixels": 3.190008885403205,
+      "holdout_90th_percentile_error_uav_pixels": 103.37307032937538,
+      "holdout_within_3_pixels_percent": 44.927536231884055,
+      "transform_satellite_to_uav": [
+        [
+          2.0078651690002136,
+          0.0007532325373116979,
+          -91.30776654761435
+        ],
+        [
+          -0.0007532325373116979,
+          2.0078651690002136,
+          -515.9290814108713
+        ]
+      ]
+    }
+  ],
+  "note": "Held-out points are automatic SIFT candidates, not manually verified ground truth. Residuals may include false matches and are not independent absolute accuracy."
+}

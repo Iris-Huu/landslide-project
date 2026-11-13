@@ -1,0 +1,29 @@
+{
+  "source_image": "Moxitaidi_Satellite001.tif",
+  "target_image": "luding_UAV0001.tif",
+  "transform_direction": "satellite_pixels_to_uav_pixels",
+  "ratio_threshold": 0.75,
+  "ransac_threshold_uav_pixels": 3.0,
+  "random_seed": 42,
+  "matrix_2x3": [
+    [
+      2.0140315524111867,
+      0.012947279842531979,
+      -96.70382284307516
+    ],
+    [
+      -0.012947279842531979,
+      2.0140315524111867,
+      0.9459127853033276
+    ]
+  ],
+  "geometric_coverage_percent": 100.0,
+  "statistics": {
+    "satellite_keypoints": 2933,
+    "uav_keypoints": 2414,
+    "candidate_matches": 110,
+    "ransac_inliers": 60,
+    "median_inlier_error_uav_pixels": 1.6214279397048663
+  },
+  "note": "Exploratory result. Geometric coverage is not a validated no-data mask. Inlier error is not an independent accuracy assessment."
+}

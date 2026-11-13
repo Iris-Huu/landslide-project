@@ -1,0 +1,16 @@
+{
+  "satellite_image": "Moxitaidi_Satellite001.tif",
+  "first_uav_image": "luding_UAV0001.tif",
+  "second_uav_image": "luding_UAV0011.tif",
+  "uav_grid_delta_row": 2,
+  "uav_grid_delta_col": 0,
+  "uav_grid_offset_xy_pixels": [
+    0.0,
+    512.0
+  ],
+  "satellite_sampling_grid": "21x21",
+  "sample_points_inside_second_uav_canvas": 100,
+  "difference_median_uav_pixels": 5.648007696299478,
+  "difference_max_uav_pixels": 9.268792896209995,
+  "note": "Comparison of two estimated models, not independent registration accuracy. First transform is extrapolated."
+}

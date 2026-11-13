@@ -237,4 +237,125 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="查找 Moxitaidi 水平和垂直重叠候选。"
+    )
+
+    parser.add_argument(
+        "--dataset",
+        required=True,
+        choices=["uav", "satellite"],
+    )
+
+    parser.add_argument(
+        "--output",
+        required=True,
+        type=Path,
+    )
+
+    parser.add_argument(
+        "--legacy-output-dir",
+        type=Path,
+        help="可选：将无人机候选另存为旧网格脚本使用的两张表",
+    )
+
+    args = parser.parse_args()
+
+    if args.legacy_output_dir is not None:
+        if args.dataset != "uav":
+            parser.error("--legacy-output-dir 只用于无人机数据")
+
+        horizontal_path = (
+            args.legacy_output_dir / "uav_horizontal_candidates.csv"
+        )
+        vertical_path = (
+            args.legacy_output_dir / "uav_vertical_candidates.csv"
+        )
+
+        outputs = [args.output, horizontal_path, vertical_path]
+
+        if len({path.resolve() for path in outputs}) != len(outputs):
+            parser.error("合并表与两张旧格式表必须使用不同路径")
+
+        for path in outputs:
+            if path.exists():
+                parser.error(f"输出文件已存在，不会覆盖：{path}")
+
+    subset = (
+        "Moxitaidi_UAV_0.6m"
+        if args.dataset == "uav"
+        else "Moxitaidi_SAT"
+    )
+
+    IMAGE_DIR = (
+        PROJECT / "data" / "raw" / "CAS" / subset / "img"
+    )
+
+    OUTPUT_PATH = args.output
+
     main()
+
+    if args.legacy_output_dir is not None:
+        with OUTPUT_PATH.open(
+            encoding="utf-8", newline=""
+        ) as file:
+            rows = list(csv.DictReader(file))
+
+        horizontal_fields = [
+            "left_image",
+            "right_image",
+            "left_image_right_candidates",
+            "right_image_left_candidates",
+            "status",
+        ]
+
+        vertical_fields = [
+            "top_image",
+            "bottom_image",
+            "top_image_bottom_candidates",
+            "bottom_image_top_candidates",
+            "status",
+        ]
+
+        args.legacy_output_dir.mkdir(parents=True, exist_ok=True)
+
+        with horizontal_path.open(
+            "x", encoding="utf-8", newline=""
+        ) as file:
+            writer = csv.DictWriter(file, fieldnames=horizontal_fields)
+            writer.writeheader()
+
+            for row in rows:
+                if row["direction"] == "right":
+                    writer.writerow({
+                        "left_image": row["source_image"],
+                        "right_image": row["target_image"],
+                        "left_image_right_candidates":
+                            row["source_direction_candidates"],
+                        "right_image_left_candidates":
+                            row["target_direction_candidates"],
+                        "status": row["status"],
+                    })
+
+        with vertical_path.open(
+            "x", encoding="utf-8", newline=""
+        ) as file:
+            writer = csv.DictWriter(file, fieldnames=vertical_fields)
+            writer.writeheader()
+
+            for row in rows:
+                if row["direction"] == "down":
+                    writer.writerow({
+                        "top_image": row["source_image"],
+                        "bottom_image": row["target_image"],
+                        "top_image_bottom_candidates":
+                            row["source_direction_candidates"],
+                        "bottom_image_top_candidates":
+                            row["target_direction_candidates"],
+                        "status": row["status"],
+                    })
+
+        print(f"无人机水平旧格式表：{horizontal_path}")
+        print(f"无人机垂直旧格式表：{vertical_path}")
