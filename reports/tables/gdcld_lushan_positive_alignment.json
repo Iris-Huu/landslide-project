@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "scene": "Lushan_1.tif",
+      "image_window_row": 511,
+      "image_window_col": 5120,
+      "window_size": 512,
+      "positive_pixels": 3919,
+      "aligned_label_values": [
+        0,
+        1
+      ],
+      "vrt_mask_valid_percent": 100.0
+    },
+    {
+      "scene": "Lushan_2.tif",
+      "image_window_row": 0,
+      "image_window_col": 10752,
+      "window_size": 512,
+      "positive_pixels": 7358,
+      "aligned_label_values": [
+        0,
+        1
+      ],
+      "vrt_mask_valid_percent": 100.0
+    }
+  ],
+  "method": "WarpedVRT nearest-neighbor to image grid",
+  "note": "Visual inspection is not independent accuracy validation. VRT mask validity depends on source metadata."
+}

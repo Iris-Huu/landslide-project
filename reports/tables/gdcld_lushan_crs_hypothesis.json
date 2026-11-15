@@ -1,0 +1,25 @@
+{
+  "hypothesis": "Interpret Lushan_1 numeric grid coordinates as EPSG:4543 for visualization only",
+  "reference_scene": "Lushan_3.tif",
+  "windows": [
+    {
+      "row": 2056,
+      "col": 9147,
+      "first_nonblack_fraction": 1.0,
+      "third_nonblack_fraction": 1.0
+    },
+    {
+      "row": 4113,
+      "col": 9147,
+      "first_nonblack_fraction": 1.0,
+      "third_nonblack_fraction": 1.0
+    },
+    {
+      "row": 4113,
+      "col": 11434,
+      "first_nonblack_fraction": 1.0,
+      "third_nonblack_fraction": 1.0
+    }
+  ],
+  "note": "Nonblack fraction is only a display-selection heuristic. Visual similarity does not independently establish the correct CRS or sensor source."
+}

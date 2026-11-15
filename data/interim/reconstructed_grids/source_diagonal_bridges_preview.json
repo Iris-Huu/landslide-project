@@ -1,0 +1,78 @@
+{
+  "status": "unreviewed_candidates",
+  "pairs": [
+    {
+      "dataset": "longxi_sat",
+      "source": "LongxiheSAT0752.tif",
+      "target": "LongxiheSAT0761.tif",
+      "source_component": "5",
+      "target_component": "10",
+      "direction": "down_right",
+      "target_shift_row": 24,
+      "target_shift_col": -13,
+      "pure_black_white_percent": 0.0,
+      "pixel_equal": true
+    },
+    {
+      "dataset": "longxi_sat",
+      "source": "LongxiheSAT0867.tif",
+      "target": "LongxiheSAT0892.tif",
+      "source_component": "5",
+      "target_component": "10",
+      "direction": "down_left",
+      "target_shift_row": 24,
+      "target_shift_col": -13,
+      "pure_black_white_percent": 0.0030517578125,
+      "pixel_equal": true
+    },
+    {
+      "dataset": "longxi_sat",
+      "source": "LongxiheSAT0893.tif",
+      "target": "LongxiheSAT0915.tif",
+      "source_component": "5",
+      "target_component": "10",
+      "direction": "down_left",
+      "target_shift_row": 24,
+      "target_shift_col": -13,
+      "pure_black_white_percent": 0.06561279296875,
+      "pixel_equal": true
+    },
+    {
+      "dataset": "longxi_uav",
+      "source": "longxihe_UAV0216.tif",
+      "target": "longxihe_UAV0231.tif",
+      "source_component": "1",
+      "target_component": "3",
+      "direction": "down_right",
+      "target_shift_row": 16,
+      "target_shift_col": 28,
+      "pure_black_white_percent": 0.0,
+      "pixel_equal": true
+    },
+    {
+      "dataset": "jiuzhai_uav_05",
+      "source": "jiuzzhaigou_0.5m_UVA0889.tif",
+      "target": "jiuzzhaigou_0.5m_UVA0900.tif",
+      "source_component": "10",
+      "target_component": "15",
+      "direction": "down_right",
+      "target_shift_row": 10,
+      "target_shift_col": 5,
+      "pure_black_white_percent": 0.39520263671875,
+      "pixel_equal": true
+    },
+    {
+      "dataset": "jiuzhai_uav_05",
+      "source": "jiuzzhaigou_0.5m_UVA0899.tif",
+      "target": "jiuzzhaigou_0.5m_UVA0913.tif",
+      "source_component": "10",
+      "target_component": "15",
+      "direction": "down_right",
+      "target_shift_row": 10,
+      "target_shift_col": 5,
+      "pure_black_white_percent": 0.3143310546875,
+      "pixel_equal": true
+    }
+  ],
+  "note": "Matching overlap and a visually structured region do not alone prove global component placement."
+}

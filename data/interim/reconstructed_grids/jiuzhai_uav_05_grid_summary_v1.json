@@ -1,0 +1,23 @@
+{
+  "dataset": "jiuzhai_uav_05",
+  "image_count": 1752,
+  "candidate_edges": 2897,
+  "used_edges": 2897,
+  "skipped_by_status": {},
+  "component_count": 23,
+  "largest_components": [
+    666,
+    510,
+    112,
+    71,
+    71,
+    68,
+    67,
+    41,
+    32,
+    23
+  ],
+  "isolated_images": 0,
+  "conflict_count": 0,
+  "scope": "Relative horizontal/vertical 50% candidates only. Cross-component overlaps and diagonal links are unverified; not a data split."
+}

@@ -1,0 +1,22 @@
+{
+  "dataset": "longxi_uav",
+  "image_count": 2504,
+  "candidate_edges": 4536,
+  "used_edges": 4536,
+  "skipped_by_status": {},
+  "component_count": 9,
+  "largest_components": [
+    2417,
+    27,
+    16,
+    13,
+    8,
+    8,
+    7,
+    5,
+    3
+  ],
+  "isolated_images": 0,
+  "conflict_count": 0,
+  "scope": "Relative horizontal/vertical 50% candidates only. Cross-component overlaps and diagonal links are unverified; not a data split."
+}

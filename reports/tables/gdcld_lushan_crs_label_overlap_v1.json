@@ -1,0 +1,19 @@
+{
+  "status": "exploratory_hypothesis_not_confirmed",
+  "hypothesis": "Interpret Lushan_1 numeric grid as EPSG:4543 for this virtual comparison only",
+  "resampling": "nearest",
+  "counts": {
+    "common_footprint_pixels": 113309188,
+    "label1_positive_pixels": 420054,
+    "label3_positive_pixels": 895242,
+    "intersection_pixels": 124965,
+    "union_pixels": 1190331,
+    "foreground_iou": 0.10498340377592451
+  },
+  "limitations": [
+    "No original CRS or pixel data was modified.",
+    "Alpha coverage is not a validated imagery-validity mask.",
+    "Labels may share annotation sources and are not independent ground truth.",
+    "Different resolutions and annotation choices affect overlap."
+  ]
+}

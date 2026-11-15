@@ -1,0 +1,23 @@
+{
+  "dataset": "longxi_sat",
+  "image_count": 1769,
+  "candidate_edges": 2853,
+  "used_edges": 2853,
+  "skipped_by_status": {},
+  "component_count": 32,
+  "largest_components": [
+    451,
+    413,
+    327,
+    189,
+    67,
+    42,
+    35,
+    27,
+    20,
+    17
+  ],
+  "isolated_images": 0,
+  "conflict_count": 0,
+  "scope": "Relative horizontal/vertical 50% candidates only. Cross-component overlaps and diagonal links are unverified; not a data split."
+}

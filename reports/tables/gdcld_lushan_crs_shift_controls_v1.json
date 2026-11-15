@@ -1,0 +1,64 @@
+{
+  "status": "exploratory_not_crs_confirmation",
+  "hypothesis": "Lushan_1 numeric grid interpreted as EPSG:4543",
+  "common_footprint_pixels": 106466308,
+  "label1_positive_on_common_footprint": 363891,
+  "controls": {
+    "unshifted": {
+      "intersection": 124965,
+      "union": 1134168,
+      "label3_positive": 895242,
+      "foreground_iou": 0.11018208942590516,
+      "shift_col_row_pixels": [
+        0,
+        0
+      ]
+    },
+    "col_plus_512": {
+      "intersection": 12280,
+      "union": 1369520,
+      "label3_positive": 1017909,
+      "foreground_iou": 0.008966645247970091,
+      "shift_col_row_pixels": [
+        512,
+        0
+      ]
+    },
+    "col_minus_512": {
+      "intersection": 22526,
+      "union": 1202336,
+      "label3_positive": 860971,
+      "foreground_iou": 0.018735195486120352,
+      "shift_col_row_pixels": [
+        -512,
+        0
+      ]
+    },
+    "row_plus_512": {
+      "intersection": 11376,
+      "union": 801696,
+      "label3_positive": 449181,
+      "foreground_iou": 0.014189917375164651,
+      "shift_col_row_pixels": [
+        0,
+        512
+      ]
+    },
+    "row_minus_512": {
+      "intersection": 13003,
+      "union": 1379169,
+      "label3_positive": 1028281,
+      "foreground_iou": 0.009428141148764219,
+      "shift_col_row_pixels": [
+        0,
+        -512
+      ]
+    }
+  },
+  "limitations": [
+    "All controls use the same geometric/metadata footprint.",
+    "Footprint is not a validated imagery-validity mask.",
+    "Shift controls are not independent ground truth.",
+    "Labels may share annotation sources."
+  ]
+}

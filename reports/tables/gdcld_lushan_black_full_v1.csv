@@ -1,0 +1,3 @@
+scene,image_pixels,pure_black_pixels,image_mask_invalid_pixels,aligned_label_mask_valid_pixels,aligned_landslide_pixels,black_and_aligned_landslide_pixels
+Lushan_1.tif,197066925,77121335,0,197066925,822554,486
+Lushan_2.tif,168559875,6040957,0,168559875,2828677,18
