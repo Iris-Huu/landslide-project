@@ -1,0 +1,4 @@
+filename,epsg,pixel_size_m,probable_source,source_confidence,exact_sensor,verification_status
+Lushan_1.tif,4544,0.5,Map World,consistent_with_paper_resolution,unknown,file_level_confirmation_pending
+Lushan_2.tif,32648,0.5,Map World,consistent_with_paper_resolution,unknown,file_level_confirmation_pending
+Lushan_3.tif,32648,3.0,PlanetScope,consistent_with_paper_resolution,unknown,file_level_confirmation_pending

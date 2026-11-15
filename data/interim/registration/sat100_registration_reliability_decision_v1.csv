@@ -1,0 +1,4 @@
+sat_image,uav_image,ransac_inliers,scale,manual_points,manual_rmse_px,reference_uav,center_difference_px,max_difference_px,evidence_grade,decision,training_pair_approved,independent_validation_confirmed
+Moxitaidi_Satellite100.tif,luding_UAV0519.tif,7,2.0003,4,3.595,UAV0533,2.5316,9.8611,A_candidate,local_feasibility_supported,False,False
+Moxitaidi_Satellite100.tif,luding_UAV0533.tif,5,2.000178,4,6.1718,UAV0519,2.5316,9.8611,B_candidate,local_feasibility_supported_with_caution,False,False
+Moxitaidi_Satellite100.tif,luding_UAV0518.tif,5,1.84916,0,,UAV0519,18.8939,70.1926,review_required,not_approved,False,False
