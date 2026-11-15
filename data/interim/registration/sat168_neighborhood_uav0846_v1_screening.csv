@@ -1,0 +1,10 @@
+satellite,uav_image,ratio_matches,unique_target_matches,ransac_inliers,scale,sat_inlier_span_x,sat_inlier_span_y,uav_inlier_span_x,uav_inlier_span_y,status,satellite_keypoints,uav_keypoints,ratio_threshold,ransac_threshold_uav_pixels,random_seed
+Moxitaidi_Satellite161.tif,luding_UAV0846.tif,19,13,3,0.02515930948310909,,,,,fewer_than_4_inliers,1630,1585,0.75,3.0,42
+Moxitaidi_Satellite162.tif,luding_UAV0846.tif,24,15,3,0.02515930838441125,,,,,fewer_than_4_inliers,2250,1585,0.75,3.0,42
+Moxitaidi_Satellite163.tif,luding_UAV0846.tif,14,10,2,1.5543489010173221,,,,,fewer_than_4_inliers,2183,1585,0.75,3.0,42
+Moxitaidi_Satellite167.tif,luding_UAV0846.tif,21,15,2,0.7356337363645487,,,,,fewer_than_4_inliers,2074,1585,0.75,3.0,42
+Moxitaidi_Satellite168.tif,luding_UAV0846.tif,27,15,2,5.845000338023797,,,,,fewer_than_4_inliers,2766,1585,0.75,3.0,42
+Moxitaidi_Satellite169.tif,luding_UAV0846.tif,14,10,2,0.538837731993991,,,,,fewer_than_4_inliers,2965,1585,0.75,3.0,42
+Moxitaidi_Satellite173.tif,luding_UAV0846.tif,23,18,2,0.22899670331744287,,,,,fewer_than_4_inliers,2656,1585,0.75,3.0,42
+Moxitaidi_Satellite174.tif,luding_UAV0846.tif,20,12,2,2.6998336772478964,,,,,fewer_than_4_inliers,3323,1585,0.75,3.0,42
+Moxitaidi_Satellite175.tif,luding_UAV0846.tif,17,13,2,0.7827248100588694,,,,,fewer_than_4_inliers,3975,1585,0.75,3.0,42

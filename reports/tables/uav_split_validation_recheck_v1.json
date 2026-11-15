@@ -1,0 +1,44 @@
+{
+  "status": "candidate_within_component_check_only",
+  "grid": "uav_grid_coordinates_v2.csv",
+  "image_count": 984,
+  "counts": {
+    "unassigned": 223,
+    "train_candidate": 484,
+    "buffer": 57,
+    "val_candidate": 71,
+    "test_candidate": 149
+  },
+  "tile_pixels": 512,
+  "grid_step_pixels": 256,
+  "required_gap_pixels": 512,
+  "component_2_pair_checks": [
+    {
+      "first": "train_candidate",
+      "second": "val_candidate",
+      "pairs": 34364,
+      "minimum_gap_pixels": 512.0,
+      "violations": 0
+    },
+    {
+      "first": "train_candidate",
+      "second": "test_candidate",
+      "pairs": 72116,
+      "minimum_gap_pixels": 3840.0,
+      "violations": 0
+    },
+    {
+      "first": "val_candidate",
+      "second": "test_candidate",
+      "pairs": 10579,
+      "minimum_gap_pixels": 512.0,
+      "violations": 0
+    }
+  ],
+  "within_component_gap_passed": true,
+  "limitations": [
+    "Other components remain unassigned; spatial separation from component 2 is unverified.",
+    "Satellite-UAV overlap, effective validity masks, and true geographic positions are unverified.",
+    "Exploratory test-area statistics were previously inspected; this is not a frozen held-out test set."
+  ]
+}
