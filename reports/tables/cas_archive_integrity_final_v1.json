@@ -1,0 +1,146 @@
+{
+  "audit_type": "CAS archive ZIP CRC audit",
+  "created_at": "2026-11-16T00:54:16.425080+08:00",
+  "archive_count": 17,
+  "passed": 17,
+  "failed": 0,
+  "note": "ZIP CRC validation does not establish that all 16 expected semantic subsets are present or that local archives match publisher checksums.",
+  "archives": [
+    {
+      "archive": "Hokkaido Iburi-Tobu.zip",
+      "size_bytes": 745717976,
+      "entry_count": 4455,
+      "file_count": 4452,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Jiuzhai valley (UAV-0.2m).zip",
+      "size_bytes": 2094116885,
+      "entry_count": 17778,
+      "file_count": 17775,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Jiuzhai valley (UAV-0.5m).zip",
+      "size_bytes": 777424021,
+      "entry_count": 5259,
+      "file_count": 5256,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Lombok.zip",
+      "size_bytes": 179943364,
+      "entry_count": 1311,
+      "file_count": 1308,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Longxi River(SAT).zip",
+      "size_bytes": 672812342,
+      "entry_count": 5310,
+      "file_count": 5307,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Longxi River（UAV）.zip",
+      "size_bytes": 687025449,
+      "entry_count": 7564,
+      "file_count": 7561,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Mengdong Township.zip",
+      "size_bytes": 724135475,
+      "entry_count": 3468,
+      "file_count": 3465,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Moxi town（UAV-0.2m）.zip",
+      "size_bytes": 1017160974,
+      "entry_count": 4908,
+      "file_count": 4905,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Moxi town（UAV-1m）.zip",
+      "size_bytes": 99370325,
+      "entry_count": 483,
+      "file_count": 480,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Moxitaidi (SAT).zip",
+      "size_bytes": 398397815,
+      "entry_count": 1959,
+      "file_count": 1956,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Moxitaidi (UAV-0.6m).zip",
+      "size_bytes": 545905382,
+      "entry_count": 2955,
+      "file_count": 2952,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Moxitaidi (UAV-1m).zip",
+      "size_bytes": 276331458,
+      "entry_count": 1452,
+      "file_count": 1449,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Tiburon Peninsula（Sentinel）.zip",
+      "size_bytes": 383158737,
+      "entry_count": 1806,
+      "file_count": 1803,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Tiburon Peninsula（planet）.zip",
+      "size_bytes": 155217089,
+      "entry_count": 978,
+      "file_count": 975,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "Wenchuan.zip",
+      "size_bytes": 25210192,
+      "entry_count": 537,
+      "file_count": 534,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "palu.zip",
+      "size_bytes": 408086146,
+      "entry_count": 2454,
+      "file_count": 2451,
+      "status": "passed",
+      "error": null
+    },
+    {
+      "archive": "study_areas_shp.zip",
+      "size_bytes": 27432,
+      "entry_count": 83,
+      "file_count": 82,
+      "status": "passed",
+      "error": null
+    }
+  ]
+}
