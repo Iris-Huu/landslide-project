@@ -1,0 +1,87 @@
+{
+  "checked_at_utc": "2026-11-18T23:13:39.205838+00:00",
+  "finished_at_utc": "2026-11-18T23:13:46.512028+00:00",
+  "environment": {
+    "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]",
+    "executable": "/root/miniconda3/envs/landslide-audit/bin/python",
+    "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+    "numpy": "2.4.6",
+    "rasterio": "1.4.4",
+    "gdal": "3.10.3"
+  },
+  "inputs": {
+    "data/interim/splits/moxitaidi_unified_spatial_manifest_v1.csv": {
+      "sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a"
+    },
+    "reports/tables/moxitaidi_nodata_audit_v1.csv": {
+      "sha256": "63cdff760bf839eeea039ae38e0382e14712539e709e20b787195473389df3b3"
+    }
+  },
+  "scope": "UAV component 2 train_candidate and val_candidate only; full image and mask pixel reads",
+  "limitations": [
+    "Full-image landslide ratios do not exclude unverified invalid areas.",
+    "NoData counts are previous audit results, not recalculated or a validated valid-pixel mask.",
+    "Readable pixels, equal dimensions and metadata do not prove physical registration or correct labels.",
+    "No test, buffer, unassigned or SAT imagery/masks were read."
+  ],
+  "splits": {
+    "train_candidate": {
+      "samples": 484,
+      "image_read_failures": 0,
+      "mask_read_failures": 0,
+      "samples_with_issues": 0,
+      "issue_counts": {},
+      "issue_details": [],
+      "georeferencing_comparison": {
+        "neither_has_georeference": 484
+      },
+      "full_image_landslide_percent_per_image": {
+        "count": 484,
+        "mean": 8.872476688101273,
+        "min": 0.1079559326171875,
+        "p25": 1.9299507141113281,
+        "median": 5.054473876953125,
+        "p75": 12.407684326171875,
+        "max": 72.63031005859375,
+        "zero_landslide_images": 0
+      },
+      "existing_suspected_nodata_audit": {
+        "matched_rows": 484,
+        "missing_rows": 0,
+        "suspected_pixels": 3282737,
+        "overlap_with_positive_pixels": 3076,
+        "images_with_suspected_pixels": 396,
+        "images_with_positive_overlap": 23
+      }
+    },
+    "val_candidate": {
+      "samples": 71,
+      "image_read_failures": 0,
+      "mask_read_failures": 0,
+      "samples_with_issues": 0,
+      "issue_counts": {},
+      "issue_details": [],
+      "georeferencing_comparison": {
+        "neither_has_georeference": 71
+      },
+      "full_image_landslide_percent_per_image": {
+        "count": 71,
+        "mean": 11.44375330965284,
+        "min": 0.1750946044921875,
+        "p25": 3.6611557006835938,
+        "median": 7.312774658203125,
+        "p75": 18.06049346923828,
+        "max": 45.08094787597656,
+        "zero_landslide_images": 0
+      },
+      "existing_suspected_nodata_audit": {
+        "matched_rows": 71,
+        "missing_rows": 0,
+        "suspected_pixels": 303332,
+        "overlap_with_positive_pixels": 5342,
+        "images_with_suspected_pixels": 41,
+        "images_with_positive_overlap": 9
+      }
+    }
+  }
+}

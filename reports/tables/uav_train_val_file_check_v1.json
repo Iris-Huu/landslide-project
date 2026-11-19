@@ -1,0 +1,68 @@
+{
+  "scope": "UAV train_candidate and val_candidate only; metadata and exact file existence, no image or mask contents opened",
+  "limitations": [
+    "Filename matching does not establish geographic separation, pixel alignment, label correctness, valid masks or readability.",
+    "Test, buffer, unassigned and SAT files were not checked.",
+    "Existing validation counts are compared, not independently recomputed."
+  ],
+  "inputs_sha256": {
+    "data/interim/splits/moxitaidi_unified_spatial_manifest_v1.csv": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+    "data/interim/splits/moxitaidi_uav_split_candidate_v1.csv": "dedf41fc76e78f819d27fc6aa438c81cf3d4566edf1b2322891507319c1a3012",
+    "reports/tables/uav_split_validation_recheck_v1.json": "b4ff7ad444c13c0363a33877316e7fa794f24ff66e724d36915294083ff2c814"
+  },
+  "manifest_fields": [
+    "platform",
+    "filename",
+    "component",
+    "grid_row",
+    "grid_col",
+    "split",
+    "within_platform_candidate",
+    "cross_platform_leakage_verified",
+    "approved_for_training",
+    "approved_for_evaluation",
+    "risk_reason"
+  ],
+  "candidate_fields": [
+    "filename",
+    "component",
+    "grid_row",
+    "grid_col",
+    "split"
+  ],
+  "splits": {
+    "train_candidate": {
+      "manifest_count": 484,
+      "candidate_count": 484,
+      "validation_record_count": 484,
+      "manifest_duplicate_filenames": {},
+      "candidate_duplicate_filenames": {},
+      "invalid_filenames": [],
+      "missing_image": [],
+      "missing_mask": [],
+      "only_in_manifest": [],
+      "only_in_candidate": [],
+      "candidate_row_mismatches": [],
+      "outside_component_2": [],
+      "unexpected_approval_or_candidate_flags": []
+    },
+    "val_candidate": {
+      "manifest_count": 71,
+      "candidate_count": 71,
+      "validation_record_count": 71,
+      "manifest_duplicate_filenames": {},
+      "candidate_duplicate_filenames": {},
+      "invalid_filenames": [],
+      "missing_image": [],
+      "missing_mask": [],
+      "only_in_manifest": [],
+      "only_in_candidate": [],
+      "candidate_row_mismatches": [],
+      "outside_component_2": [],
+      "unexpected_approval_or_candidate_flags": []
+    }
+  },
+  "train_val_filename_overlap": [],
+  "errors": [],
+  "passed": true
+}

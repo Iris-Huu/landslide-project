@@ -1,0 +1,99 @@
+{
+  "started_utc": "2026-11-18T23:45:07.311348+00:00",
+  "mode": "synthetic",
+  "config": {
+    "purpose": "exploratory_smoke_test_only",
+    "formal_approval": "unchanged; not granted by this smoke test",
+    "valid_policy": "all_pixels_provisional",
+    "valid_limitation": "valid region has not been verified",
+    "device": "cpu",
+    "threads": 1,
+    "seed": 17,
+    "base_channels": 2,
+    "crop_size": 128,
+    "batch_size": 1,
+    "learning_rate": 0.001,
+    "max_updates": 2,
+    "max_step_seconds": 60
+  },
+  "environment": {
+    "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]",
+    "torch": "2.6.0+cpu",
+    "torch_cuda_build": null,
+    "numpy": "2.4.6",
+    "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+    "device": "cpu",
+    "threads": 1
+  },
+  "git_head": "a826ae70aca84477f92ab96bfcdde203e296ab66",
+  "git_status": "?? reports/tables/uav_train_val_file_check_v1.json\n?? reports/tables/uav_train_val_readability_details_v1.csv\n?? reports/tables/uav_train_val_readability_v1.json\n?? reports/tables/uav_train_val_review_selection_v1.json\n?? reports/uav_data_reader_and_visual_review_v1.md\n?? reports/uav_exploratory_baseline_plan_v1.md\n?? reports/uav_train_val_readability_and_metrics_usage_v1.md\n?? reports/uav_unet_cpu_synthetic_usage_v1.md\n?? scripts/splits/check_uav_train_val_files.py\n?? scripts/splits/create_uav_train_val_review.py\n?? scripts/training/cpu_smoke.py\n?? src/data/uav_data.py\n?? src/data_audit/check_uav_train_val_readability.py\n?? src/metrics/binary_segmentation.py\n?? src/models/unet.py\n?? src/training/segmentation_steps.py\n?? tests/test_binary_segmentation.py\n?? tests/test_cpu_smoke.py\n?? tests/test_uav_data.py\n?? tests/test_unet_cpu.py",
+  "code_sha256": {
+    "scripts/training/cpu_smoke.py": "23892426c8d23e3bdbfde2c5c740f74e273a8acce48efaaa9453b2579c901224",
+    "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+    "src/models/unet.py": "c082246ee4bfb414f4e4be0d676bab3833a30ab8410b340272a127ffa71ddd77",
+    "src/training/segmentation_steps.py": "eb2ee431c28404c192cd360927c004b30aab3865a83e69a771a047839459277b"
+  },
+  "steps": [],
+  "status": "completed",
+  "checkpoint": null,
+  "synthetic_gate": {
+    "mode": "synthetic",
+    "config": {
+      "purpose": "exploratory_smoke_test_only",
+      "formal_approval": "unchanged; not granted by this smoke test",
+      "valid_policy": "all_pixels_provisional",
+      "valid_limitation": "valid region has not been verified",
+      "device": "cpu",
+      "threads": 1,
+      "seed": 17,
+      "base_channels": 2,
+      "crop_size": 16,
+      "batch_size": 1,
+      "learning_rate": 0.001,
+      "max_updates": 1,
+      "max_step_seconds": 60
+    },
+    "step": {
+      "crop": {
+        "top": 0,
+        "left": 0,
+        "height": 16,
+        "width": 16
+      },
+      "seconds": 0.005539862439036369,
+      "loss_before": 0.6935023069381714,
+      "update_loss": 0.6935023069381714,
+      "loss_after": 0.6935022473335266,
+      "parameter_changed": true,
+      "max_abs_parameter_change": 3.248453140258789e-06,
+      "finite_logits_loss_gradients": true,
+      "tensor_shapes": {
+        "image": [
+          1,
+          3,
+          16,
+          16
+        ],
+        "target": [
+          1,
+          1,
+          16,
+          16
+        ],
+        "valid_mask": [
+          1,
+          1,
+          16,
+          16
+        ]
+      },
+      "tensor_dtypes": {
+        "image": "torch.float32",
+        "target": "torch.float32",
+        "valid_mask": "torch.bool"
+      }
+    }
+  },
+  "finished_utc": "2026-11-18T23:45:09.530423+00:00",
+  "archive_note": "Copied from local run record; project-root absolute manifest path made relative. Original retained."
+}
