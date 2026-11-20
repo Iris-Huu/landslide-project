@@ -20,7 +20,7 @@ image, mask, valid, provenance = (sample[k] for k in ('image', 'mask', 'valid_ma
 
 ## 人工核查图
 
-每组选择两张：在既有疑似区域审计中，疑似像素为 0 的文件名字典序第一张；以及疑似区域与正类重叠像素数最大的样本（数量相同时按文件名字典序）。这种选法是可复现的示例，不是随机样本或质量代表。审计输入哈希、文件、数值和绘图参数见 `reports/tables/uav_train_val_review_selection_v1.json`。四张图保存在 `reports/figures/uav_train_val_review_v1/`；该路径受 `.gitignore` 忽略，本次整理对四张核查图逐个明确纳入 Git。
+每组选择两张：在既有疑似区域审计中，疑似像素为 0 的文件名字典序第一张；以及疑似区域与正类重叠像素数最大的样本（数量相同时按文件名字典序）。这种选法是可复现的示例，不是随机样本或质量代表。审计输入哈希、文件、数值和绘图参数见 `reports/tables/uav_train_val_review_selection_v1.json`。四张图保存在 `reports/figures/uav_train_val_review_v1/`；该路径受 `.gitignore` 忽略；四张核查图保存在服务器，当前未纳入Git。
 
 图像从左至右为影像、二值标签、红色标签叠加、疑似区域叠加。黄色是边缘连通的全通道纯黑或纯白的疑似区域，品红是疑似区域与正类标签交集；颜色的含义也在图例中写明。这里直接复用 `src/data_audit/audit_nodata_candidate.py` 的 `find_candidate`，并逐图对比本次计算的候选与交集像素数与既有审计记录一致；规则未经验证。
 

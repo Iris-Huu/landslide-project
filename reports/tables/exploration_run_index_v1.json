@@ -1,0 +1,655 @@
+{
+  "scope": "探索性运行索引；非正式E1或独立测试；原始日志与检查点保留在被Git忽略的experiments目录",
+  "created_utc": "2026-11-20T00:04:54.172242+00:00",
+  "runs": [
+    {
+      "directory": "experiments/uav_cpu_smoke_doy2b1bq",
+      "original_log": "experiments/uav_cpu_smoke_doy2b1bq/run.json",
+      "log_sha256": "6e091ec9ae1169477326ba788cd783533d6c2b6ec84f3e6c777361a543f16b98",
+      "status": "completed",
+      "mode": "real-train",
+      "seed": 17,
+      "epochs": 0,
+      "best_epoch": null,
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": null,
+      "val_samples_sha256": null,
+      "train_count": null,
+      "val_count": null,
+      "config": {
+        "purpose": "exploratory_smoke_test_only",
+        "formal_approval": "unchanged; not granted by this smoke test",
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region has not been verified",
+        "device": "cpu",
+        "threads": 1,
+        "seed": 17,
+        "base_channels": 2,
+        "crop_size": 128,
+        "batch_size": 1,
+        "learning_rate": 0.001,
+        "max_updates": 2,
+        "max_step_seconds": 60
+      },
+      "environment": {
+        "torch": "2.6.0+cpu",
+        "torch_cuda_build": null,
+        "device": "cpu",
+        "threads": 1
+      },
+      "source_sha256": {
+        "scripts/training/cpu_smoke.py": "23892426c8d23e3bdbfde2c5c740f74e273a8acce48efaaa9453b2579c901224",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/models/unet.py": "c082246ee4bfb414f4e4be0d676bab3833a30ab8410b340272a127ffa71ddd77",
+        "src/training/segmentation_steps.py": "eb2ee431c28404c192cd360927c004b30aab3865a83e69a771a047839459277b"
+      },
+      "checkpoints": {}
+    },
+    {
+      "directory": "experiments/uav_train_0ev4mlp7",
+      "original_log": "experiments/uav_train_0ev4mlp7/run.json",
+      "log_sha256": "669976ee1d50d3a87ed7f52949d770a28b241fb09fe34d348679434d6ce7b215",
+      "status": "completed",
+      "mode": "train",
+      "seed": 17,
+      "epochs": 3,
+      "best_epoch": 1,
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": null,
+      "val_samples_sha256": null,
+      "train_count": 484,
+      "val_count": 71,
+      "config": {
+        "mode": "train",
+        "epochs": 3,
+        "batch_size": 4,
+        "crop": 256,
+        "seed": 17,
+        "base_channels": 8,
+        "lr": 0.001,
+        "resume": null,
+        "device": "cuda:0",
+        "valid_policy": "all_pixels_provisional",
+        "threshold": 0.5,
+        "selection": "UAV component 2 candidates only",
+        "crop_strategy": "center crop same for image/mask/valid",
+        "training_order": "per-epoch seed + epoch random permutation",
+        "normalization": "uint8 / 255",
+        "optimizer": "Adam",
+        "loss": "masked BCEWithLogits",
+        "workers": 0
+      },
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "torch_cuda_build": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "threads": 2
+      },
+      "source_sha256": {
+        "scripts/training/uav_exploratory.py": "a45238129a501080dc821300eaff0442309070208a2ab4cdd6c9188c65591709",
+        "src/training/exploratory.py": "cd568b76dfef4accbad9efc81cea73f7f5df357ebce38d1be485103b5b2ae688",
+        "src/models/unet.py": "c082246ee4bfb414f4e4be0d676bab3833a30ab8410b340272a127ffa71ddd77",
+        "src/training/segmentation_steps.py": "eb2ee431c28404c192cd360927c004b30aab3865a83e69a771a047839459277b",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+      },
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_train_0ev4mlp7/best.pt",
+          "size_bytes": 394331,
+          "sha256": "f8005695e5dfc860af5c49bbede7fbf3c354bd01fc7b15ae42b78a379c0be006"
+        },
+        "last.pt": {
+          "path": "experiments/uav_train_0ev4mlp7/last.pt",
+          "size_bytes": 394331,
+          "sha256": "bd526f8b90e16965636ff8165e5e1d1aabea3a87c63a58030ea530ace9ebf4a0"
+        }
+      },
+      "best_validation": {
+        "loss": 0.34402696977198965,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 0,
+          "fp": 0,
+          "fn": 534758,
+          "tn": 4118298,
+          "valid_pixels": 4653056,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 534758,
+            "f1": 534758,
+            "precision": 0,
+            "recall": 534758
+          },
+          "metrics": {
+            "iou": 0.0,
+            "f1": 0.0,
+            "precision": null,
+            "recall": 0.0
+          }
+        }
+      },
+      "final_validation": {
+        "loss": 0.33216343379356494,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 0,
+          "fp": 0,
+          "fn": 534758,
+          "tn": 4118298,
+          "valid_pixels": 4653056,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 534758,
+            "f1": 534758,
+            "precision": 0,
+            "recall": 534758
+          },
+          "metrics": {
+            "iou": 0.0,
+            "f1": 0.0,
+            "precision": null,
+            "recall": 0.0
+          }
+        }
+      }
+    },
+    {
+      "directory": "experiments/uav_train_xj_kf48q",
+      "original_log": "experiments/uav_train_xj_kf48q/run.json",
+      "log_sha256": "3b07b41a3a2bb114566f24fc5d44828304a6e3a4e95a0bd3d0c0e92a6628abf1",
+      "status": "completed",
+      "mode": "train",
+      "seed": 17,
+      "epochs": 20,
+      "best_epoch": 1,
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": null,
+      "val_samples_sha256": null,
+      "train_count": 484,
+      "val_count": 71,
+      "config": {
+        "mode": "train",
+        "epochs": 20,
+        "batch_size": 4,
+        "crop": 256,
+        "seed": 17,
+        "base_channels": 8,
+        "lr": 0.001,
+        "pos_weight": null,
+        "resume": null,
+        "device": "cuda:0",
+        "valid_policy": "all_pixels_provisional",
+        "threshold": 0.5,
+        "selection": "UAV component 2 candidates only",
+        "crop_strategy": "center crop same for image/mask/valid",
+        "training_order": "per-epoch seed + epoch random permutation",
+        "normalization": "uint8 / 255",
+        "optimizer": "Adam",
+        "loss": "masked BCEWithLogits",
+        "validation_loss": "unweighted masked BCEWithLogits for cross-run comparison",
+        "workers": 0
+      },
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "torch_cuda_build": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "threads": 2
+      },
+      "source_sha256": {
+        "scripts/training/uav_exploratory.py": "9193cfd9ff533802d28f1898eb19f10a4a4cd83c6900163a5cc732c96c5acb8d",
+        "src/training/exploratory.py": "81bceb361dfe7484315df4c0997dd8a729c0cb1d1d6867d00707121c8d2a82a3",
+        "src/models/unet.py": "c082246ee4bfb414f4e4be0d676bab3833a30ab8410b340272a127ffa71ddd77",
+        "src/training/segmentation_steps.py": "96c281ce969fdf57b1aab584c55a3adb8cfb5c9feda931dab49d17f91ea31d9a",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+      },
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_train_xj_kf48q/best.pt",
+          "size_bytes": 394395,
+          "sha256": "df747c15e7eab46a6f39d5f51ca32a79c15981c57efec4aae41bb821da1e1229"
+        },
+        "last.pt": {
+          "path": "experiments/uav_train_xj_kf48q/last.pt",
+          "size_bytes": 394395,
+          "sha256": "bbda937bc0aaa2de0effbb72ec993b4dc3c1fd6a062ca15a0a247e8e003d7e59"
+        }
+      },
+      "best_validation": {
+        "loss": 0.34402696977198965,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 0,
+          "fp": 0,
+          "fn": 534758,
+          "tn": 4118298,
+          "valid_pixels": 4653056,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 534758,
+            "f1": 534758,
+            "precision": 0,
+            "recall": 534758
+          },
+          "metrics": {
+            "iou": 0.0,
+            "f1": 0.0,
+            "precision": null,
+            "recall": 0.0
+          }
+        }
+      },
+      "final_validation": {
+        "loss": 0.3018554818462318,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 0,
+          "fp": 0,
+          "fn": 534758,
+          "tn": 4118298,
+          "valid_pixels": 4653056,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 534758,
+            "f1": 534758,
+            "precision": 0,
+            "recall": 534758
+          },
+          "metrics": {
+            "iou": 0.0,
+            "f1": 0.0,
+            "precision": null,
+            "recall": 0.0
+          }
+        }
+      }
+    },
+    {
+      "directory": "experiments/uav_train_s47c7j29",
+      "original_log": "experiments/uav_train_s47c7j29/run.json",
+      "log_sha256": "0303ccaaef0f30681dd4da763c48275efde1cb3b2a26fe038ca483cd8b39f95d",
+      "status": "completed",
+      "mode": "train",
+      "seed": 17,
+      "epochs": 20,
+      "best_epoch": 20,
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": null,
+      "val_samples_sha256": null,
+      "train_count": 484,
+      "val_count": 71,
+      "config": {
+        "mode": "train",
+        "epochs": 20,
+        "batch_size": 4,
+        "crop": 256,
+        "seed": 17,
+        "base_channels": 8,
+        "lr": 0.001,
+        "pos_weight": 10.178446773838859,
+        "resume": null,
+        "device": "cuda:0",
+        "valid_policy": "all_pixels_provisional",
+        "threshold": 0.5,
+        "selection": "UAV component 2 candidates only",
+        "crop_strategy": "center crop same for image/mask/valid",
+        "training_order": "per-epoch seed + epoch random permutation",
+        "normalization": "uint8 / 255",
+        "optimizer": "Adam",
+        "loss": "masked BCEWithLogits",
+        "validation_loss": "unweighted masked BCEWithLogits for cross-run comparison",
+        "workers": 0
+      },
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "torch_cuda_build": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "threads": 2
+      },
+      "source_sha256": {
+        "scripts/training/uav_exploratory.py": "9193cfd9ff533802d28f1898eb19f10a4a4cd83c6900163a5cc732c96c5acb8d",
+        "src/training/exploratory.py": "81bceb361dfe7484315df4c0997dd8a729c0cb1d1d6867d00707121c8d2a82a3",
+        "src/models/unet.py": "c082246ee4bfb414f4e4be0d676bab3833a30ab8410b340272a127ffa71ddd77",
+        "src/training/segmentation_steps.py": "96c281ce969fdf57b1aab584c55a3adb8cfb5c9feda931dab49d17f91ea31d9a",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+      },
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_train_s47c7j29/best.pt",
+          "size_bytes": 394395,
+          "sha256": "6553d4a1b8663a4d7944ad99d190768c8837f5a0b48d1554e0232004be097fcb"
+        },
+        "last.pt": {
+          "path": "experiments/uav_train_s47c7j29/last.pt",
+          "size_bytes": 394395,
+          "sha256": "f4c77f052ebe545dcc35c31279e47c9f3ebe4de45b1ab7e64720ce606093a69c"
+        }
+      },
+      "best_validation": {
+        "loss": 0.36004065417907605,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 369487,
+          "fp": 755386,
+          "fn": 165271,
+          "tn": 3362912,
+          "valid_pixels": 4653056,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 1290144,
+            "f1": 1659631,
+            "precision": 1124873,
+            "recall": 534758
+          },
+          "metrics": {
+            "iou": 0.2863920616613339,
+            "f1": 0.4452640376083599,
+            "precision": 0.328469969498779,
+            "recall": 0.6909424449938103
+          }
+        }
+      },
+      "final_validation": {
+        "loss": 0.36004065417907605,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 369487,
+          "fp": 755386,
+          "fn": 165271,
+          "tn": 3362912,
+          "valid_pixels": 4653056,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 1290144,
+            "f1": 1659631,
+            "precision": 1124873,
+            "recall": 534758
+          },
+          "metrics": {
+            "iou": 0.2863920616613339,
+            "f1": 0.4452640376083599,
+            "precision": 0.328469969498779,
+            "recall": 0.6909424449938103
+          }
+        }
+      }
+    },
+    {
+      "directory": "experiments/uav_deeplab_train_83uohcoi",
+      "original_log": "experiments/uav_deeplab_train_83uohcoi/run.json",
+      "log_sha256": "c2b8d16f57e37efa528ddf2f149eeb6aa91b3dcaa48fe0a2edaa7844a6cdac62",
+      "status": "completed",
+      "mode": "train",
+      "seed": 17,
+      "epochs": 5,
+      "best_epoch": 4,
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": "4df89c112f475e2e3fbdb868b5b4f3e3b5ba274c90a84bcce4a5eb68511a8b50",
+      "val_samples_sha256": "5a644079b5f40d6def42e60bd32f298b62da73ca72a1cd4a0e21eeee92cb7af5",
+      "train_count": 484,
+      "val_count": 71,
+      "config": {
+        "mode": "train",
+        "encoder": "resnet50",
+        "encoder_weights": null,
+        "crop": 512,
+        "batch_size": 4,
+        "epochs": 5,
+        "seed": 17,
+        "lr": 0.0001,
+        "pos_weight": null,
+        "loss": "dice_bce",
+        "dice_smooth": 1.0,
+        "bce_weight": 1.0,
+        "dice_weight": 1.0,
+        "resume": null,
+        "purpose": "exploratory engineering only; not formal E1",
+        "formal_approval": "unchanged",
+        "model": "SMP DeepLabV3Plus",
+        "encoder_output_stride": 16,
+        "decoder_atrous_rates": [
+          12,
+          24,
+          36
+        ],
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region not validated",
+        "normalization": "RGB uint8 / 255",
+        "crop_strategy": "same deterministic center crop for image/mask/valid",
+        "sampling": "sorted sample list, per-epoch shuffle seed+epoch",
+        "loss_definition": "BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded",
+        "validation_loss": "valid-pixel weighted mean of batch losses",
+        "optimizer": "Adam",
+        "threshold": 0.5,
+        "workers": 0
+      },
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5090"
+      },
+      "source_sha256": {
+        "scripts/training/uav_deeplabv3plus.py": "bb3f2923a7f084fd1a2c5cc46aaaaa6c61230ac65ef7a89a845bdd2eadf16074",
+        "src/models/deeplabv3plus.py": "51e664c8218dc65b7fb1fd40e260406a8fc7ad0856c34226b96f21a41fd8c2ff",
+        "src/training/exploratory.py": "787936e339234469e7396c998f789a9a317fcaabb344b6f7a82d50150365e661",
+        "src/training/segmentation_steps.py": "04abaa97ded8d0ccd466785a4dbf0eb8f364a9bc8440c787bf67db4fe8771f37",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+      },
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_deeplab_train_83uohcoi/best.pt",
+          "size_bytes": 320620653,
+          "sha256": "1c7859276e673be3f720d08b7bffab589f28b1282b5634b33b3e27692c153804"
+        },
+        "last.pt": {
+          "path": "experiments/uav_deeplab_train_83uohcoi/last.pt",
+          "size_bytes": 320620653,
+          "sha256": "510eeaaf02bfb5b5ef16b8ebd46153b5878796a5ded9faee5281aca93d8998ff"
+        }
+      },
+      "best_validation": {
+        "loss": 0.8741025412586373,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1039678,
+          "fp": 851576,
+          "fn": 1090259,
+          "tn": 15630711,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2981513,
+            "f1": 4021191,
+            "precision": 1891254,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.34870818943268067,
+            "f1": 0.5170995359335082,
+            "precision": 0.5497294387744851,
+            "recall": 0.48812617462394425
+          }
+        }
+      },
+      "final_validation": {
+        "loss": 0.9740614303400819,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 773055,
+          "fp": 555224,
+          "fn": 1356882,
+          "tn": 15927063,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2685161,
+            "f1": 3458216,
+            "precision": 1328279,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.28789893790353727,
+            "f1": 0.4470831203140579,
+            "precision": 0.5819974568595905,
+            "recall": 0.36294735478091605
+          }
+        }
+      }
+    },
+    {
+      "directory": "experiments/uav_segformer_train_ydt54mjz",
+      "original_log": "experiments/uav_segformer_train_ydt54mjz/run.json",
+      "log_sha256": "acc1a4da5f94fc82afb27594d5686551ed988f35e474fddd0e36d1d2c430543c",
+      "status": "completed",
+      "mode": "train",
+      "seed": 17,
+      "epochs": 5,
+      "best_epoch": 5,
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": "4df89c112f475e2e3fbdb868b5b4f3e3b5ba274c90a84bcce4a5eb68511a8b50",
+      "val_samples_sha256": "5a644079b5f40d6def42e60bd32f298b62da73ca72a1cd4a0e21eeee92cb7af5",
+      "train_count": 484,
+      "val_count": 71,
+      "config": {
+        "mode": "train",
+        "architecture": "segformer",
+        "encoder": "mit_b2",
+        "encoder_weights": null,
+        "crop": 512,
+        "batch_size": 4,
+        "epochs": 5,
+        "seed": 17,
+        "lr": 0.0001,
+        "pos_weight": null,
+        "loss": "dice_bce",
+        "dice_smooth": 1.0,
+        "bce_weight": 1.0,
+        "dice_weight": 1.0,
+        "resume": null,
+        "purpose": "exploratory engineering only; not formal E1",
+        "formal_approval": "unchanged",
+        "model": "SMP Segformer",
+        "decoder_details": {
+          "decoder": "SegformerDecoder",
+          "feature_interpolation": "bilinear align_corners=False",
+          "head_interpolation": "bilinear scale_factor=4 align_corners=True",
+          "classes": 1
+        },
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region not validated",
+        "normalization": "RGB uint8 / 255",
+        "crop_strategy": "same deterministic center crop for image/mask/valid",
+        "sampling": "sorted sample list, per-epoch shuffle seed+epoch",
+        "loss_definition": "BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded",
+        "validation_loss": "valid-pixel weighted mean of batch losses",
+        "optimizer": "Adam",
+        "threshold": 0.5,
+        "workers": 0
+      },
+      "environment": {
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5090"
+      },
+      "source_sha256": {
+        "scripts/training/uav_deeplabv3plus.py": "039363fa3c7a03cc086a6fd7606c8d9d078396d184c06a91b5cdb44aa660aba8",
+        "src/models/deeplabv3plus.py": "51e664c8218dc65b7fb1fd40e260406a8fc7ad0856c34226b96f21a41fd8c2ff",
+        "src/models/segformer.py": "20665eebcef1ef6d6bb34a9af1e74e17f8ad78342ef96d3d72c1a9974a870a0d",
+        "src/training/exploratory.py": "787936e339234469e7396c998f789a9a317fcaabb344b6f7a82d50150365e661",
+        "src/training/segmentation_steps.py": "04abaa97ded8d0ccd466785a4dbf0eb8f364a9bc8440c787bf67db4fe8771f37",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+      },
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_segformer_train_ydt54mjz/best.pt",
+          "size_bytes": 297033697,
+          "sha256": "b9656faf2ee066b253e71c5d0fb0b638180c4780d363a8c6fa47f64d5af485e5"
+        },
+        "last.pt": {
+          "path": "experiments/uav_segformer_train_ydt54mjz/last.pt",
+          "size_bytes": 297033697,
+          "sha256": "dfefc14ef31f35e6a617e5d24dea3888b99f886800f6089e1ac2c74caf166d8c"
+        }
+      },
+      "best_validation": {
+        "loss": 0.883736509672353,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1067165,
+          "fp": 998890,
+          "fn": 1062772,
+          "tn": 15483397,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3128827,
+            "f1": 4195992,
+            "precision": 2066055,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.3410751057824546,
+            "f1": 0.5086592157468365,
+            "precision": 0.5165230354467815,
+            "recall": 0.5010312511590719
+          }
+        }
+      },
+      "final_validation": {
+        "loss": 0.883736509672353,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1067165,
+          "fp": 998890,
+          "fn": 1062772,
+          "tn": 15483397,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3128827,
+            "f1": 4195992,
+            "precision": 2066055,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.3410751057824546,
+            "f1": 0.5086592157468365,
+            "precision": 0.5165230354467815,
+            "recall": 0.5010312511590719
+          }
+        }
+      }
+    }
+  ],
+  "diagnostics": {
+    "lightweight_unet": "experiments/uav_diagnostic_zftoy29_/diagnosis.json",
+    "false_positive_full_image": "experiments/uav_val_error_y69erm3a/summary.json",
+    "per_image": "experiments/uav_val_error_y69erm3a/per_image.json",
+    "visualizations": "experiments/uav_val_error_y69erm3a/",
+    "uav_visual_review": "reports/figures/uav_train_val_review_v1/"
+  }
+}

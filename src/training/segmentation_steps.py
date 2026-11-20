@@ -16,7 +16,7 @@ class ExperimentConfig:
     valid_policy: str = 'all_pixels_provisional'
 
 
-def masked_bce(logits, target, valid):
+def masked_bce(logits, target, valid, pos_weight=None):
     if logits.shape != target.shape or logits.shape != valid.shape or logits.ndim != 4 or logits.shape[1] != 1:
         raise ValueError('logits, target and valid must have matching N x 1 x H x W shapes')
     if valid.dtype != torch.bool:
@@ -27,13 +27,41 @@ def masked_bce(logits, target, valid):
         raise ValueError('target must contain only 0/1')
     if not torch.any(valid):
         raise ValueError('no valid pixels in batch')
-    return F.binary_cross_entropy_with_logits(logits[valid], target[valid].to(logits.dtype))
+    if pos_weight is not None:
+        if not isinstance(pos_weight, (int, float)) or not 0 < pos_weight < float("inf"):
+            raise ValueError("pos_weight must be a positive finite number")
+        pos_weight = torch.tensor(pos_weight, dtype=logits.dtype, device=logits.device)
+    return F.binary_cross_entropy_with_logits(logits[valid], target[valid].to(logits.dtype), pos_weight=pos_weight)
 
 
-def train_step(model, optimizer, images, target, valid):
+def masked_dice_bce(logits, target, valid, bce_weight=1.0, dice_weight=1.0, smooth=1.0):
+    """BCE mean + soft Dice loss, pooling all valid pixels across batch.
+
+    Dice = (2*sum(p*y)+smooth)/(sum(p)+sum(y)+smooth), p=sigmoid(logits).
+    No-positive batches use the same smoothed formula. All-invalid batches fail.
+    """
+    import math
+    if not all(isinstance(x,(int,float)) and math.isfinite(x) and x >= 0 for x in (bce_weight,dice_weight)) or bce_weight+dice_weight==0:
+        raise ValueError('loss weights must be nonnegative and not both zero')
+    if not isinstance(smooth,(int,float)) or not math.isfinite(smooth) or smooth<=0:
+        raise ValueError('smooth must be positive and finite')
+    bce=masked_bce(logits,target,valid)
+    p=torch.sigmoid(logits[valid]); y=target[valid].to(logits.dtype)
+    dice=1-(2*(p*y).sum()+smooth)/(p.sum()+y.sum()+smooth)
+    return bce_weight*bce+dice_weight*dice
+
+
+def train_step(model, optimizer, images, target, valid, pos_weight=None, loss_kind='bce', dice_smooth=1.0, bce_weight=1.0, dice_weight=1.0):
     model.train(); optimizer.zero_grad(set_to_none=True)
     logits = model(images)
-    loss = masked_bce(logits, target, valid)
+    if loss_kind == 'bce':
+        loss = masked_bce(logits, target, valid, pos_weight=pos_weight)
+    elif loss_kind == 'dice_bce':
+        if pos_weight is not None: raise ValueError('weighted BCE+Dice is not configured')
+        loss = masked_dice_bce(logits,target,valid,bce_weight,dice_weight,dice_smooth)
+    else:
+        raise ValueError('unknown loss_kind')
+    if not torch.isfinite(loss): raise ValueError('non-finite loss')
     loss.backward()
     for parameter in model.parameters():
         if parameter.grad is not None and not torch.isfinite(parameter.grad).all():
