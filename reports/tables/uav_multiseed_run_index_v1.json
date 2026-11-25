@@ -1,0 +1,796 @@
+{
+  "scope": "candidate validation; exploratory, not independent or formal E1",
+  "selection": "highest validation IoU at threshold 0.5; strict improvement; earliest on ties",
+  "sd": "sample standard deviation, n-1",
+  "runs": [
+    {
+      "model": "deeplabv3plus",
+      "seed": 17,
+      "directory": "experiments/uav_deeplab_train_83uohcoi",
+      "run_json_sha256": "c2b8d16f57e37efa528ddf2f149eeb6aa91b3dcaa48fe0a2edaa7844a6cdac62",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_deeplab_train_83uohcoi/best.pt",
+          "sha256": "1c7859276e673be3f720d08b7bffab589f28b1282b5634b33b3e27692c153804",
+          "bytes": 320620653
+        },
+        "last.pt": {
+          "path": "experiments/uav_deeplab_train_83uohcoi/last.pt",
+          "sha256": "510eeaaf02bfb5b5ef16b8ebd46153b5878796a5ded9faee5281aca93d8998ff",
+          "bytes": 320620653
+        }
+      },
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": "4df89c112f475e2e3fbdb868b5b4f3e3b5ba274c90a84bcce4a5eb68511a8b50",
+      "val_samples_sha256": "5a644079b5f40d6def42e60bd32f298b62da73ca72a1cd4a0e21eeee92cb7af5",
+      "git_head": "c7bcbb3b286a1e17ed78cc63c4ef35347ebc3869",
+      "git_status": "M src/training/segmentation_steps.py\n?? reports/e1_deeplabv3plus_engineering_preparation_v1.md\n?? reports/uav_background_diagnosis_controls_v1.md\n?? reports/uav_gpu_exploratory_v1.md\n?? reports/uav_independent_evaluation_e1_preparation_v1.md\n?? reports/uav_val_false_positive_full_image_v1.md\n?? scripts/training/uav_deeplabv3plus.py\n?? scripts/training/uav_diagnose.py\n?? scripts/training/uav_exploratory.py\n?? scripts/training/uav_prepare_suspected.py\n?? scripts/training/uav_val_error_analysis.py\n?? src/metrics/region_analysis.py\n?? src/models/deeplabv3plus.py\n?? src/training/exploratory.py\n?? tests/test_deeplabv3plus.py\n?? tests/test_dice_bce.py\n?? tests/test_exploratory.py\n?? tests/test_region_analysis.py\n?? tests/test_resnet50_dice.py\n?? tests/test_weighted_loss.py",
+      "environment": {
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "torchvision": "0.23.0+cu128",
+        "smp": "0.5.0",
+        "timm": "1.0.31",
+        "numpy": "2.3.2",
+        "rasterio": "1.4.4",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "driver": "595.71.05"
+      },
+      "config": {
+        "mode": "train",
+        "encoder": "resnet50",
+        "encoder_weights": null,
+        "crop": 512,
+        "batch_size": 4,
+        "epochs": 5,
+        "seed": 17,
+        "lr": 0.0001,
+        "pos_weight": null,
+        "loss": "dice_bce",
+        "dice_smooth": 1.0,
+        "bce_weight": 1.0,
+        "dice_weight": 1.0,
+        "resume": null,
+        "purpose": "exploratory engineering only; not formal E1",
+        "formal_approval": "unchanged",
+        "model": "SMP DeepLabV3Plus",
+        "encoder_output_stride": 16,
+        "decoder_atrous_rates": [
+          12,
+          24,
+          36
+        ],
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region not validated",
+        "normalization": "RGB uint8 / 255",
+        "crop_strategy": "same deterministic center crop for image/mask/valid",
+        "sampling": "sorted sample list, per-epoch shuffle seed+epoch",
+        "loss_definition": "BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded",
+        "validation_loss": "valid-pixel weighted mean of batch losses",
+        "optimizer": "Adam",
+        "threshold": 0.5,
+        "workers": 0
+      },
+      "parameter_count": 26677585,
+      "elapsed_seconds": 45.081698,
+      "peak_allocated_bytes": 3012159488,
+      "best": {
+        "epoch": 4,
+        "train_loss": 0.6878932692295263,
+        "validation_loss": 0.8741025412586373,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1039678,
+          "fp": 851576,
+          "fn": 1090259,
+          "tn": 15630711,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2981513,
+            "f1": 4021191,
+            "precision": 1891254,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.34870818943268067,
+            "f1": 0.5170995359335082,
+            "precision": 0.5497294387744851,
+            "recall": 0.48812617462394425
+          }
+        }
+      },
+      "last": {
+        "epoch": 5,
+        "train_loss": 0.6134475011470889,
+        "validation_loss": 0.9740614303400819,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 773055,
+          "fp": 555224,
+          "fn": 1356882,
+          "tn": 15927063,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2685161,
+            "f1": 3458216,
+            "precision": 1328279,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.28789893790353727,
+            "f1": 0.4470831203140579,
+            "precision": 0.5819974568595905,
+            "recall": 0.36294735478091605
+          }
+        }
+      }
+    },
+    {
+      "model": "deeplabv3plus",
+      "seed": 42,
+      "directory": "experiments/uav_deeplabv3plus_train_be14p2ab",
+      "run_json_sha256": "3519243fb015e2ae6c67503eb3d4cc75f27070714bb724d99857c31df59af5a2",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_deeplabv3plus_train_be14p2ab/best.pt",
+          "sha256": "9723d6a552c4ee656720b5bc01455e88c795161d50043b0e1c607c8562c3920c",
+          "bytes": 320620653
+        },
+        "last.pt": {
+          "path": "experiments/uav_deeplabv3plus_train_be14p2ab/last.pt",
+          "sha256": "bbe9eb9eb8fe86d6df7f4cffcb2695d4a361096d6e76a4ac86c97ed21be92caf",
+          "bytes": 320620653
+        }
+      },
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": "4df89c112f475e2e3fbdb868b5b4f3e3b5ba274c90a84bcce4a5eb68511a8b50",
+      "val_samples_sha256": "5a644079b5f40d6def42e60bd32f298b62da73ca72a1cd4a0e21eeee92cb7af5",
+      "git_head": "4f7234fce6fe9805c8e157dffa9d2f285cd9eecb",
+      "git_status": "?? reports/uav_multiseed_protocol_v1.md",
+      "environment": {
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "torchvision": "0.23.0+cu128",
+        "smp": "0.5.0",
+        "timm": "1.0.31",
+        "numpy": "2.3.2",
+        "rasterio": "1.4.4",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "driver": "595.71.05"
+      },
+      "config": {
+        "mode": "train",
+        "architecture": "deeplabv3plus",
+        "encoder": "resnet50",
+        "encoder_weights": null,
+        "crop": 512,
+        "batch_size": 4,
+        "epochs": 5,
+        "seed": 42,
+        "lr": 0.0001,
+        "pos_weight": null,
+        "loss": "dice_bce",
+        "dice_smooth": 1.0,
+        "bce_weight": 1.0,
+        "dice_weight": 1.0,
+        "resume": null,
+        "purpose": "exploratory engineering only; not formal E1",
+        "formal_approval": "unchanged",
+        "model": "SMP DeepLabV3Plus",
+        "decoder_details": {
+          "encoder_output_stride": 16,
+          "atrous_rates": [
+            12,
+            24,
+            36
+          ]
+        },
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region not validated",
+        "normalization": "RGB uint8 / 255",
+        "crop_strategy": "same deterministic center crop for image/mask/valid",
+        "sampling": "sorted sample list, per-epoch shuffle seed+epoch",
+        "loss_definition": "BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded",
+        "validation_loss": "valid-pixel weighted mean of batch losses",
+        "optimizer": "Adam",
+        "threshold": 0.5,
+        "workers": 0
+      },
+      "parameter_count": 26677585,
+      "elapsed_seconds": 44.956952,
+      "peak_allocated_bytes": 3012159488,
+      "best": {
+        "epoch": 2,
+        "train_loss": 0.8425529170627436,
+        "validation_loss": 0.8809387129797063,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 883678,
+          "fp": 267277,
+          "fn": 1246259,
+          "tn": 16215010,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2397214,
+            "f1": 3280892,
+            "precision": 1150955,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.36862708127017446,
+            "f1": 0.5386815536750371,
+            "precision": 0.7677780625654348,
+            "recall": 0.4148845717032945
+          }
+        }
+      },
+      "last": {
+        "epoch": 5,
+        "train_loss": 0.6117804560286939,
+        "validation_loss": 0.8788008354079555,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 841297,
+          "fp": 542680,
+          "fn": 1288640,
+          "tn": 15939607,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2672617,
+            "f1": 3513914,
+            "precision": 1383977,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.31478397391021606,
+            "f1": 0.4788375583466186,
+            "precision": 0.6078836570260922,
+            "recall": 0.3949868000790634
+          }
+        }
+      }
+    },
+    {
+      "model": "deeplabv3plus",
+      "seed": 123,
+      "directory": "experiments/uav_deeplabv3plus_train_o6kfrz6d",
+      "run_json_sha256": "6ead42a6bf1740734d740a82ba8c170bb0b11566d5adaa7fad442da356fdef20",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_deeplabv3plus_train_o6kfrz6d/best.pt",
+          "sha256": "8f1bef049c2cf54f13b6e735ea1fad5caf12000a8026ad81b056af28c0bf5140",
+          "bytes": 320620717
+        },
+        "last.pt": {
+          "path": "experiments/uav_deeplabv3plus_train_o6kfrz6d/last.pt",
+          "sha256": "6de4b8307d77c2b17c4db2ec9b4824b7844cbb62dbb538f218c75846ad26b422",
+          "bytes": 320620717
+        }
+      },
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": "4df89c112f475e2e3fbdb868b5b4f3e3b5ba274c90a84bcce4a5eb68511a8b50",
+      "val_samples_sha256": "5a644079b5f40d6def42e60bd32f298b62da73ca72a1cd4a0e21eeee92cb7af5",
+      "git_head": "4f7234fce6fe9805c8e157dffa9d2f285cd9eecb",
+      "git_status": "?? reports/uav_multiseed_protocol_v1.md",
+      "environment": {
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "torchvision": "0.23.0+cu128",
+        "smp": "0.5.0",
+        "timm": "1.0.31",
+        "numpy": "2.3.2",
+        "rasterio": "1.4.4",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "driver": "595.71.05"
+      },
+      "config": {
+        "mode": "train",
+        "architecture": "deeplabv3plus",
+        "encoder": "resnet50",
+        "encoder_weights": null,
+        "crop": 512,
+        "batch_size": 4,
+        "epochs": 5,
+        "seed": 123,
+        "lr": 0.0001,
+        "pos_weight": null,
+        "loss": "dice_bce",
+        "dice_smooth": 1.0,
+        "bce_weight": 1.0,
+        "dice_weight": 1.0,
+        "resume": null,
+        "purpose": "exploratory engineering only; not formal E1",
+        "formal_approval": "unchanged",
+        "model": "SMP DeepLabV3Plus",
+        "decoder_details": {
+          "encoder_output_stride": 16,
+          "atrous_rates": [
+            12,
+            24,
+            36
+          ]
+        },
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region not validated",
+        "normalization": "RGB uint8 / 255",
+        "crop_strategy": "same deterministic center crop for image/mask/valid",
+        "sampling": "sorted sample list, per-epoch shuffle seed+epoch",
+        "loss_definition": "BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded",
+        "validation_loss": "valid-pixel weighted mean of batch losses",
+        "optimizer": "Adam",
+        "threshold": 0.5,
+        "workers": 0
+      },
+      "parameter_count": 26677585,
+      "elapsed_seconds": 47.11377,
+      "peak_allocated_bytes": 3012159488,
+      "best": {
+        "epoch": 5,
+        "train_loss": 0.6281808358578642,
+        "validation_loss": 0.8812322834847679,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1008066,
+          "fp": 648069,
+          "fn": 1121871,
+          "tn": 15834218,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2778006,
+            "f1": 3786072,
+            "precision": 1656135,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.36287394627657393,
+            "f1": 0.5325128523704779,
+            "precision": 0.6086858861143566,
+            "recall": 0.47328442108851104
+          }
+        }
+      },
+      "last": {
+        "epoch": 5,
+        "train_loss": 0.6281808358578642,
+        "validation_loss": 0.8812322834847679,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1008066,
+          "fp": 648069,
+          "fn": 1121871,
+          "tn": 15834218,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2778006,
+            "f1": 3786072,
+            "precision": 1656135,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.36287394627657393,
+            "f1": 0.5325128523704779,
+            "precision": 0.6086858861143566,
+            "recall": 0.47328442108851104
+          }
+        }
+      }
+    },
+    {
+      "model": "segformer",
+      "seed": 17,
+      "directory": "experiments/uav_segformer_train_ydt54mjz",
+      "run_json_sha256": "acc1a4da5f94fc82afb27594d5686551ed988f35e474fddd0e36d1d2c430543c",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_segformer_train_ydt54mjz/best.pt",
+          "sha256": "b9656faf2ee066b253e71c5d0fb0b638180c4780d363a8c6fa47f64d5af485e5",
+          "bytes": 297033697
+        },
+        "last.pt": {
+          "path": "experiments/uav_segformer_train_ydt54mjz/last.pt",
+          "sha256": "dfefc14ef31f35e6a617e5d24dea3888b99f886800f6089e1ac2c74caf166d8c",
+          "bytes": 297033697
+        }
+      },
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": "4df89c112f475e2e3fbdb868b5b4f3e3b5ba274c90a84bcce4a5eb68511a8b50",
+      "val_samples_sha256": "5a644079b5f40d6def42e60bd32f298b62da73ca72a1cd4a0e21eeee92cb7af5",
+      "git_head": "c7bcbb3b286a1e17ed78cc63c4ef35347ebc3869",
+      "git_status": "M src/training/segmentation_steps.py\n?? reports/e1_deeplabv3plus_engineering_preparation_v1.md\n?? reports/e1_user_taskbook_resnet50_dice_exploration_v1.md\n?? reports/uav_background_diagnosis_controls_v1.md\n?? reports/uav_gpu_exploratory_v1.md\n?? reports/uav_independent_evaluation_e1_preparation_v1.md\n?? reports/uav_val_false_positive_full_image_v1.md\n?? scripts/training/segformer_b2_synthetic_smoke.py\n?? scripts/training/uav_deeplabv3plus.py\n?? scripts/training/uav_diagnose.py\n?? scripts/training/uav_exploratory.py\n?? scripts/training/uav_prepare_suspected.py\n?? scripts/training/uav_val_error_analysis.py\n?? src/metrics/region_analysis.py\n?? src/models/deeplabv3plus.py\n?? src/models/segformer.py\n?? src/training/exploratory.py\n?? tests/test_deeplabv3plus.py\n?? tests/test_dice_bce.py\n?? tests/test_exploratory.py\n?? tests/test_region_analysis.py\n?? tests/test_resnet50_dice.py\n?? tests/test_segformer_b2.py\n?? tests/test_weighted_loss.py",
+      "environment": {
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "torchvision": "0.23.0+cu128",
+        "smp": "0.5.0",
+        "timm": "1.0.31",
+        "numpy": "2.3.2",
+        "rasterio": "1.4.4",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "driver": "595.71.05"
+      },
+      "config": {
+        "mode": "train",
+        "architecture": "segformer",
+        "encoder": "mit_b2",
+        "encoder_weights": null,
+        "crop": 512,
+        "batch_size": 4,
+        "epochs": 5,
+        "seed": 17,
+        "lr": 0.0001,
+        "pos_weight": null,
+        "loss": "dice_bce",
+        "dice_smooth": 1.0,
+        "bce_weight": 1.0,
+        "dice_weight": 1.0,
+        "resume": null,
+        "purpose": "exploratory engineering only; not formal E1",
+        "formal_approval": "unchanged",
+        "model": "SMP Segformer",
+        "decoder_details": {
+          "decoder": "SegformerDecoder",
+          "feature_interpolation": "bilinear align_corners=False",
+          "head_interpolation": "bilinear scale_factor=4 align_corners=True",
+          "classes": 1
+        },
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region not validated",
+        "normalization": "RGB uint8 / 255",
+        "crop_strategy": "same deterministic center crop for image/mask/valid",
+        "sampling": "sorted sample list, per-epoch shuffle seed+epoch",
+        "loss_definition": "BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded",
+        "validation_loss": "valid-pixel weighted mean of batch losses",
+        "optimizer": "Adam",
+        "threshold": 0.5,
+        "workers": 0
+      },
+      "parameter_count": 24722369,
+      "elapsed_seconds": 69.58137,
+      "peak_allocated_bytes": 3955378688,
+      "best": {
+        "epoch": 5,
+        "train_loss": 0.6548414688465024,
+        "validation_loss": 0.883736509672353,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1067165,
+          "fp": 998890,
+          "fn": 1062772,
+          "tn": 15483397,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3128827,
+            "f1": 4195992,
+            "precision": 2066055,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.3410751057824546,
+            "f1": 0.5086592157468365,
+            "precision": 0.5165230354467815,
+            "recall": 0.5010312511590719
+          }
+        }
+      },
+      "last": {
+        "epoch": 5,
+        "train_loss": 0.6548414688465024,
+        "validation_loss": 0.883736509672353,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1067165,
+          "fp": 998890,
+          "fn": 1062772,
+          "tn": 15483397,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3128827,
+            "f1": 4195992,
+            "precision": 2066055,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.3410751057824546,
+            "f1": 0.5086592157468365,
+            "precision": 0.5165230354467815,
+            "recall": 0.5010312511590719
+          }
+        }
+      }
+    },
+    {
+      "model": "segformer",
+      "seed": 42,
+      "directory": "experiments/uav_segformer_train_ffsz6jh6",
+      "run_json_sha256": "1db9514f33a6b963d7f2362b93e06d6c23be32744f3f5e999a5ebbb8c262b8b3",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_segformer_train_ffsz6jh6/best.pt",
+          "sha256": "5019204ed0c72c4e28de15faf30a0082a5050ffda4cbfd11b9a88e6efda97d31",
+          "bytes": 297033633
+        },
+        "last.pt": {
+          "path": "experiments/uav_segformer_train_ffsz6jh6/last.pt",
+          "sha256": "d1cad7eb02f9f705b7518465ae0c75be6590733679088efeca1faf07115f5b9f",
+          "bytes": 297033633
+        }
+      },
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": "4df89c112f475e2e3fbdb868b5b4f3e3b5ba274c90a84bcce4a5eb68511a8b50",
+      "val_samples_sha256": "5a644079b5f40d6def42e60bd32f298b62da73ca72a1cd4a0e21eeee92cb7af5",
+      "git_head": "4f7234fce6fe9805c8e157dffa9d2f285cd9eecb",
+      "git_status": "?? reports/uav_multiseed_protocol_v1.md",
+      "environment": {
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "torchvision": "0.23.0+cu128",
+        "smp": "0.5.0",
+        "timm": "1.0.31",
+        "numpy": "2.3.2",
+        "rasterio": "1.4.4",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "driver": "595.71.05"
+      },
+      "config": {
+        "mode": "train",
+        "architecture": "segformer",
+        "encoder": "mit_b2",
+        "encoder_weights": null,
+        "crop": 512,
+        "batch_size": 4,
+        "epochs": 5,
+        "seed": 42,
+        "lr": 0.0001,
+        "pos_weight": null,
+        "loss": "dice_bce",
+        "dice_smooth": 1.0,
+        "bce_weight": 1.0,
+        "dice_weight": 1.0,
+        "resume": null,
+        "purpose": "exploratory engineering only; not formal E1",
+        "formal_approval": "unchanged",
+        "model": "SMP Segformer",
+        "decoder_details": {
+          "decoder": "SegformerDecoder",
+          "feature_interpolation": "bilinear align_corners=False",
+          "head_interpolation": "bilinear scale_factor=4 align_corners=True",
+          "classes": 1
+        },
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region not validated",
+        "normalization": "RGB uint8 / 255",
+        "crop_strategy": "same deterministic center crop for image/mask/valid",
+        "sampling": "sorted sample list, per-epoch shuffle seed+epoch",
+        "loss_definition": "BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded",
+        "validation_loss": "valid-pixel weighted mean of batch losses",
+        "optimizer": "Adam",
+        "threshold": 0.5,
+        "workers": 0
+      },
+      "parameter_count": 24722369,
+      "elapsed_seconds": 68.689698,
+      "peak_allocated_bytes": 3955378688,
+      "best": {
+        "epoch": 3,
+        "train_loss": 0.7785851300255326,
+        "validation_loss": 1.3531585646347262,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1744417,
+          "fp": 3515698,
+          "fn": 385520,
+          "tn": 12966589,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 5645635,
+            "f1": 7390052,
+            "precision": 5260115,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.3089850831660212,
+            "f1": 0.47209870783047264,
+            "precision": 0.3316309624409352,
+            "recall": 0.8189993412950711
+          }
+        }
+      },
+      "last": {
+        "epoch": 5,
+        "train_loss": 0.6628036467004413,
+        "validation_loss": 1.0539597625463781,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1144474,
+          "fp": 1732316,
+          "fn": 985463,
+          "tn": 14749971,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3862253,
+            "f1": 5006727,
+            "precision": 2876790,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.296322897541927,
+            "f1": 0.4571745174042843,
+            "precision": 0.39783022048880873,
+            "recall": 0.5373276298782547
+          }
+        }
+      }
+    },
+    {
+      "model": "segformer",
+      "seed": 123,
+      "directory": "experiments/uav_segformer_train_k8fntit3",
+      "run_json_sha256": "1f2b955846032205751d38b71c9ba762204c96b9f5002ce422a2e095258c851b",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_segformer_train_k8fntit3/best.pt",
+          "sha256": "54b0e88118d461d5a677ea838e415ecf0caf45753cc7953c89b5ede3b06c7e8d",
+          "bytes": 297033697
+        },
+        "last.pt": {
+          "path": "experiments/uav_segformer_train_k8fntit3/last.pt",
+          "sha256": "57c52751d75ab813a9ce6deee58517d6b67a657f382f61674d2c0af44cdaea58",
+          "bytes": 297033697
+        }
+      },
+      "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "train_samples_sha256": "4df89c112f475e2e3fbdb868b5b4f3e3b5ba274c90a84bcce4a5eb68511a8b50",
+      "val_samples_sha256": "5a644079b5f40d6def42e60bd32f298b62da73ca72a1cd4a0e21eeee92cb7af5",
+      "git_head": "4f7234fce6fe9805c8e157dffa9d2f285cd9eecb",
+      "git_status": "?? reports/uav_multiseed_protocol_v1.md",
+      "environment": {
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "torchvision": "0.23.0+cu128",
+        "smp": "0.5.0",
+        "timm": "1.0.31",
+        "numpy": "2.3.2",
+        "rasterio": "1.4.4",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "driver": "595.71.05"
+      },
+      "config": {
+        "mode": "train",
+        "architecture": "segformer",
+        "encoder": "mit_b2",
+        "encoder_weights": null,
+        "crop": 512,
+        "batch_size": 4,
+        "epochs": 5,
+        "seed": 123,
+        "lr": 0.0001,
+        "pos_weight": null,
+        "loss": "dice_bce",
+        "dice_smooth": 1.0,
+        "bce_weight": 1.0,
+        "dice_weight": 1.0,
+        "resume": null,
+        "purpose": "exploratory engineering only; not formal E1",
+        "formal_approval": "unchanged",
+        "model": "SMP Segformer",
+        "decoder_details": {
+          "decoder": "SegformerDecoder",
+          "feature_interpolation": "bilinear align_corners=False",
+          "head_interpolation": "bilinear scale_factor=4 align_corners=True",
+          "classes": 1
+        },
+        "valid_policy": "all_pixels_provisional",
+        "valid_limitation": "valid region not validated",
+        "normalization": "RGB uint8 / 255",
+        "crop_strategy": "same deterministic center crop for image/mask/valid",
+        "sampling": "sorted sample list, per-epoch shuffle seed+epoch",
+        "loss_definition": "BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded",
+        "validation_loss": "valid-pixel weighted mean of batch losses",
+        "optimizer": "Adam",
+        "threshold": 0.5,
+        "workers": 0
+      },
+      "parameter_count": 24722369,
+      "elapsed_seconds": 63.873573,
+      "peak_allocated_bytes": 3955378688,
+      "best": {
+        "epoch": 4,
+        "train_loss": 0.7168031041779794,
+        "validation_loss": 0.8641453771524026,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1036978,
+          "fp": 779184,
+          "fn": 1092959,
+          "tn": 15703103,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2909121,
+            "f1": 3946099,
+            "precision": 1816162,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.35645750039273033,
+            "f1": 0.5255712033580505,
+            "precision": 0.570972193009214,
+            "recall": 0.4868585314964715
+          }
+        }
+      },
+      "last": {
+        "epoch": 5,
+        "train_loss": 0.6715247581812961,
+        "validation_loss": 0.9211460083303317,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1028154,
+          "fp": 932363,
+          "fn": 1101783,
+          "tn": 15549924,
+          "valid_pixels": 18612224,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3062300,
+            "f1": 4090454,
+            "precision": 1960517,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.33574568135061883,
+            "f1": 0.5027089902490042,
+            "precision": 0.524430035546746,
+            "recall": 0.48271568595690856
+          }
+        }
+      }
+    }
+  ],
+  "summaries": {
+    "deeplabv3plus": {
+      "best_iou_mean": 0.36006973899314304,
+      "best_iou_sample_sd": 0.010251255868174368,
+      "range": [
+        0.34870818943268067,
+        0.36862708127017446
+      ]
+    },
+    "segformer": {
+      "best_iou_mean": 0.3355058964470687,
+      "best_iou_sample_sd": 0.02422126480600672,
+      "range": [
+        0.3089850831660212,
+        0.35645750039273033
+      ]
+    }
+  }
+}

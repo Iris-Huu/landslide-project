@@ -1,0 +1,89 @@
+"""DeepLabV3+ candidate-only exploratory entry; default limited training smoke.
+
+Longer candidate training is available explicitly, but never implies formal approval.
+Only load locally trusted checkpoints and licensed local encoder weights.
+"""
+import argparse,hashlib,json,random,subprocess,sys,tempfile,time
+from datetime import datetime,timezone
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2]; sys.path.insert(0,str(ROOT))
+import numpy as np, rasterio, segmentation_models_pytorch as smp, timm, torch, torchvision
+from torch.utils.data import DataLoader
+from src.models.deeplabv3plus import build_deeplabv3plus
+from src.training.segmentation_steps import train_step
+from src.training.exploratory import CandidateDataset,evaluate,save_checkpoint,load_checkpoint
+
+MANIFEST=ROOT/'data/interim/splits/moxitaidi_unified_spatial_manifest_v1.csv'; DATA=ROOT/'data/raw/CAS/Moxitaidi_UAV_0.6m'
+def git(*args): return subprocess.check_output(['git','--no-optional-locks',*args],cwd=ROOT,text=True).strip()
+def name_hash(samples): return hashlib.sha256(('\n'.join(s.filename for s in samples)+'\n').encode()).hexdigest()
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--mode',choices=('smoke','benchmark','train'),default='smoke')
+    p.add_argument('--encoder',default='resnet18'); p.add_argument('--encoder-weights',type=Path,default=None,help='Explicit, licensed local encoder state dict; never downloaded')
+    p.add_argument('--crop',type=int,default=128); p.add_argument('--batch-size',type=int,default=2); p.add_argument('--epochs',type=int,default=1)
+    p.add_argument('--seed',type=int,default=17); p.add_argument('--lr',type=float,default=.0001); p.add_argument('--pos-weight',type=float,default=None)
+    p.add_argument('--loss',choices=('bce','dice_bce'),default='bce'); p.add_argument('--dice-smooth',type=float,default=1.0)
+    p.add_argument('--bce-weight',type=float,default=1.0); p.add_argument('--dice-weight',type=float,default=1.0)
+    p.add_argument('--resume',type=Path,help='Trusted local checkpoint only')
+    a=p.parse_args()
+    if a.crop<32 or a.crop%32 or a.batch_size<2 or a.epochs<1 or a.lr<=0: p.error('crop must be >=32 and divisible by 32; batch size >=2, epochs and learning rate positive')
+    if a.mode=='smoke' and (a.epochs!=1 or a.batch_size>4 or a.resume): p.error('smoke: one epoch, batch size 2–4, no resume')
+    if a.pos_weight is not None and (not np.isfinite(a.pos_weight) or a.pos_weight<=0): p.error('invalid pos-weight')
+    if a.loss=='dice_bce' and a.pos_weight is not None: p.error('weighted BCE+Dice not implemented')
+    if a.mode=='benchmark' and (a.epochs!=1 or a.resume): p.error('benchmark requires one epoch and no resume')
+    if not torch.cuda.is_available(): raise RuntimeError('CUDA unavailable')
+    torch.set_num_threads(2); torch.manual_seed(a.seed); torch.cuda.manual_seed_all(a.seed); np.random.seed(a.seed); random.seed(a.seed)
+    torch.backends.cudnn.benchmark=False; torch.backends.cudnn.deterministic=True; torch.cuda.init(); device=torch.device('cuda:0'); torch.cuda.reset_peak_memory_stats(device)
+    run=Path(tempfile.mkdtemp(prefix='uav_deeplab_'+a.mode+'_',dir=ROOT/'experiments')); file=run/'run.json'
+    config=vars(a).copy(); config['resume']=str(a.resume) if a.resume else None; config['encoder_weights']=str(a.encoder_weights) if a.encoder_weights else None
+    config.update({'purpose':'exploratory engineering only; not formal E1','formal_approval':'unchanged','model':'SMP DeepLabV3Plus','encoder_output_stride':16,'decoder_atrous_rates':[12,24,36],
+                   'valid_policy':'all_pixels_provisional','valid_limitation':'valid region not validated','normalization':'RGB uint8 / 255', 'crop_strategy':'same deterministic center crop for image/mask/valid',
+                   'sampling':'sorted sample list, per-epoch shuffle seed+epoch','loss':a.loss,'loss_definition':'BCE mean + soft Dice batch valid pixel pooled, smooth and weights recorded' if a.loss=='dice_bce' else 'masked BCEWithLogits','validation_loss':'valid-pixel weighted mean of batch losses','optimizer':'Adam','threshold':.5,'workers':0})
+    record={'started_utc':datetime.now(timezone.utc).isoformat(),'status':'started','config':config,'epochs':[],
+            'limitations':['candidate data only; not formal E1 or independent evaluation','no test/buffer/unassigned imagery','all pixels provisional'],
+            'environment':{'python':sys.version,'torch':torch.__version__,'torch_cuda':torch.version.cuda,'torchvision':torchvision.__version__,'smp':smp.__version__,'timm':timm.__version__,'numpy':np.__version__,'rasterio':rasterio.__version__,'gpu':torch.cuda.get_device_name(0),'driver':subprocess.check_output(['nvidia-smi','--query-gpu=driver_version','--format=csv,noheader'],text=True).strip()},
+            'git_head':git('rev-parse','HEAD'),'git_status':git('status','--short','--untracked-files=all'),
+            'source_sha256':{str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in (Path(__file__),ROOT/'src/models/deeplabv3plus.py',ROOT/'src/training/exploratory.py',ROOT/'src/training/segmentation_steps.py',ROOT/'src/data/uav_data.py',ROOT/'src/metrics/binary_segmentation.py')}}
+    def save(): file.write_text(json.dumps(record,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+    save(); print('run:',run,flush=True)
+    try:
+        train=CandidateDataset(MANIFEST,DATA,'train_candidate',limit=4 if a.mode=='smoke' else 16 if a.mode=='benchmark' else None,crop=a.crop)
+        if len(train)%a.batch_size==1: raise ValueError('last train batch would have one sample; select a different batch size due to BatchNorm')
+        val=CandidateDataset(MANIFEST,DATA,'val_candidate',crop=a.crop) if a.mode=='train' else None
+        record['manifest_path']=str(MANIFEST.relative_to(ROOT)); record['manifest_sha256']=train.samples[0].manifest_sha256
+        record['train_samples']=[s.filename for s in train.samples]; record['train_samples_sha256']=name_hash(train.samples)
+        record['val_samples']=[s.filename for s in val.samples] if val else []; record['val_samples_sha256']=name_hash(val.samples) if val else None
+        model,provenance=build_deeplabv3plus(a.encoder,a.encoder_weights); model=model.to(device); opt=torch.optim.Adam(model.parameters(),lr=a.lr)
+        record['weights']=provenance; record['parameter_count']=sum(x.numel() for x in model.parameters())
+        checkpoint_config={'encoder':a.encoder,'encoder_weights_sha256':provenance['sha256'],'crop':a.crop,'batch_size':a.batch_size,'seed':a.seed,'lr':a.lr,'pos_weight':a.pos_weight,'loss':a.loss,'dice_smooth':a.dice_smooth,'bce_weight':a.bce_weight,'dice_weight':a.dice_weight}
+        start=0; best=-1.
+        if a.resume:
+            ck=load_checkpoint(a.resume,model,opt,device)
+            old=dict(ck['config']); old.setdefault('loss','bce'); old.setdefault('dice_smooth',1.0); old.setdefault('bce_weight',1.0); old.setdefault('dice_weight',1.0)
+            if old!=checkpoint_config: raise ValueError('resume configuration mismatch')
+            start=ck['epoch']; best=ck['best']
+        save()
+        for epoch in range(start,a.epochs):
+            gen=torch.Generator().manual_seed(a.seed+epoch)
+            loader=DataLoader(train,batch_size=a.batch_size,shuffle=a.mode=='train',generator=gen,num_workers=0)
+            t=time.perf_counter(); total=0.; count=0; before=next(model.parameters()).detach().clone(); steps=0
+            for x,y,v in loader:
+                x,y,v=x.to(device),y.to(device),v.to(device); n=int(v.sum().item()); loss=train_step(model,opt,x,y,v,pos_weight=a.pos_weight,loss_kind=a.loss,dice_smooth=a.dice_smooth,bce_weight=a.bce_weight,dice_weight=a.dice_weight); total+=loss*n; count+=n; steps+=1
+            torch.cuda.synchronize(); secs=time.perf_counter()-t
+            changed=not torch.equal(before,next(model.parameters()))
+            if not changed: raise RuntimeError('first parameter unchanged')
+            item={'epoch':epoch+1,'train_loss':total/count,'train_seconds':secs,'steps':steps,'first_parameter_changed':changed,'peak_allocated_bytes':torch.cuda.max_memory_allocated(device)}
+            if val is not None:
+                t=time.perf_counter(); item['validation']=evaluate(model,DataLoader(val,batch_size=a.batch_size,shuffle=False,num_workers=0),device,.5,loss_kind=a.loss,dice_smooth=a.dice_smooth,bce_weight=a.bce_weight,dice_weight=a.dice_weight); torch.cuda.synchronize(); item['validation_seconds']=time.perf_counter()-t
+                score=item['validation']['confusion']['metrics']['iou']
+                if score is not None and score>best:
+                    best=score; save_checkpoint(run/'best.pt',model,opt,epoch+1,checkpoint_config,best); record['best_epoch']=epoch+1
+                save_checkpoint(run/'last.pt',model,opt,epoch+1,checkpoint_config,best)
+            record['epochs'].append(item); save(); print(json.dumps(item,ensure_ascii=False),flush=True)
+        record['status']='completed'
+    except Exception as exc:
+        record['status']='failed'; record['error']=f'{type(exc).__name__}: {exc}'; raise
+    finally:
+        record['finished_utc']=datetime.now(timezone.utc).isoformat(); save()
+    print(json.dumps({'run':str(run),'status':record['status'],'parameter_count':record['parameter_count'],'weights':record['weights']},ensure_ascii=False),flush=True)
+if __name__=='__main__': main()

@@ -1,0 +1,52 @@
+{
+  "protocol": "moxitaidi_uav_spatial_split_formal_v1",
+  "created_utc": "2026-11-25T21:58:37.803952+00:00",
+  "scope": "UAV 单平台第 2 连通组划分；不代表跨平台空间泄漏已排除。",
+  "decision_basis": "依据用户转达的学长反馈冻结既有划分。",
+  "source_manifest": "data/interim/splits/moxitaidi_unified_spatial_manifest_v1.csv",
+  "source_manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+  "previous_review": "reports/tables/uav_split_validation_recheck_v1.json",
+  "previous_review_sha256": "b4ff7ad444c13c0363a33877316e7fa794f24ff66e724d36915294083ff2c814",
+  "formal_manifest": "data/interim/splits/moxitaidi_uav_spatial_split_formal_v1.csv",
+  "formal_manifest_sha256": "8788ed446d7c2e9573ce1e9e8b77bff8a26eae4c0763d4eea7698889210c45ba",
+  "counts": {
+    "train": 484,
+    "val": 71,
+    "test": 149,
+    "buffer": 57,
+    "excluded": 223
+  },
+  "tile_pixels": 512,
+  "grid_step_pixels": 256,
+  "required_gap_pixels": 512,
+  "independent_gap_checks": [
+    {
+      "first": "train_candidate",
+      "second": "val_candidate",
+      "pairs": 34364,
+      "minimum_gap_pixels": 512.0,
+      "violations": 0
+    },
+    {
+      "first": "train_candidate",
+      "second": "test_candidate",
+      "pairs": 72116,
+      "minimum_gap_pixels": 3840.0,
+      "violations": 0
+    },
+    {
+      "first": "val_candidate",
+      "second": "test_candidate",
+      "pairs": 10579,
+      "minimum_gap_pixels": 512.0,
+      "violations": 0
+    }
+  ],
+  "limitations": [
+    "其他连通组 223 张不参与本协议训练、验证或测试。",
+    "此前已查看测试区域标签统计；学长确认本协议可继续使用，后续不得用测试结果调参。",
+    "SAT/UAV 跨平台泄漏、其他连通组的空间关系尚未验证。",
+    "本清单未自动修改旧统一清单的正式批准字段或训练代码。",
+    "NoData 有效像素规则和标签对齐仍需继续核查。"
+  ]
+}

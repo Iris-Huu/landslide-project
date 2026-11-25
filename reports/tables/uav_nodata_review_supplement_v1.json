@@ -1,0 +1,153 @@
+{
+  "created_utc": "2026-11-22T23:17:55.738452+00:00",
+  "scope": "UAV component 2 train_candidate and val_candidate only",
+  "manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+  "audit_sha256": "63cdff760bf839eeea039ae38e0382e14712539e709e20b787195473389df3b3",
+  "rules": "per split: maximum positive overlap; first filename without suspected; maximum suspected with zero positive overlap; filename ascending for ties",
+  "suspected_rule": "4-connected edge-connected RGB all-0 or all-255, unverified",
+  "historical_audit_summary": {
+    "train_candidate": {
+      "samples": 484,
+      "images_with_suspected": 396,
+      "images_with_positive_overlap": 23,
+      "suspected_pixels": 3282737,
+      "overlap_positive_pixels": 3076
+    },
+    "val_candidate": {
+      "samples": 71,
+      "images_with_suspected": 41,
+      "images_with_positive_overlap": 9,
+      "suspected_pixels": 303332,
+      "overlap_positive_pixels": 5342
+    }
+  },
+  "figures": [
+    {
+      "filename": "luding_UAV0164.tif",
+      "split": "train_candidate",
+      "selection_reason": "no_suspected_pixels",
+      "historical_suspected_pixels": 0,
+      "historical_positive_overlap_pixels": 0,
+      "output": "reports/figures/uav_train_val_review_v1/train_candidate_no_suspected_pixels_luding_UAV0164.png",
+      "source_manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "reused": true
+    },
+    {
+      "filename": "luding_UAV0305.tif",
+      "split": "train_candidate",
+      "selection_reason": "largest_positive_overlap",
+      "historical_suspected_pixels": 65929,
+      "historical_positive_overlap_pixels": 1077,
+      "output": "reports/figures/uav_train_val_review_v1/train_candidate_largest_positive_overlap_luding_UAV0305.png",
+      "source_manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "reused": true
+    },
+    {
+      "filename": "luding_UAV0651.tif",
+      "split": "val_candidate",
+      "selection_reason": "no_suspected_pixels",
+      "historical_suspected_pixels": 0,
+      "historical_positive_overlap_pixels": 0,
+      "output": "reports/figures/uav_train_val_review_v1/val_candidate_no_suspected_pixels_luding_UAV0651.png",
+      "source_manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "reused": true
+    },
+    {
+      "filename": "luding_UAV0779.tif",
+      "split": "val_candidate",
+      "selection_reason": "largest_positive_overlap",
+      "historical_suspected_pixels": 2712,
+      "historical_positive_overlap_pixels": 2666,
+      "output": "reports/figures/uav_train_val_review_v1/val_candidate_largest_positive_overlap_luding_UAV0779.png",
+      "source_manifest_sha256": "54ab9a9fd80ab321bc4f0a18ad259b5a467b3a5502c1c70a0c184e4a7c3b281a",
+      "reused": true
+    },
+    {
+      "filename": "luding_UAV0523.tif",
+      "split": "train_candidate",
+      "selection_reason": "highest_suspected_without_positive_overlap",
+      "suspected_pixels": 187906,
+      "overlap_pixels": 0,
+      "output": "reports/figures/uav_nodata_review_supplement_v1/train_candidate_luding_UAV0523.png",
+      "reused": false
+    },
+    {
+      "filename": "luding_UAV0770.tif",
+      "split": "val_candidate",
+      "selection_reason": "highest_suspected_without_positive_overlap",
+      "suspected_pixels": 93845,
+      "overlap_pixels": 0,
+      "output": "reports/figures/uav_nodata_review_supplement_v1/val_candidate_luding_UAV0770.png",
+      "reused": false
+    }
+  ],
+  "sensitivity": {
+    "source": "experiments/uav_val_error_y69erm3a/summary.json",
+    "source_sha256": "74fd421a1750871036cde37dcc016a14d995a1af7949238b9f67f6eb725e02f3",
+    "checkpoint": "experiments/uav_train_s47c7j29/best.pt",
+    "checkpoint_sha256": "6553d4a1b8663a4d7944ad99d190768c8837f5a0b48d1554e0232004be097fcb",
+    "scope": "weighted U-Net best, val_candidate direct 256 center crop, threshold 0.5; NOT DeepLab or SegFormer full image",
+    "all_pixels": {
+      "aggregation": "pooled_pixels",
+      "tp": 369487,
+      "fp": 755386,
+      "fn": 165271,
+      "tn": 3362912,
+      "valid_pixels": 4653056,
+      "samples": 71,
+      "empty_samples": 0,
+      "denominators": {
+        "iou": 1290144,
+        "f1": 1659631,
+        "precision": 1124873,
+        "recall": 534758
+      },
+      "metrics": {
+        "iou": 0.2863920616613339,
+        "f1": 0.4452640376083599,
+        "precision": 0.328469969498779,
+        "recall": 0.6909424449938103
+      }
+    },
+    "retained": {
+      "aggregation": "pooled_pixels",
+      "tp": 369487,
+      "fp": 741313,
+      "fn": 165271,
+      "tn": 3350153,
+      "valid_pixels": 4626224,
+      "samples": 71,
+      "empty_samples": 0,
+      "denominators": {
+        "iou": 1276071,
+        "f1": 1645558,
+        "precision": 1110800,
+        "recall": 534758
+      },
+      "metrics": {
+        "iou": 0.28955050306761926,
+        "f1": 0.4490719865237202,
+        "precision": 0.33263143680230467,
+        "recall": 0.6909424449938103
+      }
+    },
+    "excluded": {
+      "total": 26832,
+      "positive": 0,
+      "fp": 14073
+    },
+    "excluded_confusion": {
+      "tp": 0,
+      "fp": 14073,
+      "fn": 0,
+      "tn": 12759
+    },
+    "excluded_fraction": 0.005766532790492958
+  },
+  "limitations": [
+    "Suspected NoData not validated; not a final valid mask",
+    "Overlap does not prove incorrect label or NoData",
+    "Visual inspection cannot establish alignment or overall label quality",
+    "Validation was used for model development and selection; not independent evaluation"
+  ]
+}

@@ -1,0 +1,4478 @@
+{
+  "created_utc": "2026-11-25T22:04:46.402782+00:00",
+  "manifest": "data/interim/splits/moxitaidi_uav_spatial_split_formal_v1.csv",
+  "manifest_sha256": "8788ed446d7c2e9573ce1e9e8b77bff8a26eae4c0763d4eea7698889210c45ba",
+  "rule": "四邻域边缘连通纯黑；标签为 1 的像素保留；纯白不自动忽略。",
+  "scope": "仅训练和验证候选；尚未检查测试影像和标签。",
+  "summary": {
+    "train": {
+      "images_attempted": 484,
+      "images_succeeded": 484,
+      "images_with_ignored_pixels": 152,
+      "images_with_edge_black_positive_overlap": 3,
+      "total_pixels": 126877696,
+      "ignored_pixels": 1022776,
+      "edge_black_positive_pixels": 23,
+      "ignored_positive_pixels": 0,
+      "ignored_percent": 0.8061117377162965
+    },
+    "val": {
+      "images_attempted": 71,
+      "images_succeeded": 71,
+      "images_with_ignored_pixels": 8,
+      "images_with_edge_black_positive_overlap": 0,
+      "total_pixels": 18612224,
+      "ignored_pixels": 63281,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0,
+      "ignored_percent": 0.339996982628191
+    }
+  },
+  "errors": [],
+  "per_image": [
+    {
+      "filename": "luding_UAV0094.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0095.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 13,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0096.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0097.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0098.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0099.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0100.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0101.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0102.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0103.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0104.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0105.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0106.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0107.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 443,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0108.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 10612,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0109.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 9753,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0110.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0111.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0112.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0113.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 31,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0114.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 22,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0115.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 4657,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0116.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0117.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0118.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0119.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0120.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0121.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1485,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0122.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 41199,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0123.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0124.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0125.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0126.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 8,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0127.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 18574,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0128.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0129.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0130.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0131.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 5,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0132.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 6,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0133.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0134.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0135.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0136.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 31,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0137.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 14427,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0139.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0140.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0141.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1700,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0142.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 14466,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0143.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0144.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0145.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0146.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0147.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0148.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0149.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0150.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0151.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0152.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0154.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0155.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 3864,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0156.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 8757,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0157.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 628,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0158.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0159.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0161.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0162.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0163.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0164.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0165.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 129,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0166.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 45626,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0167.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2074,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0168.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0169.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0170.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0171.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0172.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0173.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0174.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0175.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 18481,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0176.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 22186,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0177.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 45039,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0178.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 605,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0179.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0180.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0181.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0182.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0183.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0184.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0185.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0186.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 7,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0187.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 161,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0188.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 464,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0189.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 33592,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0190.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 31,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0191.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0192.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0193.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0194.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0195.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0196.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0197.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 23,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0198.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 64729,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0199.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 18851,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0200.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0201.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0202.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0203.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0204.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0205.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0206.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 67,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0208.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 55791,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0209.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 8212,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0210.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0211.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0212.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0213.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0214.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0215.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0216.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 64,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0217.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 257,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0218.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 288,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0222.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 41945,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0223.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 205,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0224.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0225.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0226.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0227.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0228.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0229.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 5,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0230.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 64,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0231.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 98,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0232.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 91,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0235.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 80370,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0236.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 34669,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0237.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 201,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0238.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 31,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0239.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0240.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0241.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0242.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0243.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0244.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0245.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 7,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0246.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 21,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0247.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 106,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0248.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 19512,
+      "edge_black_positive_pixels": 1,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0249.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 276,
+      "edge_black_positive_pixels": 1,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0250.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 16,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0251.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0252.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0253.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0254.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0255.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0256.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0257.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0258.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0259.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0260.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0261.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 99,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0262.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 46103,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0263.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 6339,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0264.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 29,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0265.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0266.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0267.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 13,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0268.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 6,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0269.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0270.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0271.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0273.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0274.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0275.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0276.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 24,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0277.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 16,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0279.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 29206,
+      "edge_black_positive_pixels": 21,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0283.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0284.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0285.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0286.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0287.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0288.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0289.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0290.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0291.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 6,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0292.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0293.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 5,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0296.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0297.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0298.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0299.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0300.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0301.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0302.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0303.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0304.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 31,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0305.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 83,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0307.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0308.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0309.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0310.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0311.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0312.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0313.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0314.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 4,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0315.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 48,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0316.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 14,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0317.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0318.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0319.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0320.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0321.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0322.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0323.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0324.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0325.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 3,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0326.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 12,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0327.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0328.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0329.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0330.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0331.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0332.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0333.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0334.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0335.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0337.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0338.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0339.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0340.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0341.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0342.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0343.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0344.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0345.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0346.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0347.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0348.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0349.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0350.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0351.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0352.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0353.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 19,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0354.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 29,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0355.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 31,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0356.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0357.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0358.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0359.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0360.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0361.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0362.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0363.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0364.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0365.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0366.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0367.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0368.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0369.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 13,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0370.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 7676,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0371.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0372.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0373.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0374.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0375.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0376.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0377.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0378.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0379.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0380.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0381.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0382.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0383.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0384.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 15,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0385.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 28136,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0386.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 4546,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0387.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 39,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0388.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0389.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0390.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0391.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0392.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0393.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0394.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0395.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0396.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0397.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0398.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0399.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0400.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0401.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0402.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0403.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0404.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0405.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0406.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0407.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0408.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 43,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0409.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 46,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0410.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0411.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0412.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0413.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0414.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0415.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0416.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0417.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0418.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0419.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0420.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0421.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1431,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0422.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0423.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0424.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0425.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0426.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0427.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0429.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0430.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0431.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0432.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0433.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0434.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0435.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 15,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0436.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0437.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0438.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0439.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0440.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0441.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0442.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0443.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0444.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0445.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0446.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0447.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 17049,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0448.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 9,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0449.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0450.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0451.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0452.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0453.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0454.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0455.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0456.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0457.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0458.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0459.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0460.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0461.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 14527,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0462.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 165,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0463.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 5,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0464.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0465.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0466.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0467.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0468.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0469.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0470.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0471.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0472.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0473.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0474.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0475.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 14,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0476.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 328,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0477.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 85139,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0478.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 28627,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0479.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 12,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0480.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0481.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0482.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0483.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0484.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0485.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0486.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0487.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0488.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0489.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0490.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0491.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0492.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 143,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0493.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 23429,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0494.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 13,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0495.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0496.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0497.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0498.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0499.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0500.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0501.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0502.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0503.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0504.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0505.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0506.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 3,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0509.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 68498,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0510.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 7043,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0512.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0513.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0514.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0515.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0516.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0517.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0518.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0519.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0520.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0521.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 5,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0522.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 69,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0523.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 247,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0524.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0525.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0526.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0527.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0528.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0529.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0530.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0531.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0532.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0533.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0534.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0535.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 7,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0536.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 85,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0537.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 54,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0538.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 25852,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0539.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 38,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0540.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0541.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0542.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0543.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0544.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0545.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0546.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0547.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0548.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0549.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0550.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0551.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0552.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 1,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0553.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 3,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0554.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 2270,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0555.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 35,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0556.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0557.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0558.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0559.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0560.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0561.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0562.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0563.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0564.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0565.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0566.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0567.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0568.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0569.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0570.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0571.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0572.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0573.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0574.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0575.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0576.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0577.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0578.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0579.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0580.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0581.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0582.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0583.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0584.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0585.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0586.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0587.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0588.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0589.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0590.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0591.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0592.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0593.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0594.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0595.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0596.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0597.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0598.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0599.tif",
+      "split": "train",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0650.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 4650,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0651.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0652.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0653.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0654.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0655.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0656.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0657.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0668.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 20962,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0669.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 1009,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0670.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0671.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0672.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0673.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0674.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0675.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0688.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 5302,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0689.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 4316,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0690.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0691.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0692.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0693.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0694.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0706.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 10,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0707.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0708.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0709.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0710.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0711.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0712.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0713.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0724.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0725.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0726.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0727.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0737.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0738.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0739.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0740.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0745.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0746.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0747.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0748.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0749.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0750.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0751.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0752.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0753.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0754.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0755.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0756.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0757.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0758.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0759.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0761.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0762.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0763.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0764.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0765.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0766.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0770.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 20443,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0771.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 6589,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0772.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0773.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0774.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0775.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0776.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0777.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0778.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0779.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    },
+    {
+      "filename": "luding_UAV0780.tif",
+      "split": "val",
+      "total_pixels": 262144,
+      "ignored_pixels": 0,
+      "edge_black_positive_pixels": 0,
+      "ignored_positive_pixels": 0
+    }
+  ],
+  "limitations": [
+    "该规则依据学长建议制定，尚不能证明所有被忽略像素均为无效。",
+    "边缘纯黑与正类标签交叠时，正类像素保留。"
+  ]
+}
