@@ -1,0 +1,532 @@
+{
+  "purpose": "CPU geometry-only translation candidates; not approved B samples",
+  "uav_metadata": {
+    "platform": "uav",
+    "component": "2",
+    "tiles": 761,
+    "downsample_factor": 4,
+    "grid_origin_row": 0,
+    "grid_origin_col": 0,
+    "native_grid_step": 256,
+    "native_tile_size": 512,
+    "working_shape": [
+      5120,
+      4032
+    ],
+    "grid_sha256": "91d15210c89580c548166c2a7e62b35bc971c24d90cf8bf9bd005acc41239f47",
+    "overlap_policy": "mean of available grayscale tile pixels",
+    "purpose": "geometry-only registration; no labels or model predictions",
+    "scale_assumption": "SAT native pixel approximately 2 UAV native pixels"
+  },
+  "uav_keypoints": 19265,
+  "method": "CLAHE SIFT, mutual ratio 0.70, fixed-scale translation",
+  "fit_tolerance_working_pixels": 3,
+  "limitations": [
+    "尺度2和旋转0为固定工作假设。",
+    "留出匹配点用于检查一致性，不是独立地理控制点。",
+    "尚未进行空间覆盖、重复纹理和不同平移峰的人工复核。",
+    "不能直接将候选变换用于正式B单元批准。"
+  ],
+  "results": [
+    {
+      "sat_component": "154",
+      "sat_metadata": {
+        "platform": "satellite",
+        "component": "154",
+        "tiles": 234,
+        "downsample_factor": 2,
+        "grid_origin_row": 0,
+        "grid_origin_col": 0,
+        "native_grid_step": 256,
+        "native_tile_size": 512,
+        "working_shape": [
+          4608,
+          3456
+        ],
+        "grid_sha256": "32772da45cc166ae4435416a19fa811f451ad750159db7587985a933a82d5422",
+        "overlap_policy": "mean of available grayscale tile pixels",
+        "purpose": "geometry-only registration; no labels or model predictions",
+        "scale_assumption": "SAT native pixel approximately 2 UAV native pixels"
+      },
+      "sat_keypoints": 11705,
+      "status": "candidate_requires_spatial_review",
+      "mutual_ratio_matches": 34,
+      "working_transform": "uav_xy = satellite_xy + translation",
+      "working_translation_xy": [
+        410.5815124511719,
+        272.9752197265625
+      ],
+      "working_pixel_in_uav_native_pixels": 4,
+      "sat_native_to_uav_native_scale_assumption": 2,
+      "fit_matches": 23,
+      "fit_inliers": 2,
+      "fit_inlier_span_sat_working_xy": [
+        0.0,
+        0.0
+      ],
+      "holdout_matches": 11,
+      "holdout_within_3_working_pixels": 0,
+      "holdout_all_median_error_working_pixels": 795.2116088867188,
+      "holdout_supported_median_error_uav_pixels": null,
+      "all_consistent_matches": 2,
+      "matches": [
+        {
+          "sat_xy": [
+            3064.121337890625,
+            4135.40966796875
+          ],
+          "uav_xy": [
+            2171.805419921875,
+            2898.336669921875
+          ],
+          "error_working_pixels": 1994.4390869140625,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            2997.4658203125,
+            4311.53955078125
+          ],
+          "uav_xy": [
+            2140.60888671875,
+            2985.242431640625
+          ],
+          "error_working_pixels": 2040.6058349609375,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            2980.9697265625,
+            4296.720703125
+          ],
+          "uav_xy": [
+            2133.575439453125,
+            2979.5751953125
+          ],
+          "error_working_pixels": 2027.5570068359375,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            2968.909423828125,
+            3780.908935546875
+          ],
+          "uav_xy": [
+            2128.694580078125,
+            2719.036376953125
+          ],
+          "error_working_pixels": 1829.292236328125,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            2796.296875,
+            4031.36669921875
+          ],
+          "uav_xy": [
+            2042.0369873046875,
+            2845.09619140625
+          ],
+          "error_working_pixels": 1867.151123046875,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            2782.54052734375,
+            3605.5693359375
+          ],
+          "uav_xy": [
+            1318.66845703125,
+            2184.581298828125
+          ],
+          "error_working_pixels": 2526.477294921875,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            2583.20458984375,
+            3501.7421875
+          ],
+          "uav_xy": [
+            1934.2073974609375,
+            2579.36279296875
+          ],
+          "error_working_pixels": 1597.366455078125,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            282.0207214355469,
+            1062.9842529296875
+          ],
+          "uav_xy": [
+            782.5810546875,
+            1362.5306396484375
+          ],
+          "error_working_pixels": 93.82012176513672,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            282.0736999511719,
+            1090.6630859375
+          ],
+          "uav_xy": [
+            780.77880859375,
+            1376.1163330078125
+          ],
+          "error_working_pixels": 89.00263977050781,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            1597.84814453125,
+            2602.32568359375
+          ],
+          "uav_xy": [
+            1440.680908203125,
+            2131.820556640625
+          ],
+          "error_working_pixels": 935.4686889648438,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            1512.6630859375,
+            2307.378662109375
+          ],
+          "uav_xy": [
+            1397.52490234375,
+            1983.7130126953125
+          ],
+          "error_working_pixels": 795.2116088867188,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            1489.7513427734375,
+            2264.936279296875
+          ],
+          "uav_xy": [
+            1386.284423828125,
+            1962.08935546875
+          ],
+          "error_working_pixels": 771.891845703125,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            378.65167236328125,
+            901.258544921875
+          ],
+          "uav_xy": [
+            1996.7786865234375,
+            3187.294189453125
+          ],
+          "error_working_pixels": 2347.4619140625,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            1198.3544921875,
+            2788.564453125
+          ],
+          "uav_xy": [
+            1240.008544921875,
+            2224.67529296875
+          ],
+          "error_working_pixels": 914.5761108398438,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            1106.9599609375,
+            1069.80224609375
+          ],
+          "uav_xy": [
+            1194.2694091796875,
+            1365.35107421875
+          ],
+          "error_working_pixels": 324.05926513671875,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            1029.3189697265625,
+            2364.737060546875
+          ],
+          "uav_xy": [
+            1156.247802734375,
+            2010.5594482421875
+          ],
+          "error_working_pixels": 688.3164672851562,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            604.0430297851562,
+            1296.8702392578125
+          ],
+          "uav_xy": [
+            941.0845336914062,
+            1479.7850341796875
+          ],
+          "error_working_pixels": 116.27128601074219,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            591.2747802734375,
+            1335.83349609375
+          ],
+          "uav_xy": [
+            934.9708862304688,
+            1499.1014404296875
+          ],
+          "error_working_pixels": 128.4886932373047,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            584.2554931640625,
+            1316.1798095703125
+          ],
+          "uav_xy": [
+            930.3208618164062,
+            1489.1829833984375
+          ],
+          "error_working_pixels": 118.98210906982422,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            532.8285522460938,
+            1329.0589599609375
+          ],
+          "uav_xy": [
+            907.5504760742188,
+            1494.769287109375
+          ],
+          "error_working_pixels": 113.10025024414062,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            532.8285522460938,
+            1329.0589599609375
+          ],
+          "uav_xy": [
+            907.5504760742188,
+            1494.769287109375
+          ],
+          "error_working_pixels": 113.10025024414062,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            517.89501953125,
+            1915.5263671875
+          ],
+          "uav_xy": [
+            899.687744140625,
+            1786.059814453125
+          ],
+          "error_working_pixels": 403.47015380859375,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            503.76617431640625,
+            1375.8131103515625
+          ],
+          "uav_xy": [
+            894.4918212890625,
+            1517.7786865234375
+          ],
+          "error_working_pixels": 132.5057830810547,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            2865.98828125,
+            4151.646484375
+          ],
+          "uav_xy": [
+            2073.238037109375,
+            2906.016357421875
+          ],
+          "error_working_pixels": 1937.5679931640625,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            2865.98828125,
+            4151.646484375
+          ],
+          "uav_xy": [
+            2073.238037109375,
+            2906.016357421875
+          ],
+          "error_working_pixels": 1937.5679931640625,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            2991.022216796875,
+            4210.23583984375
+          ],
+          "uav_xy": [
+            2135.957275390625,
+            2934.9423828125
+          ],
+          "error_working_pixels": 1999.749267578125,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            459.9892272949219,
+            1115.7271728515625
+          ],
+          "uav_xy": [
+            870.5707397460938,
+            1388.702392578125
+          ],
+          "error_working_pixels": 0.0,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            459.9892272949219,
+            1115.7271728515625
+          ],
+          "uav_xy": [
+            870.5707397460938,
+            1388.702392578125
+          ],
+          "error_working_pixels": 0.0,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            3209.059326171875,
+            4383.0341796875
+          ],
+          "uav_xy": [
+            1536.695556640625,
+            2032.412841796875
+          ],
+          "error_working_pixels": 3349.913330078125,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            586.2817993164062,
+            1896.521484375
+          ],
+          "uav_xy": [
+            1228.68505859375,
+            2154.9794921875
+          ],
+          "error_working_pixels": 232.27586364746094,
+          "partition": "holdout"
+        },
+        {
+          "sat_xy": [
+            476.0287780761719,
+            1329.398681640625
+          ],
+          "uav_xy": [
+            882.43359375,
+            1493.5654296875
+          ],
+          "error_working_pixels": 108.88860321044922,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            2687.377685546875,
+            3872.912353515625
+          ],
+          "uav_xy": [
+            1983.7296142578125,
+            2764.540283203125
+          ],
+          "error_working_pixels": 1774.7191162109375,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            783.22900390625,
+            1372.3211669921875
+          ],
+          "uav_xy": [
+            1030.9879150390625,
+            1515.0491943359375
+          ],
+          "error_working_pixels": 208.50787353515625,
+          "partition": "fit"
+        },
+        {
+          "sat_xy": [
+            3323.763427734375,
+            4408.2685546875
+          ],
+          "uav_xy": [
+            1034.3131103515625,
+            1895.9906005859375
+          ],
+          "error_working_pixels": 3879.150146484375,
+          "partition": "holdout"
+        }
+      ]
+    },
+    {
+      "sat_component": "158",
+      "sat_metadata": {
+        "platform": "satellite",
+        "component": "158",
+        "tiles": 81,
+        "downsample_factor": 2,
+        "grid_origin_row": 0,
+        "grid_origin_col": 0,
+        "native_grid_step": 256,
+        "native_tile_size": 512,
+        "working_shape": [
+          1536,
+          2432
+        ],
+        "grid_sha256": "32772da45cc166ae4435416a19fa811f451ad750159db7587985a933a82d5422",
+        "overlap_policy": "mean of available grayscale tile pixels",
+        "purpose": "geometry-only registration; no labels or model predictions",
+        "scale_assumption": "SAT native pixel approximately 2 UAV native pixels"
+      },
+      "sat_keypoints": 11805,
+      "status": "insufficient_matches",
+      "mutual_ratio_matches": 4
+    },
+    {
+      "sat_component": "148",
+      "sat_metadata": {
+        "platform": "satellite",
+        "component": "148",
+        "tiles": 69,
+        "downsample_factor": 2,
+        "grid_origin_row": 0,
+        "grid_origin_col": 0,
+        "native_grid_step": 256,
+        "native_tile_size": 512,
+        "working_shape": [
+          2304,
+          1664
+        ],
+        "grid_sha256": "32772da45cc166ae4435416a19fa811f451ad750159db7587985a933a82d5422",
+        "overlap_policy": "mean of available grayscale tile pixels",
+        "purpose": "geometry-only registration; no labels or model predictions",
+        "scale_assumption": "SAT native pixel approximately 2 UAV native pixels"
+      },
+      "sat_keypoints": 11730,
+      "status": "insufficient_matches",
+      "mutual_ratio_matches": 3
+    }
+  ]
+}

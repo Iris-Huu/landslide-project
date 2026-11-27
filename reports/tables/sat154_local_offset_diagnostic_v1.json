@@ -1,0 +1,82 @@
+{
+  "component": "154",
+  "status": "local_registration_diagnostic_only",
+  "working_pixel_in_uav_native_pixels": 4,
+  "search_radius_working_pixels": 24,
+  "limitations": [
+    "Local gradient correlation is not independent manual accuracy validation.",
+    "Observed shifts are not a guaranteed error bound for all tiles.",
+    "No labels or model predictions were used.",
+    "No approval fields were modified."
+  ],
+  "locations": [
+    {
+      "location": 1,
+      "best_shift_working_xy": [
+        1,
+        -1
+      ],
+      "best_shift_uav_native_xy": [
+        4,
+        -4
+      ],
+      "shift_length_uav_native_pixels": 5.656854249492381,
+      "gradient_ncc": 0.364957332611084,
+      "zero_shift_gradient_ncc": 0.33251625299453735,
+      "alternative_peak_outside_5_pixels": 0.21957680583000183,
+      "peak_at_search_boundary": false,
+      "overlap_working_pixels": 35456
+    },
+    {
+      "location": 2,
+      "best_shift_working_xy": [
+        4,
+        -1
+      ],
+      "best_shift_uav_native_xy": [
+        16,
+        -4
+      ],
+      "shift_length_uav_native_pixels": 16.492422502470642,
+      "gradient_ncc": 0.25467953085899353,
+      "zero_shift_gradient_ncc": 0.24012473225593567,
+      "alternative_peak_outside_5_pixels": 0.2491522580385208,
+      "peak_at_search_boundary": false,
+      "overlap_working_pixels": 35381
+    },
+    {
+      "location": 3,
+      "best_shift_working_xy": [
+        1,
+        0
+      ],
+      "best_shift_uav_native_xy": [
+        4,
+        0
+      ],
+      "shift_length_uav_native_pixels": 4.0,
+      "gradient_ncc": 0.539087176322937,
+      "zero_shift_gradient_ncc": 0.5242030024528503,
+      "alternative_peak_outside_5_pixels": 0.19027777016162872,
+      "peak_at_search_boundary": false,
+      "overlap_working_pixels": 36364
+    },
+    {
+      "location": 4,
+      "best_shift_working_xy": [
+        -1,
+        1
+      ],
+      "best_shift_uav_native_xy": [
+        -4,
+        4
+      ],
+      "shift_length_uav_native_pixels": 5.656854249492381,
+      "gradient_ncc": 0.5961558818817139,
+      "zero_shift_gradient_ncc": 0.4865818917751312,
+      "alternative_peak_outside_5_pixels": 0.5375657677650452,
+      "peak_at_search_boundary": false,
+      "overlap_working_pixels": 36352
+    }
+  ]
+}

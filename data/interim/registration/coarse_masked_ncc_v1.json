@@ -1,0 +1,302 @@
+{
+  "method": "gradient magnitude masked normalized cross-correlation",
+  "extra_downsample": 4,
+  "coarse_pixel_in_uav_native_pixels": 16,
+  "transform": "uav coarse xy = satellite coarse xy + translation",
+  "uav_metadata": {
+    "platform": "uav",
+    "component": "2",
+    "tiles": 761,
+    "downsample_factor": 4,
+    "grid_origin_row": 0,
+    "grid_origin_col": 0,
+    "native_grid_step": 256,
+    "native_tile_size": 512,
+    "working_shape": [
+      5120,
+      4032
+    ],
+    "grid_sha256": "91d15210c89580c548166c2a7e62b35bc971c24d90cf8bf9bd005acc41239f47",
+    "overlap_policy": "mean of available grayscale tile pixels",
+    "purpose": "geometry-only registration; no labels or model predictions",
+    "scale_assumption": "SAT native pixel approximately 2 UAV native pixels"
+  },
+  "limitations": [
+    "尺度2、旋转0为固定假设。",
+    "粗定位候选，尚未进行高分辨率细化及独立验证。",
+    "低重叠或重复纹理可能产生假峰。",
+    "本结果不能直接作为B单元可用图块批准依据。"
+  ],
+  "results": [
+    {
+      "sat_component": "154",
+      "status": "coarse_candidates_only",
+      "minimum_overlap_coarse_pixels": 35796,
+      "sat_metadata": {
+        "platform": "satellite",
+        "component": "154",
+        "tiles": 234,
+        "downsample_factor": 2,
+        "grid_origin_row": 0,
+        "grid_origin_col": 0,
+        "native_grid_step": 256,
+        "native_tile_size": 512,
+        "working_shape": [
+          4608,
+          3456
+        ],
+        "grid_sha256": "32772da45cc166ae4435416a19fa811f451ad750159db7587985a933a82d5422",
+        "overlap_policy": "mean of available grayscale tile pixels",
+        "purpose": "geometry-only registration; no labels or model predictions",
+        "scale_assumption": "SAT native pixel approximately 2 UAV native pixels"
+      },
+      "peaks": [
+        {
+          "rank": 1,
+          "ncc": 0.10667912662029266,
+          "overlap_coarse_pixels": 37280,
+          "translation_coarse_xy": [
+            750,
+            804
+          ],
+          "translation_mosaic_working_xy": [
+            3000,
+            3216
+          ]
+        },
+        {
+          "rank": 2,
+          "ncc": 0.08283643424510956,
+          "overlap_coarse_pixels": 40520,
+          "translation_coarse_xy": [
+            734,
+            779
+          ],
+          "translation_mosaic_working_xy": [
+            2936,
+            3116
+          ]
+        },
+        {
+          "rank": 3,
+          "ncc": 0.08249521255493164,
+          "overlap_coarse_pixels": 36076,
+          "translation_coarse_xy": [
+            660,
+            955
+          ],
+          "translation_mosaic_working_xy": [
+            2640,
+            3820
+          ]
+        },
+        {
+          "rank": 4,
+          "ncc": 0.0820905938744545,
+          "overlap_coarse_pixels": 55888,
+          "translation_coarse_xy": [
+            376,
+            220
+          ],
+          "translation_mosaic_working_xy": [
+            1504,
+            880
+          ]
+        },
+        {
+          "rank": 5,
+          "ncc": 0.07500334829092026,
+          "overlap_coarse_pixels": 39051,
+          "translation_coarse_xy": [
+            731,
+            749
+          ],
+          "translation_mosaic_working_xy": [
+            2924,
+            2996
+          ]
+        }
+      ]
+    },
+    {
+      "sat_component": "158",
+      "status": "coarse_candidates_only",
+      "minimum_overlap_coarse_pixels": 17474,
+      "sat_metadata": {
+        "platform": "satellite",
+        "component": "158",
+        "tiles": 81,
+        "downsample_factor": 2,
+        "grid_origin_row": 0,
+        "grid_origin_col": 0,
+        "native_grid_step": 256,
+        "native_tile_size": 512,
+        "working_shape": [
+          1536,
+          2432
+        ],
+        "grid_sha256": "32772da45cc166ae4435416a19fa811f451ad750159db7587985a933a82d5422",
+        "overlap_policy": "mean of available grayscale tile pixels",
+        "purpose": "geometry-only registration; no labels or model predictions",
+        "scale_assumption": "SAT native pixel approximately 2 UAV native pixels"
+      },
+      "peaks": [
+        {
+          "rank": 1,
+          "ncc": 0.11291070282459259,
+          "overlap_coarse_pixels": 19320,
+          "translation_coarse_xy": [
+            -391,
+            28
+          ],
+          "translation_mosaic_working_xy": [
+            -1564,
+            112
+          ]
+        },
+        {
+          "rank": 2,
+          "ncc": 0.1102575808763504,
+          "overlap_coarse_pixels": 19392,
+          "translation_coarse_xy": [
+            768,
+            932
+          ],
+          "translation_mosaic_working_xy": [
+            3072,
+            3728
+          ]
+        },
+        {
+          "rank": 3,
+          "ncc": 0.09960497915744781,
+          "overlap_coarse_pixels": 25038,
+          "translation_coarse_xy": [
+            642,
+            809
+          ],
+          "translation_mosaic_working_xy": [
+            2568,
+            3236
+          ]
+        },
+        {
+          "rank": 4,
+          "ncc": 0.09783414006233215,
+          "overlap_coarse_pixels": 19844,
+          "translation_coarse_xy": [
+            470,
+            1009
+          ],
+          "translation_mosaic_working_xy": [
+            1880,
+            4036
+          ]
+        },
+        {
+          "rank": 5,
+          "ncc": 0.09682568907737732,
+          "overlap_coarse_pixels": 23692,
+          "translation_coarse_xy": [
+            144,
+            739
+          ],
+          "translation_mosaic_working_xy": [
+            576,
+            2956
+          ]
+        }
+      ]
+    },
+    {
+      "sat_component": "148",
+      "status": "coarse_candidates_only",
+      "minimum_overlap_coarse_pixels": 14920,
+      "sat_metadata": {
+        "platform": "satellite",
+        "component": "148",
+        "tiles": 69,
+        "downsample_factor": 2,
+        "grid_origin_row": 0,
+        "grid_origin_col": 0,
+        "native_grid_step": 256,
+        "native_tile_size": 512,
+        "working_shape": [
+          2304,
+          1664
+        ],
+        "grid_sha256": "32772da45cc166ae4435416a19fa811f451ad750159db7587985a933a82d5422",
+        "overlap_policy": "mean of available grayscale tile pixels",
+        "purpose": "geometry-only registration; no labels or model predictions",
+        "scale_assumption": "SAT native pixel approximately 2 UAV native pixels"
+      },
+      "peaks": [
+        {
+          "rank": 1,
+          "ncc": 0.1371006816625595,
+          "overlap_coarse_pixels": 22160,
+          "translation_coarse_xy": [
+            836,
+            1078
+          ],
+          "translation_mosaic_working_xy": [
+            3344,
+            4312
+          ]
+        },
+        {
+          "rank": 2,
+          "ncc": 0.12242124229669571,
+          "overlap_coarse_pixels": 18640,
+          "translation_coarse_xy": [
+            784,
+            896
+          ],
+          "translation_mosaic_working_xy": [
+            3136,
+            3584
+          ]
+        },
+        {
+          "rank": 3,
+          "ncc": 0.12237362563610077,
+          "overlap_coarse_pixels": 14976,
+          "translation_coarse_xy": [
+            80,
+            -76
+          ],
+          "translation_mosaic_working_xy": [
+            320,
+            -304
+          ]
+        },
+        {
+          "rank": 4,
+          "ncc": 0.11543552577495575,
+          "overlap_coarse_pixels": 14960,
+          "translation_coarse_xy": [
+            304,
+            208
+          ],
+          "translation_mosaic_working_xy": [
+            1216,
+            832
+          ]
+        },
+        {
+          "rank": 5,
+          "ncc": 0.11303136497735977,
+          "overlap_coarse_pixels": 27744,
+          "translation_coarse_xy": [
+            807,
+            979
+          ],
+          "translation_mosaic_working_xy": [
+            3228,
+            3916
+          ]
+        }
+      ]
+    }
+  ]
+}

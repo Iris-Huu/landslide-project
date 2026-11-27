@@ -1,0 +1,294 @@
+{
+  "created_utc": "2026-11-26T23:10:02.293316+00:00",
+  "scope": "A单元v1训练及验证结果；未进行独立测试",
+  "shared_config_except_seed": {
+    "model": "DeepLabV3Plus",
+    "encoder": "resnet50",
+    "encoder_weights": null,
+    "initialization": "random",
+    "batch_size": 4,
+    "lr": 0.0001,
+    "optimizer": "Adam",
+    "max_epochs": 100,
+    "minimum_epochs_before_early_stop": 30,
+    "patience": 15,
+    "selection": "highest validation tile-pooled IoU; ties keep earliest",
+    "loss": "BCE + batch-pooled soft Dice",
+    "dice_smooth": 1.0,
+    "bce_weight": 1.0,
+    "dice_weight": 1.0,
+    "threshold": 0.5,
+    "input": "512x512 full tile",
+    "normalization": "RGB uint8 / 255",
+    "augmentation": "none",
+    "valid_policy": "edge_connected_black_4_neighbors_keep_positive_v1",
+    "manifest_sha256": "8788ed446d7c2e9573ce1e9e8b77bff8a26eae4c0763d4eea7698889210c45ba",
+    "train_count": 484,
+    "val_count": 71,
+    "train_order": "sorted filenames then epoch-specific seeded shuffle",
+    "validation_aggregation": "tile-pooled pixels; overlaps not deduplicated",
+    "test_evaluation": "not performed; deduplicated mosaic evaluation pending",
+    "training_pool": "all 484 A training tiles; equal-size factorial subset not yet selected"
+  },
+  "runs": [
+    {
+      "seed": 17,
+      "directory": "experiments/uav_A_v1_seed17_73cm2c39",
+      "run_json_sha256": "3b87eeacb3cf000ae3111fcbaf8a933ba026877eb0b98a053c7d69962d0b1d59",
+      "epochs_completed": 30,
+      "best_epoch": 12,
+      "best_validation": {
+        "loss": 0.831505170366339,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1066029,
+          "fp": 494093,
+          "fn": 1063908,
+          "tn": 15924913,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2624030,
+            "f1": 3690059,
+            "precision": 1560122,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4062564071294917,
+            "f1": 0.5777842576500809,
+            "precision": 0.683298485631252,
+            "recall": 0.500497902050624
+          }
+        }
+      },
+      "last_validation": {
+        "loss": 1.0980261937174236,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1096662,
+          "fp": 1197167,
+          "fn": 1033275,
+          "tn": 15221839,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3327104,
+            "f1": 4423766,
+            "precision": 2293829,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.32961458373408226,
+            "f1": 0.49580470576427416,
+            "precision": 0.47809230766547983,
+            "recall": 0.5148800175779847
+          }
+        }
+      },
+      "stop_reason": "validation IoU patience reached",
+      "elapsed_seconds": 347.1831999383867,
+      "source_sha256": {
+        "scripts/training/uav_a_v1.py": "94e4685ae11463f50a1803268e523b71faebaac9bf6c79a474016247d82c6d2f",
+        "src/data/uav_formal_v1.py": "7b6efe700dd038526f36f90eda027e909440cad95220d29d1936c19ac0bec09a",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/data/nodata_v1.py": "6ea0a06431975d8a45d58206366647d706704d560558bc466c7ca27494355558",
+        "src/models/deeplabv3plus.py": "51e664c8218dc65b7fb1fd40e260406a8fc7ad0856c34226b96f21a41fd8c2ff",
+        "src/training/segmentation_steps.py": "04abaa97ded8d0ccd466785a4dbf0eb8f364a9bc8440c787bf67db4fe8771f37",
+        "src/training/exploratory.py": "787936e339234469e7396c998f789a9a317fcaabb344b6f7a82d50150365e661",
+        "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+      },
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_v1_seed17_73cm2c39/best.pt",
+          "bytes": 320621613,
+          "sha256": "a671d35a3cb52a2bc730adf22ad44d90ee06e72e6a7f18f9daa4baa33201200f"
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_v1_seed17_73cm2c39/last.pt",
+          "bytes": 320621613,
+          "sha256": "646c7dc9d3f0d5551aa225d361d7c4f1eaf8a7bfd919edd198901238468854ba"
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "directory": "experiments/uav_A_v1_seed42_q9ok0ej8",
+      "run_json_sha256": "95d3f4d984b015d5d21024494663823d1ab4823f29f66f78b817eb40e58a035f",
+      "epochs_completed": 30,
+      "best_epoch": 6,
+      "best_validation": {
+        "loss": 0.8331225738086667,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1120344,
+          "fp": 771345,
+          "fn": 1009593,
+          "tn": 15647661,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2901282,
+            "f1": 4021626,
+            "precision": 1891689,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.3861548101839118,
+            "f1": 0.5571597159954705,
+            "precision": 0.5922453426541043,
+            "recall": 0.5259986562982849
+          }
+        }
+      },
+      "last_validation": {
+        "loss": 1.132371065695225,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 780847,
+          "fp": 249853,
+          "fn": 1349090,
+          "tn": 16169153,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2379790,
+            "f1": 3160637,
+            "precision": 1030700,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.3281159261951685,
+            "f1": 0.4941073587381278,
+            "precision": 0.7575890171727951,
+            "recall": 0.3666056789473116
+          }
+        }
+      },
+      "stop_reason": "validation IoU patience reached",
+      "elapsed_seconds": 347.7699328754097,
+      "source_sha256": {
+        "scripts/training/uav_a_v1.py": "1a5829694b576e93a21e1592acc2ee753e1ce3e0d7bb798f422e91780b832361",
+        "src/data/uav_formal_v1.py": "7b6efe700dd038526f36f90eda027e909440cad95220d29d1936c19ac0bec09a",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/data/nodata_v1.py": "6ea0a06431975d8a45d58206366647d706704d560558bc466c7ca27494355558",
+        "src/models/deeplabv3plus.py": "51e664c8218dc65b7fb1fd40e260406a8fc7ad0856c34226b96f21a41fd8c2ff",
+        "src/training/segmentation_steps.py": "04abaa97ded8d0ccd466785a4dbf0eb8f364a9bc8440c787bf67db4fe8771f37",
+        "src/training/exploratory.py": "787936e339234469e7396c998f789a9a317fcaabb344b6f7a82d50150365e661",
+        "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+      },
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_v1_seed42_q9ok0ej8/best.pt",
+          "bytes": 320621613,
+          "sha256": "ca4a861f5df20f5516d056bfbac37237ec551ade5725d69ad442502ba734cbcb"
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_v1_seed42_q9ok0ej8/last.pt",
+          "bytes": 320621613,
+          "sha256": "1183cd2feb5dd267f8617ac8fefe495263b033041722889607e522a55b06873c"
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "directory": "experiments/uav_A_v1_seed123_51b_xlmb",
+      "run_json_sha256": "9c5483ebcf1c0579b229df69574723b30cc2b23c6b3d7cfb32f752decd99493b",
+      "epochs_completed": 30,
+      "best_epoch": 14,
+      "best_validation": {
+        "loss": 0.8896313746466392,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1041313,
+          "fp": 546289,
+          "fn": 1088624,
+          "tn": 15872717,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2676226,
+            "f1": 3717539,
+            "precision": 1587602,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.389097557530642,
+            "f1": 0.5602163151482742,
+            "precision": 0.65590305378804,
+            "recall": 0.4888938029622472
+          }
+        }
+      },
+      "last_validation": {
+        "loss": 1.1356599339735658,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 837929,
+          "fp": 536038,
+          "fn": 1292008,
+          "tn": 15882968,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2665975,
+            "f1": 3503904,
+            "precision": 1373967,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.3143048978328754,
+            "f1": 0.4782830808149995,
+            "precision": 0.609861081088556,
+            "recall": 0.39340553265190475
+          }
+        }
+      },
+      "stop_reason": "validation IoU patience reached",
+      "elapsed_seconds": 347.61115893162787,
+      "source_sha256": {
+        "scripts/training/uav_a_v1.py": "1a5829694b576e93a21e1592acc2ee753e1ce3e0d7bb798f422e91780b832361",
+        "src/data/uav_formal_v1.py": "7b6efe700dd038526f36f90eda027e909440cad95220d29d1936c19ac0bec09a",
+        "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+        "src/data/nodata_v1.py": "6ea0a06431975d8a45d58206366647d706704d560558bc466c7ca27494355558",
+        "src/models/deeplabv3plus.py": "51e664c8218dc65b7fb1fd40e260406a8fc7ad0856c34226b96f21a41fd8c2ff",
+        "src/training/segmentation_steps.py": "04abaa97ded8d0ccd466785a4dbf0eb8f364a9bc8440c787bf67db4fe8771f37",
+        "src/training/exploratory.py": "787936e339234469e7396c998f789a9a317fcaabb344b6f7a82d50150365e661",
+        "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+      },
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_v1_seed123_51b_xlmb/best.pt",
+          "bytes": 320621613,
+          "sha256": "57fe093e3f88ba1578aaf210761592f7c05f52c78a05a09d817f3be631d21551"
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_v1_seed123_51b_xlmb/last.pt",
+          "bytes": 320621613,
+          "sha256": "48de7824b5b02f4d55bfa3d3558c39bf18a499edb897fd7a5dbe32ebee517537"
+        }
+      }
+    }
+  ],
+  "best_validation_iou_mean": 0.3938362582813485,
+  "best_validation_iou_sample_sd": 0.01085633518016998,
+  "limitations": [
+    "验证指标按图块像素汇总，重叠区域可能重复计数。",
+    "检查点由验证IoU选择，不能将这些数值报告为测试IoU。",
+    "测试区拼图去重评价和空间块bootstrap尚未完成。",
+    "随机初始化、未使用预训练权重。",
+    "A训练使用484张；析因实验的等样本量子集尚未确定。",
+    "seed17入口后加入了种子参数，原源码快照保存在其运行目录。"
+  ]
+}

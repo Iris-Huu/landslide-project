@@ -1,0 +1,103 @@
+{
+  "scope": "registration diagnostics only; no labels or model outputs",
+  "expected_working_scale_under_native_ratio_2": 1.0,
+  "results": [
+    {
+      "name": "sat100_positive_control",
+      "satellite_features": 1389,
+      "status": "diagnostic_only_not_approved",
+      "unique_mutual_matches": 9,
+      "reason": "insufficient_matches_for_fit_and_holdout"
+    },
+    {
+      "name": "satellite_component_154",
+      "satellite_features": 39188,
+      "status": "diagnostic_only_not_approved",
+      "unique_mutual_matches": 92,
+      "fit_matches": 61,
+      "holdout_matches": 31,
+      "matrix_sat_working_to_uav_working": [
+        [
+          0.49982355487331176,
+          0.0002201765871677504,
+          640.5136330835211
+        ],
+        [
+          -0.0002201765871677504,
+          0.49982355487331176,
+          830.7355367186386
+        ]
+      ],
+      "working_scale": 0.4998236033681523,
+      "rotation_degrees": -0.02523928344977769,
+      "fit_inliers": 40,
+      "fit_span_sat_working_xy": [
+        2715.445068359375,
+        3251.744140625
+      ],
+      "holdout_within_3_working_pixels": 19,
+      "holdout_median_error_working_pixels": 2.5872442891991847,
+      "limitation": "Held-out descriptor matches are a diagnostic, not independent manual registration validation."
+    },
+    {
+      "name": "satellite_component_158",
+      "satellite_features": 39450,
+      "status": "diagnostic_only_not_approved",
+      "unique_mutual_matches": 32,
+      "fit_matches": 21,
+      "holdout_matches": 11,
+      "matrix_sat_working_to_uav_working": [
+        [
+          0.5005351769279889,
+          0.004023376199825555,
+          2299.952059636747
+        ],
+        [
+          -0.004023376199825555,
+          0.5005351769279889,
+          3715.503742120231
+        ]
+      ],
+      "working_scale": 0.5005513469149578,
+      "rotation_degrees": -0.4605420790281183,
+      "fit_inliers": 8,
+      "fit_span_sat_working_xy": [
+        1138.3558349609375,
+        763.7237548828125
+      ],
+      "holdout_within_3_working_pixels": 4,
+      "holdout_median_error_working_pixels": 7.173935047760319,
+      "limitation": "Held-out descriptor matches are a diagnostic, not independent manual registration validation."
+    },
+    {
+      "name": "satellite_component_148",
+      "satellite_features": 32434,
+      "status": "diagnostic_only_not_approved",
+      "unique_mutual_matches": 20,
+      "fit_matches": 13,
+      "holdout_matches": 7,
+      "matrix_sat_working_to_uav_working": [
+        [
+          -1.9762464408848825,
+          -0.606139125660812,
+          4383.534934816558
+        ],
+        [
+          0.606139125660812,
+          -1.9762464408848825,
+          4512.986121102506
+        ]
+      ],
+      "working_scale": 2.067112632336956,
+      "rotation_degrees": 162.94857830091757,
+      "fit_inliers": 2,
+      "fit_span_sat_working_xy": [
+        195.758544921875,
+        543.8050537109375
+      ],
+      "holdout_within_3_working_pixels": 0,
+      "holdout_median_error_working_pixels": 2003.9495069170935,
+      "limitation": "Held-out descriptor matches are a diagnostic, not independent manual registration validation."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "component": "148",
+  "status": "diagnostic_only_not_approved",
+  "satellite_features": 7766,
+  "uav_features": 38935,
+  "unique_mutual_matches": 7,
+  "satellite_additional_resize": 0.5,
+  "reason": "insufficient_matches_for_fit_and_holdout"
+}
