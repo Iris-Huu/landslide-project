@@ -38,3 +38,6 @@ venv/
 
 # 配准拼图数组与含原始影像的预览
 /data/interim/registration/mosaics_v1/
+
+# 本地模型权重及随附文件
+/weights/

@@ -1,0 +1,45 @@
+{
+  "scope": "A484 frozen pretrained DINOv3 with linear segmentation head",
+  "variants": [
+    "lvd1689m",
+    "sat493m"
+  ],
+  "seeds": [
+    17,
+    42,
+    123
+  ],
+  "encoder": "frozen, eval, cached float32 features",
+  "decoder": "Conv2d(1024,1,1), bilinear to 512x512, align_corners=False",
+  "trainable_parameters": 1025,
+  "decoder_initialization": "PyTorch default, seed reset before construction",
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "batch_size": 4,
+  "loss": "BCE + batch-pooled soft Dice",
+  "dice_smooth": 1.0,
+  "bce_weight": 1.0,
+  "dice_weight": 1.0,
+  "max_epochs": 100,
+  "minimum_epochs_before_early_stop": 30,
+  "patience": 15,
+  "selection": "highest validation tile-pooled IoU; ties keep earliest",
+  "threshold": 0.5,
+  "augmentation": "none",
+  "manifest_sha256": "8788ed446d7c2e9573ce1e9e8b77bff8a26eae4c0763d4eea7698889210c45ba",
+  "feature_cache_index_sha256": "25a81308a2a31669f370fe672518c9ceff5e17127f8018990ec144d0cb501eab",
+  "valid_policy": "edge_connected_black_4_neighbors_keep_positive_v1",
+  "validation_aggregation": "tile-pooled; overlaps not deduplicated",
+  "source_sha256": {
+    "scripts/training/dinov3_linear_a_v1.py": "c190bb3079bf4500f3f55546e996ac1944aa9555d3f6949c424bac9f2b8915ba",
+    "src/training/exploratory.py": "787936e339234469e7396c998f789a9a317fcaabb344b6f7a82d50150365e661",
+    "src/training/segmentation_steps.py": "04abaa97ded8d0ccd466785a4dbf0eb8f364a9bc8440c787bf67db4fe8771f37",
+    "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b"
+  },
+  "constraints": [
+    "No test data used.",
+    "Not full encoder fine-tuning.",
+    "Not an initialization-only comparison against fully trained random baselines.",
+    "A484 is not an equal-sample factorial result."
+  ]
+}

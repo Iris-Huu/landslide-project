@@ -1,0 +1,69 @@
+{
+  "scope": "Synthetic GPU functionality only; no project imagery",
+  "source_sha256": "80d37879a5576db64da076f46cacc064f67193dc2068c2be283b11d0c92f8a31",
+  "model_source_sha256": "4c40d789be38f2d909d121acce93e2c9e5b0b1261d511d132559110c8929a9e1",
+  "environment": {
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1",
+    "huggingface_hub": "0.36.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "results": [
+    {
+      "model": "dinov3-vitl16-pretrain-lvd1689m",
+      "revision": "ea8dc2863c51be0a264bab82070e3e8836b02d51",
+      "weight_sha256": "dcb2e45127cccbf1601e5f42fef165eea275c8e5213197e8dcf3f48822718179",
+      "total_parameters": 303130625,
+      "trainable_parameters": 1025,
+      "encoder_frozen": true,
+      "encoder_eval_during_training": true,
+      "encoder_gradients_absent": true,
+      "decoder_updated": true,
+      "synthetic_input_shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "output_shape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "loss": 1.3839341402053833,
+      "finite_logits": true,
+      "seconds": 1.1743869939818978,
+      "peak_allocated_bytes": 1276608512
+    },
+    {
+      "model": "dinov3-vitl16-pretrain-sat493m",
+      "revision": "f692fa42da72c6797b67cd73494a168d1120d3ee",
+      "weight_sha256": "4e6356d992c1301b5e7c275f465e47296c5c4ad17052e262b29fc21e82ccc698",
+      "total_parameters": 303130625,
+      "trainable_parameters": 1025,
+      "encoder_frozen": true,
+      "encoder_eval_during_training": true,
+      "encoder_gradients_absent": true,
+      "decoder_updated": true,
+      "synthetic_input_shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "output_shape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "loss": 1.3333868980407715,
+      "finite_logits": true,
+      "seconds": 0.4818648654036224,
+      "peak_allocated_bytes": 1278472192
+    }
+  ],
+  "status": "completed"
+}

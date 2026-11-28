@@ -1,0 +1,303 @@
+{
+  "scope": "SegFormer-B2 A484, random initialization",
+  "source_run": "experiments/uav_A_segformer_v1_test_1k4qlykn/run.json",
+  "source_run_sha256": "02407024c428fc309caf15ecb5cc985c7db48df6be30ea9a24d6889aa670d0a8",
+  "protocol": "reports/tables/uav_segformer_A_v1_test_protocol.json",
+  "protocol_sha256": "e2795e4d19e9fc678743c7ab8ecad1a0a7e2bc71b9c814cc5f9fd7f9b78e2fb3",
+  "evaluation_source_sha256": "069d61230553f2fa5003326eefbb54c1773a2f1309eae773a197930b76f7f803",
+  "environment": {
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "torch": "2.8.0+cu128",
+    "torch_cuda": "12.8",
+    "numpy": "2.3.2",
+    "scipy": "1.18.1",
+    "rasterio": "1.4.4",
+    "smp": "0.5.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "mosaic": {
+    "origin_native_xy": [
+      10240,
+      16896
+    ],
+    "shape_hw": [
+      3584,
+      5888
+    ],
+    "unique_valid_pixels": 12266695,
+    "valid_tile_pixel_contributions": 38605377,
+    "pixels_with_multiple_valid_contributions": 11183343
+  },
+  "results": [
+    {
+      "seed": 17,
+      "checkpoint": "experiments/uav_A_segformer_v1_seed17_dk2zebn8/best.pt",
+      "checkpoint_sha256": "932569b7a60a73eb060d5fc24fd12830f68cbd87c0417aa5ebc2d501749df479",
+      "selected_epoch": 5,
+      "confusion": {
+        "tp": 487676,
+        "fp": 1098777,
+        "fn": 866969,
+        "tn": 9813273
+      },
+      "metrics": {
+        "iou": 0.1987737943166728,
+        "f1": 0.331628527849123,
+        "precision": 0.3074002192312032,
+        "recall": 0.3600028051629763
+      },
+      "boundary_counts": {
+        "predicted_boundary_pixels": 110185,
+        "true_boundary_pixels": 57964,
+        "matched_predicted_pixels": 6090,
+        "matched_true_pixels": 6005,
+        "scored_support_pixels": 12165660
+      },
+      "boundary_metrics": {
+        "boundary_f1": 0.07208402670689196,
+        "boundary_precision": 0.05527068112719517,
+        "boundary_recall": 0.10359878545303981
+      },
+      "spatial_blocks": 28
+    },
+    {
+      "seed": 42,
+      "checkpoint": "experiments/uav_A_segformer_v1_seed42_t9s_mn01/best.pt",
+      "checkpoint_sha256": "ca50ba86bae78147b084708b55257f9a7cefe770302de0bf55e22ec01a55fb97",
+      "selected_epoch": 4,
+      "confusion": {
+        "tp": 384897,
+        "fp": 1074178,
+        "fn": 969748,
+        "tn": 9837872
+      },
+      "metrics": {
+        "iou": 0.15847058431182512,
+        "f1": 0.273585857867876,
+        "precision": 0.2637952127203879,
+        "recall": 0.28413126686327417
+      },
+      "boundary_counts": {
+        "predicted_boundary_pixels": 100316,
+        "true_boundary_pixels": 57964,
+        "matched_predicted_pixels": 5050,
+        "matched_true_pixels": 4958,
+        "scored_support_pixels": 12165660
+      },
+      "boundary_metrics": {
+        "boundary_f1": 0.06338027498734922,
+        "boundary_precision": 0.05034092268431756,
+        "boundary_recall": 0.08553584983783037
+      },
+      "spatial_blocks": 28
+    },
+    {
+      "seed": 123,
+      "checkpoint": "experiments/uav_A_segformer_v1_seed123_oc_6u504/best.pt",
+      "checkpoint_sha256": "cea5dc63c27dec6de59a71246e382bd34170fc4de3cac867a50b5b6c02c8686f",
+      "selected_epoch": 8,
+      "confusion": {
+        "tp": 570406,
+        "fp": 1720512,
+        "fn": 784239,
+        "tn": 9191538
+      },
+      "metrics": {
+        "iou": 0.1854884157134091,
+        "f1": 0.31293163771960597,
+        "precision": 0.24898577775372144,
+        "recall": 0.42107415595967945
+      },
+      "boundary_counts": {
+        "predicted_boundary_pixels": 105706,
+        "true_boundary_pixels": 57964,
+        "matched_predicted_pixels": 6344,
+        "matched_true_pixels": 6222,
+        "scored_support_pixels": 12165660
+      },
+      "boundary_metrics": {
+        "boundary_f1": 0.07698723185138988,
+        "boundary_precision": 0.06001551472953286,
+        "boundary_recall": 0.10734248844110138
+      },
+      "spatial_blocks": 28
+    }
+  ],
+  "seed_summary": {
+    "iou": {
+      "seed_mean": 0.18091093144730233,
+      "seed_sample_sd": 0.020537823785117905
+    },
+    "f1": {
+      "seed_mean": 0.3060486744788683,
+      "seed_sample_sd": 0.02962717117559484
+    },
+    "precision": {
+      "seed_mean": 0.2733937365684375,
+      "seed_sample_sd": 0.03036709548718346
+    },
+    "recall": {
+      "seed_mean": 0.3550694093286433,
+      "seed_sample_sd": 0.06860461000808364
+    },
+    "boundary_f1": {
+      "seed_mean": 0.07081717784854369,
+      "seed_sample_sd": 0.006891371292956835
+    }
+  },
+  "spatial_bootstrap": {
+    "replicates": 10000,
+    "seed": 20261127,
+    "block_count": 28,
+    "per_seed": [
+      {
+        "iou": {
+          "percentile_95": [
+            0.13883168347225802,
+            0.256083359616011
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "f1": {
+          "percentile_95": [
+            0.24381422683931336,
+            0.4077489884019256
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": {
+          "percentile_95": [
+            0.19843268689140184,
+            0.4250903880946148
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": {
+          "percentile_95": [
+            0.28672519652892664,
+            0.4193315741238655
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      {
+        "iou": {
+          "percentile_95": [
+            0.11012356920518777,
+            0.20590800056453945
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "f1": {
+          "percentile_95": [
+            0.19839875874933288,
+            0.34149868890075646
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": {
+          "percentile_95": [
+            0.1691441906655153,
+            0.3778896491734647
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": {
+          "percentile_95": [
+            0.21030506046987596,
+            0.3588268214811697
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      {
+        "iou": {
+          "percentile_95": [
+            0.11662593732016117,
+            0.2541907797615221
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "f1": {
+          "percentile_95": [
+            0.20888989484547676,
+            0.4053462740291442
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": {
+          "percentile_95": [
+            0.15051650157411703,
+            0.3537799783789572
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": {
+          "percentile_95": [
+            0.32283074744984397,
+            0.4970313563400553
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    ],
+    "paired_seed_mean": {
+      "iou": {
+        "percentile_95": [
+          0.12427812389416805,
+          0.2345868965532935
+        ],
+        "defined_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "f1": {
+        "percentile_95": [
+          0.2210328040496675,
+          0.37895668945567434
+        ],
+        "defined_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "precision": {
+        "percentile_95": [
+          0.17352732185358727,
+          0.3814924650956358
+        ],
+        "defined_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "recall": {
+        "percentile_95": [
+          0.2818987311516892,
+          0.41474090357911986
+        ],
+        "defined_replicates": 10000,
+        "undefined_replicates": 0
+      }
+    },
+    "limitation": "Conditional on fixed models and this test region."
+  },
+  "spatial_block_counts_sha256": "a08995f50b9d07ce40277cfedfaafadd615ec90bd420a0875fa0b8a4d9a42b70",
+  "limitations": [
+    "No threshold, checkpoint, or hyperparameter selection using test results.",
+    "Training validation scores were tile-pooled without overlap deduplication.",
+    "This A484 result is not an equal-sample factorial comparison.",
+    "Spatial bootstrap does not establish independence of geographic regions.",
+    "833 pixels corresponds to about 500 m only under nominal 0.6 m spacing.",
+    "Boundary F1 excludes the protocol-defined coverage-edge band.",
+    "Bootstrap intervals are conditional on this test region and fixed models.",
+    "A484 is not an equal-sample factorial comparison."
+  ]
+}

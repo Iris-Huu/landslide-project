@@ -1,0 +1,1415 @@
+{
+  "status": "completed",
+  "scope": "Relative scale diagnostic; no labels or model predictions",
+  "manifest_sha256": "8788ed446d7c2e9573ce1e9e8b77bff8a26eae4c0763d4eea7698889210c45ba",
+  "reference_mosaic_sha256": "c61c93242f3e260212a77b8601caae10bbf828e63b30d5da501297d6296a3f62",
+  "source_code_sha256": "4ceb2224afd2b904db5b8933bb56215222b10e24a2f36679cf24c3380c2d5bae",
+  "reference_feature_count": 25625,
+  "reference_downsample_factor": 4,
+  "source_downsample_factor": 2,
+  "selection": "80 uniformly spaced indices of sorted image filenames, or all if fewer",
+  "selected_files": [
+    "Luding_1m_UAV001.tif",
+    "Luding_1m_UAV007.tif",
+    "Luding_1m_UAV013.tif",
+    "Luding_1m_UAV019.tif",
+    "Luding_1m_UAV026.tif",
+    "Luding_1m_UAV032.tif",
+    "Luding_1m_UAV038.tif",
+    "Luding_1m_UAV044.tif",
+    "Luding_1m_UAV050.tif",
+    "Luding_1m_UAV056.tif",
+    "Luding_1m_UAV063.tif",
+    "Luding_1m_UAV069.tif",
+    "Luding_1m_UAV075.tif",
+    "Luding_1m_UAV081.tif",
+    "Luding_1m_UAV088.tif",
+    "Luding_1m_UAV095.tif",
+    "Luding_1m_UAV101.tif",
+    "Luding_1m_UAV108.tif",
+    "Luding_1m_UAV114.tif",
+    "Luding_1m_UAV120.tif",
+    "Luding_1m_UAV127.tif",
+    "Luding_1m_UAV133.tif",
+    "Luding_1m_UAV139.tif",
+    "Luding_1m_UAV146.tif",
+    "Luding_1m_UAV152.tif",
+    "Luding_1m_UAV158.tif",
+    "Luding_1m_UAV164.tif",
+    "Luding_1m_UAV170.tif",
+    "Luding_1m_UAV176.tif",
+    "Luding_1m_UAV183.tif",
+    "Luding_1m_UAV190.tif",
+    "Luding_1m_UAV196.tif",
+    "Luding_1m_UAV203.tif",
+    "Luding_1m_UAV209.tif",
+    "Luding_1m_UAV215.tif",
+    "Luding_1m_UAV221.tif",
+    "Luding_1m_UAV227.tif",
+    "Luding_1m_UAV233.tif",
+    "Luding_1m_UAV239.tif",
+    "Luding_1m_UAV247.tif",
+    "Luding_1m_UAV256.tif",
+    "Luding_1m_UAV262.tif",
+    "Luding_1m_UAV269.tif",
+    "Luding_1m_UAV275.tif",
+    "Luding_1m_UAV282.tif",
+    "Luding_1m_UAV290.tif",
+    "Luding_1m_UAV297.tif",
+    "Luding_1m_UAV303.tif",
+    "Luding_1m_UAV309.tif",
+    "Luding_1m_UAV317.tif",
+    "Luding_1m_UAV324.tif",
+    "Luding_1m_UAV330.tif",
+    "Luding_1m_UAV336.tif",
+    "Luding_1m_UAV342.tif",
+    "Luding_1m_UAV348.tif",
+    "Luding_1m_UAV354.tif",
+    "Luding_1m_UAV360.tif",
+    "Luding_1m_UAV366.tif",
+    "Luding_1m_UAV372.tif",
+    "Luding_1m_UAV378.tif",
+    "Luding_1m_UAV386.tif",
+    "Luding_1m_UAV392.tif",
+    "Luding_1m_UAV398.tif",
+    "Luding_1m_UAV405.tif",
+    "Luding_1m_UAV411.tif",
+    "Luding_1m_UAV417.tif",
+    "Luding_1m_UAV423.tif",
+    "Luding_1m_UAV429.tif",
+    "Luding_1m_UAV435.tif",
+    "Luding_1m_UAV441.tif",
+    "Luding_1m_UAV448.tif",
+    "Luding_1m_UAV454.tif",
+    "Luding_1m_UAV460.tif",
+    "Luding_1m_UAV466.tif",
+    "Luding_1m_UAV472.tif",
+    "Luding_1m_UAV478.tif",
+    "Luding_1m_UAV484.tif",
+    "Luding_1m_UAV490.tif",
+    "Luding_1m_UAV496.tif",
+    "Luding_1m_UAV504.tif"
+  ],
+  "support_rule": {
+    "minimum_unique_matches": 15,
+    "minimum_fit_inliers": 8,
+    "minimum_holdout_support_within_3_working_pixels": 4,
+    "minimum_fit_inlier_span_source_working_xy": [
+      40,
+      40
+    ],
+    "scale_acceptance_filter": "none; nominal ratio is not used to select matches"
+  },
+  "results": [
+    {
+      "filename": "Luding_1m_UAV001.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV007.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV013.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV019.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV026.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV032.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV038.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV044.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV050.tif",
+      "supported": true,
+      "unique_matches": 57,
+      "fit_inliers": 38,
+      "fit_span_source_working_xy": [
+        155.1999969482422,
+        234.39999389648438
+      ],
+      "holdout_matches": 19,
+      "holdout_supported": 19,
+      "holdout_median_error_working_pixels": 0.12317067102486462,
+      "working_scale": 0.8194340303853352,
+      "native_1m_to_06m_pixel_scale": 1.6388680607706705,
+      "rotation_degrees": -0.02049600530613709,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8194339779556584,
+          0.00029313020992711444,
+          111.55689072890569
+        ],
+        [
+          -0.00029313020992711444,
+          0.8194339779556584,
+          60.074859291139774
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV056.tif",
+      "supported": true,
+      "unique_matches": 103,
+      "fit_inliers": 68,
+      "fit_span_source_working_xy": [
+        216.90000915527344,
+        239.40000915527344
+      ],
+      "holdout_matches": 35,
+      "holdout_supported": 35,
+      "holdout_median_error_working_pixels": 0.15830177647784333,
+      "working_scale": 0.8195089889235586,
+      "native_1m_to_06m_pixel_scale": 1.6390179778471172,
+      "rotation_degrees": -0.02171089517636448,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.819508930088808,
+          0.0003105337510027293,
+          6.62454601702876
+        ],
+        [
+          -0.0003105337510027293,
+          0.819508930088808,
+          269.85905018720155
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV063.tif",
+      "supported": true,
+      "unique_matches": 89,
+      "fit_inliers": 59,
+      "fit_span_source_working_xy": [
+        211.8000030517578,
+        240.0
+      ],
+      "holdout_matches": 30,
+      "holdout_supported": 30,
+      "holdout_median_error_working_pixels": 0.1696330892229692,
+      "working_scale": 0.8193800319163083,
+      "native_1m_to_06m_pixel_scale": 1.6387600638326165,
+      "rotation_degrees": 0.022626182121428938,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8193799680263408,
+          -0.00032357429298445145,
+          321.3679947650621
+        ],
+        [
+          0.00032357429298445145,
+          0.8193799680263408,
+          374.68759297754434
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV069.tif",
+      "supported": true,
+      "unique_matches": 37,
+      "fit_inliers": 23,
+      "fit_span_source_working_xy": [
+        222.20001220703125,
+        112.0999984741211
+      ],
+      "holdout_matches": 13,
+      "holdout_supported": 13,
+      "holdout_median_error_working_pixels": 0.15882253322623394,
+      "working_scale": 0.8191297027842787,
+      "native_1m_to_06m_pixel_scale": 1.6382594055685573,
+      "rotation_degrees": 0.06854853295539574,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8191291165466494,
+          -0.0009800045746473723,
+          321.43152386572154
+        ],
+        [
+          0.0009800045746473723,
+          0.8191291165466494,
+          584.4129051028559
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV075.tif",
+      "supported": true,
+      "unique_matches": 41,
+      "fit_inliers": 25,
+      "fit_span_source_working_xy": [
+        83.40000915527344,
+        221.8000030517578
+      ],
+      "holdout_matches": 14,
+      "holdout_supported": 14,
+      "holdout_median_error_working_pixels": 0.19368367804279008,
+      "working_scale": 0.8198311199045726,
+      "native_1m_to_06m_pixel_scale": 1.6396622398091452,
+      "rotation_degrees": -0.017657371163518936,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8198310809730645,
+          0.00025265494717827206,
+          426.0864516591353
+        ],
+        [
+          -0.00025265494717827206,
+          0.8198310809730645,
+          689.4542390179176
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV081.tif",
+      "supported": true,
+      "unique_matches": 26,
+      "fit_inliers": 16,
+      "fit_span_source_working_xy": [
+        205.3000030517578,
+        239.0
+      ],
+      "holdout_matches": 9,
+      "holdout_supported": 9,
+      "holdout_median_error_working_pixels": 0.20548301235454317,
+      "working_scale": 0.8200776743690045,
+      "native_1m_to_06m_pixel_scale": 1.640155348738009,
+      "rotation_degrees": 0.0047922655749563685,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8200776715004607,
+          -6.859196325602381e-05,
+          111.47166653317585
+        ],
+        [
+          6.859196325602381e-05,
+          0.8200776715004607,
+          794.0944309178738
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV088.tif",
+      "supported": true,
+      "unique_matches": 34,
+      "fit_inliers": 20,
+      "fit_span_source_working_xy": [
+        221.8000030517578,
+        177.0
+      ],
+      "holdout_matches": 12,
+      "holdout_supported": 12,
+      "holdout_median_error_working_pixels": 0.1359569039906497,
+      "working_scale": 0.8192637447600567,
+      "native_1m_to_06m_pixel_scale": 1.6385274895201134,
+      "rotation_degrees": 0.008239286433952915,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8192637362891934,
+          -0.00011781231867567343,
+          111.61757611482201
+        ],
+        [
+          0.00011781231867567343,
+          0.8192637362891934,
+          899.1091388119603
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV095.tif",
+      "supported": true,
+      "unique_matches": 68,
+      "fit_inliers": 44,
+      "fit_span_source_working_xy": [
+        216.5,
+        236.0
+      ],
+      "holdout_matches": 23,
+      "holdout_supported": 23,
+      "holdout_median_error_working_pixels": 0.11260148060092459,
+      "working_scale": 0.8190743924246132,
+      "native_1m_to_06m_pixel_scale": 1.6381487848492264,
+      "rotation_degrees": 0.011294017446887884,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8190743765118722,
+          -0.00016145413321978143,
+          950.7614081933145
+        ],
+        [
+          0.00016145413321978143,
+          0.8190743765118722,
+          899.1988234477504
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV101.tif",
+      "supported": true,
+      "unique_matches": 126,
+      "fit_inliers": 84,
+      "fit_span_source_working_xy": [
+        230.39999389648438,
+        231.8000030517578
+      ],
+      "holdout_matches": 42,
+      "holdout_supported": 42,
+      "holdout_median_error_working_pixels": 0.16149449511330471,
+      "working_scale": 0.819980281303336,
+      "native_1m_to_06m_pixel_scale": 1.639960562606672,
+      "rotation_degrees": -0.016640424766755944,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8199802467207902,
+          0.0002381470346574702,
+          635.9284169523665
+        ],
+        [
+          -0.0002381470346574702,
+          0.8199802467207902,
+          1004.0131250058427
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV108.tif",
+      "supported": true,
+      "unique_matches": 29,
+      "fit_inliers": 18,
+      "fit_span_source_working_xy": [
+        212.8000030517578,
+        213.89999389648438
+      ],
+      "holdout_matches": 10,
+      "holdout_supported": 10,
+      "holdout_median_error_working_pixels": 0.1499836404215566,
+      "working_scale": 0.8191227072665648,
+      "native_1m_to_06m_pixel_scale": 1.6382454145331296,
+      "rotation_degrees": -0.007688807552631661,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.819122699891061,
+          0.00010992217738869013,
+          321.3863095493204
+        ],
+        [
+          -0.00010992217738869013,
+          0.819122699891061,
+          1109.0064404579064
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV114.tif",
+      "supported": true,
+      "unique_matches": 31,
+      "fit_inliers": 19,
+      "fit_span_source_working_xy": [
+        168.0,
+        201.40000915527344
+      ],
+      "holdout_matches": 11,
+      "holdout_supported": 10,
+      "holdout_median_error_working_pixels": 0.17600652195020666,
+      "working_scale": 0.8190179187213189,
+      "native_1m_to_06m_pixel_scale": 1.6380358374426378,
+      "rotation_degrees": 0.013415435399399503,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8190178962707327,
+          -0.00019176773529458525,
+          216.47848533337412
+        ],
+        [
+          0.00019176773529458525,
+          0.8190178962707327,
+          1213.8129642387241
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV120.tif",
+      "supported": true,
+      "unique_matches": 206,
+      "fit_inliers": 136,
+      "fit_span_source_working_xy": [
+        237.59999084472656,
+        240.0
+      ],
+      "holdout_matches": 69,
+      "holdout_supported": 69,
+      "holdout_median_error_working_pixels": 0.1447285961723846,
+      "working_scale": 0.8195673369069574,
+      "native_1m_to_06m_pixel_scale": 1.6391346738139148,
+      "rotation_degrees": 0.0029962812834537834,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8195673357862956,
+          -4.2859252319351133e-05,
+          950.6819456778555
+        ],
+        [
+          4.2859252319351133e-05,
+          0.8195673357862956,
+          1213.7792557659268
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV127.tif",
+      "supported": true,
+      "unique_matches": 148,
+      "fit_inliers": 98,
+      "fit_span_source_working_xy": [
+        243.8000030517578,
+        243.10000610351562
+      ],
+      "holdout_matches": 50,
+      "holdout_supported": 50,
+      "holdout_median_error_working_pixels": 0.17036050115637597,
+      "working_scale": 0.8191816527886607,
+      "native_1m_to_06m_pixel_scale": 1.6383633055773215,
+      "rotation_degrees": -0.002639243166230852,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8191816519195727,
+          3.773436013320904e-05,
+          636.0434356692897
+        ],
+        [
+          -3.773436013320904e-05,
+          0.8191816519195727,
+          1318.7136892510262
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV133.tif",
+      "supported": true,
+      "unique_matches": 72,
+      "fit_inliers": 48,
+      "fit_span_source_working_xy": [
+        179.5,
+        239.5
+      ],
+      "holdout_matches": 24,
+      "holdout_supported": 24,
+      "holdout_median_error_working_pixels": 0.15180359052700843,
+      "working_scale": 0.8195682508207578,
+      "native_1m_to_06m_pixel_scale": 1.6391365016415156,
+      "rotation_degrees": -0.0006202416985966239,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8195682507727368,
+          8.872039237705732e-06,
+          1265.3123365600081
+        ],
+        [
+          -8.872039237705732e-06,
+          0.8195682507727368,
+          1318.6837214959419
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV139.tif",
+      "supported": true,
+      "unique_matches": 197,
+      "fit_inliers": 130,
+      "fit_span_source_working_xy": [
+        245.09999084472656,
+        242.0
+      ],
+      "holdout_matches": 66,
+      "holdout_supported": 66,
+      "holdout_median_error_working_pixels": 0.15314763910043144,
+      "working_scale": 0.819639496088618,
+      "native_1m_to_06m_pixel_scale": 1.639278992177236,
+      "rotation_degrees": -0.0010404677298865592,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8196394959534714,
+          1.4884315267568604e-05,
+          845.7450093295147
+        ],
+        [
+          -1.4884315267568604e-05,
+          0.8196394959534714,
+          1423.552448458568
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV146.tif",
+      "supported": true,
+      "unique_matches": 39,
+      "fit_inliers": 26,
+      "fit_span_source_working_xy": [
+        234.0,
+        89.5999984741211
+      ],
+      "holdout_matches": 13,
+      "holdout_supported": 13,
+      "holdout_median_error_working_pixels": 0.18891895556709556,
+      "working_scale": 0.8188254677064206,
+      "native_1m_to_06m_pixel_scale": 1.6376509354128412,
+      "rotation_degrees": 0.03958076016173389,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.818825272324522,
+          -0.0005656565308866991,
+          531.2545010213584
+        ],
+        [
+          0.0005656565308866991,
+          0.818825272324522,
+          1528.445756487769
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV152.tif",
+      "supported": true,
+      "unique_matches": 96,
+      "fit_inliers": 62,
+      "fit_span_source_working_xy": [
+        239.5,
+        232.8000030517578
+      ],
+      "holdout_matches": 32,
+      "holdout_supported": 32,
+      "holdout_median_error_working_pixels": 0.17887841087446477,
+      "working_scale": 0.819171234174302,
+      "native_1m_to_06m_pixel_scale": 1.638342468348604,
+      "rotation_degrees": -0.01589708288914433,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8191712026435516,
+          0.00022728432973000772,
+          1160.4035948593066
+        ],
+        [
+          -0.00022728432973000772,
+          0.8191712026435516,
+          1528.528599354622
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV158.tif",
+      "supported": true,
+      "unique_matches": 132,
+      "fit_inliers": 88,
+      "fit_span_source_working_xy": [
+        231.59999084472656,
+        231.89999389648438
+      ],
+      "holdout_matches": 44,
+      "holdout_supported": 44,
+      "holdout_median_error_working_pixels": 0.1482827425896319,
+      "working_scale": 0.819541447718696,
+      "native_1m_to_06m_pixel_scale": 1.639082895437392,
+      "rotation_degrees": -0.0013200290547957063,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8195414475011943,
+          1.8881295126725712e-05,
+          1055.5345575522767
+        ],
+        [
+          -1.8881295126725712e-05,
+          0.8195414475011943,
+          1633.3038200711342
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV164.tif",
+      "supported": true,
+      "unique_matches": 106,
+      "fit_inliers": 70,
+      "fit_span_source_working_xy": [
+        245.39999389648438,
+        242.90000915527344
+      ],
+      "holdout_matches": 36,
+      "holdout_supported": 36,
+      "holdout_median_error_working_pixels": 0.20467586784503183,
+      "working_scale": 0.8191345398267129,
+      "native_1m_to_06m_pixel_scale": 1.6382690796534258,
+      "rotation_degrees": -0.014083779631821839,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8191345150799488,
+          0.00020135008773068696,
+          950.6410638299717
+        ],
+        [
+          -0.00020135008773068696,
+          0.8191345150799488,
+          1738.313441183457
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV170.tif",
+      "supported": true,
+      "unique_matches": 149,
+      "fit_inliers": 99,
+      "fit_span_source_working_xy": [
+        242.3000030517578,
+        242.29998779296875
+      ],
+      "holdout_matches": 50,
+      "holdout_supported": 49,
+      "holdout_median_error_working_pixels": 0.1278952180874226,
+      "working_scale": 0.8194310499838209,
+      "native_1m_to_06m_pixel_scale": 1.6388620999676418,
+      "rotation_degrees": 0.008780867303688543,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8194310403607877,
+          -0.0001255819424643836,
+          845.8316680806737
+        ],
+        [
+          0.0001255819424643836,
+          0.8194310403607877,
+          1843.0630889143945
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV176.tif",
+      "supported": true,
+      "unique_matches": 91,
+      "fit_inliers": 60,
+      "fit_span_source_working_xy": [
+        236.6999969482422,
+        239.09999084472656
+      ],
+      "holdout_matches": 31,
+      "holdout_supported": 31,
+      "holdout_median_error_working_pixels": 0.08637541313162429,
+      "working_scale": 0.8194686912384986,
+      "native_1m_to_06m_pixel_scale": 1.6389373824769973,
+      "rotation_degrees": 0.005755143227737684,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.819468687104509,
+          -8.231251447965555e-05,
+          1475.0968296192168
+        ],
+        [
+          8.231251447965555e-05,
+          0.819468687104509,
+          1843.096926918613
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV183.tif",
+      "supported": true,
+      "unique_matches": 184,
+      "fit_inliers": 122,
+      "fit_span_source_working_xy": [
+        241.0,
+        240.10000610351562
+      ],
+      "holdout_matches": 62,
+      "holdout_supported": 62,
+      "holdout_median_error_working_pixels": 0.13512011640558277,
+      "working_scale": 0.8196556450931469,
+      "native_1m_to_06m_pixel_scale": 1.6393112901862938,
+      "rotation_degrees": 0.01542216109399257,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8196556154006553,
+          -0.00022062464905813582,
+          1160.4345368035888
+        ],
+        [
+          0.00022062464905813582,
+          0.8196556154006553,
+          1947.9715388479883
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV190.tif",
+      "supported": true,
+      "unique_matches": 133,
+      "fit_inliers": 87,
+      "fit_span_source_working_xy": [
+        230.59999084472656,
+        208.5
+      ],
+      "holdout_matches": 45,
+      "holdout_supported": 45,
+      "holdout_median_error_working_pixels": 0.11423247209175981,
+      "working_scale": 0.8194893130987664,
+      "native_1m_to_06m_pixel_scale": 1.6389786261975328,
+      "rotation_degrees": -0.006364662590597396,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8194893080426298,
+          9.10324112538916e-05,
+          845.7578530180393
+        ],
+        [
+          -9.10324112538916e-05,
+          0.8194893080426298,
+          2052.9221478623567
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV196.tif",
+      "supported": true,
+      "unique_matches": 181,
+      "fit_inliers": 119,
+      "fit_span_source_working_xy": [
+        245.8000030517578,
+        240.39999389648438
+      ],
+      "holdout_matches": 61,
+      "holdout_supported": 61,
+      "holdout_median_error_working_pixels": 0.13891015749262883,
+      "working_scale": 0.8193515967834637,
+      "native_1m_to_06m_pixel_scale": 1.6387031935669274,
+      "rotation_degrees": 0.009178494411243552,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8193515862701908,
+          -0.00013125598575786947,
+          1475.129567261472
+        ],
+        [
+          0.00013125598575786947,
+          0.8193515862701908,
+          2052.8680780035393
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV203.tif",
+      "supported": true,
+      "unique_matches": 271,
+      "fit_inliers": 180,
+      "fit_span_source_working_xy": [
+        246.89999389648438,
+        244.1999969482422
+      ],
+      "holdout_matches": 91,
+      "holdout_supported": 91,
+      "holdout_median_error_working_pixels": 0.19219242793084826,
+      "working_scale": 0.8193054458602378,
+      "native_1m_to_06m_pixel_scale": 1.6386108917204756,
+      "rotation_degrees": -0.0063709743390909694,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8193054407952046,
+          9.110224182402184e-05,
+          1265.3559890859506
+        ],
+        [
+          -9.110224182402184e-05,
+          0.8193054407952046,
+          2157.780006219149
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV209.tif",
+      "supported": true,
+      "unique_matches": 131,
+      "fit_inliers": 87,
+      "fit_span_source_working_xy": [
+        167.10000610351562,
+        208.5
+      ],
+      "holdout_matches": 44,
+      "holdout_supported": 44,
+      "holdout_median_error_working_pixels": 0.09840093703344682,
+      "working_scale": 0.8193219108450145,
+      "native_1m_to_06m_pixel_scale": 1.638643821690029,
+      "rotation_degrees": 0.010516013441756622,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8193218970449355,
+          -0.00015037757147942575,
+          1894.656047821478
+        ],
+        [
+          0.00015037757147942575,
+          0.8193218970449355,
+          2157.770057817831
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV215.tif",
+      "supported": true,
+      "unique_matches": 365,
+      "fit_inliers": 243,
+      "fit_span_source_working_xy": [
+        248.0,
+        246.60000610351562
+      ],
+      "holdout_matches": 122,
+      "holdout_supported": 122,
+      "holdout_median_error_working_pixels": 0.1447818573603443,
+      "working_scale": 0.8193495003479934,
+      "native_1m_to_06m_pixel_scale": 1.6386990006959867,
+      "rotation_degrees": -0.0008859082656597797,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8193495002500508,
+          1.2668795170643203e-05,
+          1579.9695017910924
+        ],
+        [
+          -1.2668795170643203e-05,
+          0.8193495002500508,
+          2262.684253534723
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV221.tif",
+      "supported": true,
+      "unique_matches": 127,
+      "fit_inliers": 84,
+      "fit_span_source_working_xy": [
+        241.89999389648438,
+        240.0
+      ],
+      "holdout_matches": 43,
+      "holdout_supported": 43,
+      "holdout_median_error_working_pixels": 0.160558108670948,
+      "working_scale": 0.81954731722975,
+      "native_1m_to_06m_pixel_scale": 1.6390946344595,
+      "rotation_degrees": -0.0028853632212738375,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8195473161905485,
+          4.127165571923047e-05,
+          1160.4377058567893
+        ],
+        [
+          -4.127165571923047e-05,
+          0.8195473161905485,
+          2367.5240483183657
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV227.tif",
+      "supported": true,
+      "unique_matches": 171,
+      "fit_inliers": 113,
+      "fit_span_source_working_xy": [
+        234.5,
+        241.1999969482422
+      ],
+      "holdout_matches": 57,
+      "holdout_supported": 57,
+      "holdout_median_error_working_pixels": 0.13352906793720748,
+      "working_scale": 0.8192605970258423,
+      "native_1m_to_06m_pixel_scale": 1.6385211940516846,
+      "rotation_degrees": 0.007982281559565943,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8192605890752243,
+          -0.00011413700608559657,
+          1789.801559115806
+        ],
+        [
+          0.00011413700608559657,
+          0.8192605890752243,
+          2367.587199028157
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV233.tif",
+      "supported": true,
+      "unique_matches": 79,
+      "fit_inliers": 52,
+      "fit_span_source_working_xy": [
+        235.10000610351562,
+        230.1999969482422
+      ],
+      "holdout_matches": 27,
+      "holdout_supported": 27,
+      "holdout_median_error_working_pixels": 0.1309247082133494,
+      "working_scale": 0.8194345904886101,
+      "native_1m_to_06m_pixel_scale": 1.6388691809772202,
+      "rotation_degrees": 0.03474832246970791,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8194344397908819,
+          -0.0004969646261838893,
+          1370.3005446824045
+        ],
+        [
+          0.0004969646261838893,
+          0.8194344397908819,
+          2472.3857399631424
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV239.tif",
+      "supported": true,
+      "unique_matches": 108,
+      "fit_inliers": 72,
+      "fit_span_source_working_xy": [
+        235.5,
+        219.8000030517578
+      ],
+      "holdout_matches": 36,
+      "holdout_supported": 36,
+      "holdout_median_error_working_pixels": 0.1390368042745342,
+      "working_scale": 0.8195044318391301,
+      "native_1m_to_06m_pixel_scale": 1.6390088636782603,
+      "rotation_degrees": -0.004063057262515807,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.819504429778586,
+          5.8114113446993024e-05,
+          1999.4854100320347
+        ],
+        [
+          -5.8114113446993024e-05,
+          0.819504429778586,
+          2472.416318200608
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV247.tif",
+      "supported": true,
+      "unique_matches": 259,
+      "fit_inliers": 172,
+      "fit_span_source_working_xy": [
+        237.3000030517578,
+        244.89999389648438
+      ],
+      "holdout_matches": 87,
+      "holdout_supported": 87,
+      "holdout_median_error_working_pixels": 0.13363886733376032,
+      "working_scale": 0.8192229051214205,
+      "native_1m_to_06m_pixel_scale": 1.638445810242841,
+      "rotation_degrees": 0.002956329985186084,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.819222904030903,
+          -4.227001113291559e-05,
+          1684.8972136851437
+        ],
+        [
+          4.227001113291559e-05,
+          0.819222904030903,
+          2577.323623527566
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV256.tif",
+      "supported": true,
+      "unique_matches": 124,
+      "fit_inliers": 82,
+      "fit_span_source_working_xy": [
+        239.5,
+        241.10000610351562
+      ],
+      "holdout_matches": 42,
+      "holdout_supported": 42,
+      "holdout_median_error_working_pixels": 0.12254872638708891,
+      "working_scale": 0.819609444324954,
+      "native_1m_to_06m_pixel_scale": 1.639218888649908,
+      "rotation_degrees": 0.0032670295689932968,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8196094429925441,
+          -4.673447697091523e-05,
+          1579.938321536932
+        ],
+        [
+          4.673447697091523e-05,
+          0.8196094429925441,
+          2682.162133261384
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV262.tif",
+      "supported": true,
+      "unique_matches": 149,
+      "fit_inliers": 99,
+      "fit_span_source_working_xy": [
+        236.3000030517578,
+        235.10000610351562
+      ],
+      "holdout_matches": 50,
+      "holdout_supported": 50,
+      "holdout_median_error_working_pixels": 0.11607770947630924,
+      "working_scale": 0.8191812847040126,
+      "native_1m_to_06m_pixel_scale": 1.6383625694080253,
+      "rotation_degrees": -0.0017238624877035655,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.819181284333238,
+          2.4646769781613148e-05,
+          2209.3147752387745
+        ],
+        [
+          -2.4646769781613148e-05,
+          0.819181284333238,
+          2682.2601323036133
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV269.tif",
+      "supported": true,
+      "unique_matches": 159,
+      "fit_inliers": 106,
+      "fit_span_source_working_xy": [
+        234.89999389648438,
+        236.3000030517578
+      ],
+      "holdout_matches": 53,
+      "holdout_supported": 53,
+      "holdout_median_error_working_pixels": 0.14220754178834594,
+      "working_scale": 0.8195017895925009,
+      "native_1m_to_06m_pixel_scale": 1.6390035791850017,
+      "rotation_degrees": 0.007201592504662332,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8195017831191115,
+          -0.00010300440940156184,
+          1789.7576638787164
+        ],
+        [
+          0.00010300440940156184,
+          0.8195017831191115,
+          2787.054216674139
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV275.tif",
+      "supported": true,
+      "unique_matches": 52,
+      "fit_inliers": 34,
+      "fit_span_source_working_xy": [
+        111.29999542236328,
+        225.10000610351562
+      ],
+      "holdout_matches": 18,
+      "holdout_supported": 18,
+      "holdout_median_error_working_pixels": 0.12265637591554703,
+      "working_scale": 0.8194795561581185,
+      "native_1m_to_06m_pixel_scale": 1.638959112316237,
+      "rotation_degrees": -0.023871325643160236,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8194794850341581,
+          0.0003414224039408555,
+          2419.000071600976
+        ],
+        [
+          -0.0003414224039408555,
+          0.8194794850341581,
+          2787.0934113531453
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV282.tif",
+      "supported": true,
+      "unique_matches": 139,
+      "fit_inliers": 92,
+      "fit_span_source_working_xy": [
+        243.40000915527344,
+        238.10000610351562
+      ],
+      "holdout_matches": 47,
+      "holdout_supported": 47,
+      "holdout_median_error_working_pixels": 0.15939403975229122,
+      "working_scale": 0.8198373218808127,
+      "native_1m_to_06m_pixel_scale": 1.6396746437616254,
+      "rotation_degrees": -0.009406183489458984,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8198373108329233,
+          0.00013459176770109756,
+          1999.4680815006782
+        ],
+        [
+          -0.00013459176770109756,
+          0.8198373108329233,
+          2891.9348374149567
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV290.tif",
+      "supported": true,
+      "unique_matches": 134,
+      "fit_inliers": 88,
+      "fit_span_source_working_xy": [
+        233.10000610351562,
+        236.8000030517578
+      ],
+      "holdout_matches": 45,
+      "holdout_supported": 45,
+      "holdout_median_error_working_pixels": 0.1734947796201016,
+      "working_scale": 0.8190900069128637,
+      "native_1m_to_06m_pixel_scale": 1.6381800138257274,
+      "rotation_degrees": 0.006145676673136416,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.8190900022009667,
+          -8.785747190823284e-05,
+          1999.5738127520935
+        ],
+        [
+          8.785747190823284e-05,
+          0.8190900022009667,
+          2996.9039492512975
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV297.tif",
+      "supported": true,
+      "unique_matches": 117,
+      "fit_inliers": 77,
+      "fit_span_source_working_xy": [
+        243.6999969482422,
+        169.0
+      ],
+      "holdout_matches": 39,
+      "holdout_supported": 39,
+      "holdout_median_error_working_pixels": 0.13924937184343678,
+      "working_scale": 0.8195881321600204,
+      "native_1m_to_06m_pixel_scale": 1.6391762643200407,
+      "rotation_degrees": 0.009064755254918044,
+      "matrix_source_working_to_reference_working": [
+        [
+          0.819588121902732,
+          -0.00012966689449048154,
+          2209.275553812346
+        ],
+        [
+          0.00012966689449048154,
+          0.819588121902732,
+          3101.7356852309913
+        ]
+      ]
+    },
+    {
+      "filename": "Luding_1m_UAV303.tif",
+      "supported": false,
+      "unique_matches": 8
+    },
+    {
+      "filename": "Luding_1m_UAV309.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV317.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV324.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV330.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV336.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV342.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV348.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV354.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV360.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV366.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV372.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV378.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV386.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV392.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV398.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV405.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV411.tif",
+      "supported": false,
+      "unique_matches": 2
+    },
+    {
+      "filename": "Luding_1m_UAV417.tif",
+      "supported": false,
+      "unique_matches": 2
+    },
+    {
+      "filename": "Luding_1m_UAV423.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV429.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV435.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV441.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV448.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV454.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV460.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV466.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV472.tif",
+      "supported": false,
+      "unique_matches": 2
+    },
+    {
+      "filename": "Luding_1m_UAV478.tif",
+      "supported": false,
+      "unique_matches": 1
+    },
+    {
+      "filename": "Luding_1m_UAV484.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV490.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV496.tif",
+      "supported": false,
+      "unique_matches": 0
+    },
+    {
+      "filename": "Luding_1m_UAV504.tif",
+      "supported": false,
+      "unique_matches": 1
+    }
+  ],
+  "limitations": [
+    "Accepted matches are geometric diagnostics, not independent manual accuracy measurements.",
+    "A relative ratio agreeing with nominal values cannot independently prove absolute ground resolution.",
+    "Reference features are restricted to frozen training-tile coverage."
+  ],
+  "summary": {
+    "checked": 80,
+    "supported": 39,
+    "nominal_ratio_for_comparison_only": 1.6666666666666667,
+    "median_native_scale": 1.6388680607706705,
+    "minimum_native_scale": 1.6376509354128412,
+    "maximum_native_scale": 1.640155348738009
+  }
+}

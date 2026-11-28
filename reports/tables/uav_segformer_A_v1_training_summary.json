@@ -1,0 +1,247 @@
+{
+  "scope": "SegFormer-B2 A484 random initialization",
+  "training_protocol": "reports/tables/uav_segformer_A_v1_training_protocol.json",
+  "training_protocol_sha256": "b7be61037569ff026b18807190fa87f7a0ea5073a696f447a6f987530b6a8e62",
+  "common_config_except_seed": {
+    "architecture": "segformer",
+    "model": "SMP Segformer",
+    "encoder": "mit_b2",
+    "encoder_weights": null,
+    "initialization": "random",
+    "batch_size": 4,
+    "lr": 0.0001,
+    "optimizer": "Adam",
+    "max_epochs": 100,
+    "minimum_epochs_before_early_stop": 30,
+    "patience": 15,
+    "selection": "highest validation tile-pooled IoU; ties keep earliest",
+    "loss": "BCE + batch-pooled soft Dice",
+    "dice_smooth": 1.0,
+    "bce_weight": 1.0,
+    "dice_weight": 1.0,
+    "threshold": 0.5,
+    "input": "512x512 full tile",
+    "normalization": "RGB uint8 / 255",
+    "augmentation": "none",
+    "valid_policy": "edge_connected_black_4_neighbors_keep_positive_v1",
+    "manifest_sha256": "8788ed446d7c2e9573ce1e9e8b77bff8a26eae4c0763d4eea7698889210c45ba",
+    "train_count": 484,
+    "val_count": 71,
+    "train_order": "sorted filenames then epoch-specific seeded shuffle",
+    "validation_aggregation": "tile-pooled pixels; overlaps not deduplicated",
+    "test_evaluation": "not performed; deduplicated mosaic evaluation pending",
+    "training_pool": "all 484 A training tiles; equal-size factorial subset not yet selected"
+  },
+  "runs": [
+    {
+      "seed": 17,
+      "run_json": "experiments/uav_A_segformer_v1_seed17_dk2zebn8/run.json",
+      "run_json_sha256": "4523e9974677cf0e3aba79b591f4b56e79db2d6e5119066cb6bc700a8f35c6df",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_segformer_v1_seed17_dk2zebn8/best.pt",
+          "sha256": "932569b7a60a73eb060d5fc24fd12830f68cbd87c0417aa5ebc2d501749df479"
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_segformer_v1_seed17_dk2zebn8/last.pt",
+          "sha256": "6bc9b7c140f9677423c10b56cc2fefbe60e661daacb39740f369dbd395deaacf"
+        }
+      },
+      "best_epoch": 5,
+      "best_validation": {
+        "loss": 0.8691042532686926,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1093047,
+          "fp": 1104507,
+          "fn": 1036890,
+          "tn": 15314499,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3234444,
+            "f1": 4327491,
+            "precision": 2197554,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.337939689170689,
+            "f1": 0.5051643088339178,
+            "precision": 0.4973925555412973,
+            "recall": 0.513182784279535
+          }
+        }
+      },
+      "last_epoch": 30,
+      "last_validation": {
+        "loss": 1.5314859431540742,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 367523,
+          "fp": 131761,
+          "fn": 1762414,
+          "tn": 16287245,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2261698,
+            "f1": 2629221,
+            "precision": 499284,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.16249870672388622,
+            "f1": 0.2795679785000957,
+            "precision": 0.7361000953365219,
+            "recall": 0.1725511130141408
+          }
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "run_json": "experiments/uav_A_segformer_v1_seed42_t9s_mn01/run.json",
+      "run_json_sha256": "09d0714befd0cceae11269ba9e0766218a933e6919d731edf7e61f520fc78caf",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_segformer_v1_seed42_t9s_mn01/best.pt",
+          "sha256": "ca50ba86bae78147b084708b55257f9a7cefe770302de0bf55e22ec01a55fb97"
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_segformer_v1_seed42_t9s_mn01/last.pt",
+          "sha256": "97dfcac54b16e3e3aaecf7bbbfc85ad460ca9ae6855aa0a18b9fb45e772ab100"
+        }
+      },
+      "best_epoch": 4,
+      "best_validation": {
+        "loss": 0.8767646036884408,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1047010,
+          "fp": 944071,
+          "fn": 1082927,
+          "tn": 15474935,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3074008,
+            "f1": 4121018,
+            "precision": 1991081,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.34060093532612795,
+            "f1": 0.50813172861657,
+            "precision": 0.5258500282007613,
+            "recall": 0.4915685299612148
+          }
+        }
+      },
+      "last_epoch": 30,
+      "last_validation": {
+        "loss": 1.420111824194104,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 519068,
+          "fp": 227737,
+          "fn": 1610869,
+          "tn": 16191269,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2357674,
+            "f1": 2876742,
+            "precision": 746805,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.22016105704181324,
+            "f1": 0.3608721254808391,
+            "precision": 0.6950515864248364,
+            "recall": 0.24370110477446047
+          }
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "run_json": "experiments/uav_A_segformer_v1_seed123_oc_6u504/run.json",
+      "run_json_sha256": "efd4e57ec4e8722b6dc5b5317cdfb99ce929d37048dd01cfe3f5b8d804c565f9",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_segformer_v1_seed123_oc_6u504/best.pt",
+          "sha256": "cea5dc63c27dec6de59a71246e382bd34170fc4de3cac867a50b5b6c02c8686f"
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_segformer_v1_seed123_oc_6u504/last.pt",
+          "sha256": "50a32b38ca6e32381fecd51dbb632498c3edf024a99f06fd0610c3a7d6880828"
+        }
+      },
+      "best_epoch": 8,
+      "best_validation": {
+        "loss": 0.9422321626001978,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1224560,
+          "fp": 1385510,
+          "fn": 905377,
+          "tn": 15033496,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 3515447,
+            "f1": 4740007,
+            "precision": 2610070,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.34833692557447177,
+            "f1": 0.5166912200762572,
+            "precision": 0.4691674935921259,
+            "recall": 0.5749278030289159
+          }
+        }
+      },
+      "last_epoch": 30,
+      "last_validation": {
+        "loss": 1.4910582449583614,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 408983,
+          "fp": 193540,
+          "fn": 1720954,
+          "tn": 16225466,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2323477,
+            "f1": 2732460,
+            "precision": 602523,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.17602197052090465,
+            "f1": 0.2993515001134509,
+            "precision": 0.678784046418145,
+            "recall": 0.19201647748266734
+          }
+        }
+      }
+    }
+  ],
+  "best_validation_iou_mean": 0.3422925166904296,
+  "best_validation_iou_sample_sd": 0.005401084783918484,
+  "limitation": "Validation-selected results, not test performance."
+}

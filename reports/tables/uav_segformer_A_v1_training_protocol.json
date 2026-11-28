@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-11-27T21:37:34.478815+00:00",
+  "scope": "E1 SegFormer-B2 A484, random initialization",
+  "architecture": "SMP Segformer",
+  "encoder": "mit_b2",
+  "encoder_weights": null,
+  "seeds": [
+    17,
+    42,
+    123
+  ],
+  "train_count": 484,
+  "val_count": 71,
+  "manifest_sha256": "8788ed446d7c2e9573ce1e9e8b77bff8a26eae4c0763d4eea7698889210c45ba",
+  "input": "full 512x512 RGB, uint8 / 255",
+  "augmentation": "none",
+  "valid_policy": "edge_connected_black_4_neighbors_keep_positive_v1",
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "batch_size": 4,
+  "loss": "BCE + batch-pooled soft Dice",
+  "dice_smooth": 1.0,
+  "loss_weights": [
+    1.0,
+    1.0
+  ],
+  "maximum_epochs": 100,
+  "minimum_epochs_before_early_stop": 30,
+  "patience": 15,
+  "selection": "highest validation tile-pooled IoU; ties keep earliest",
+  "threshold": 0.5,
+  "training_source": "scripts/training/uav_a_models_v1.py",
+  "training_source_sha256": "9e77c54559f74fd1fb5b7a8a3ce0020896eaf0e2899149db6d40c8e92b8bcd00",
+  "comparison": "Same recorded training settings as DeepLab A v1, except architecture.",
+  "constraints": [
+    "No test imagery or labels used by this training entry.",
+    "Do not change this plan based on known DeepLab test performance.",
+    "A484 random-initialization baseline, not an equal-sample factorial result."
+  ]
+}

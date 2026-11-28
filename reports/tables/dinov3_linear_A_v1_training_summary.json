@@ -1,0 +1,461 @@
+{
+  "scope": "Frozen DINOv3 linear-head A484; validation results only",
+  "training_protocol": "reports/tables/dinov3_linear_A_v1_training_protocol.json",
+  "training_protocol_sha256": "d8e3e056187d15786c413765f1ad147668f31f8be9537309dde168ab7d1e5625",
+  "runs": [
+    {
+      "variant": "lvd1689m",
+      "seed": 17,
+      "directory": "experiments/uav_A_dinov3_linear_lvd1689m_seed17_j95n_4vt",
+      "run_json_sha256": "88edaddb31050cae27a4e3f3207996019f6d4fb25240540ae2e74a7314d6b589",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_dinov3_linear_lvd1689m_seed17_j95n_4vt/best.pt",
+          "sha256": "7e7879e6500808aa52188fb3440cfbae08737a3492b51bde481772f24ca207db",
+          "bytes": 31381
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_dinov3_linear_lvd1689m_seed17_j95n_4vt/last.pt",
+          "sha256": "475c0d8f25d3bdc67deba694e7ac5c86465eade2a8e8668a0cf12706e639f9dd",
+          "bytes": 31381
+        }
+      },
+      "best_epoch": 99,
+      "best_validation_iou": 0.4522251809665893,
+      "best_validation": {
+        "loss": 0.6986318236446969,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1128835,
+          "fp": 366242,
+          "fn": 1001102,
+          "tn": 16052764,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2496179,
+            "f1": 3625014,
+            "precision": 1495077,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4522251809665893,
+            "f1": 0.6228031119328091,
+            "precision": 0.7550346905209564,
+            "recall": 0.5299851591854595
+          }
+        }
+      },
+      "last_epoch": 100,
+      "last_validation": {
+        "loss": 0.7000545579922087,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1124914,
+          "fp": 362671,
+          "fn": 1005023,
+          "tn": 16056335,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2492608,
+            "f1": 3617522,
+            "precision": 1487585,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4513000038513878,
+            "f1": 0.6219251741938266,
+            "precision": 0.756201494368389,
+            "recall": 0.5281442596658962
+          }
+        }
+      }
+    },
+    {
+      "variant": "lvd1689m",
+      "seed": 42,
+      "directory": "experiments/uav_A_dinov3_linear_lvd1689m_seed42_jkt19ijj",
+      "run_json_sha256": "15ea8528fac99dc5709a5aae6565e6a9294eeb9087424724d114367a37d31fb9",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_dinov3_linear_lvd1689m_seed42_jkt19ijj/best.pt",
+          "sha256": "d3a5837863773f139c98f546bf7e935194ce002dec7041cb3f7547ac6a48c449",
+          "bytes": 31381
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_dinov3_linear_lvd1689m_seed42_jkt19ijj/last.pt",
+          "sha256": "26520c5d588a18c724f75b61171dc02f64c6a240ebb19e6c17d00e2d807c390e",
+          "bytes": 31381
+        }
+      },
+      "best_epoch": 100,
+      "best_validation_iou": 0.4521940764162571,
+      "best_validation": {
+        "loss": 0.6989379272000971,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1128931,
+          "fp": 366626,
+          "fn": 1001006,
+          "tn": 16052380,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2496563,
+            "f1": 3625494,
+            "precision": 1495557,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4521940764162571,
+            "f1": 0.6227736137475335,
+            "precision": 0.7548565517730184,
+            "recall": 0.5300302309411029
+          }
+        }
+      },
+      "last_epoch": 100,
+      "last_validation": {
+        "loss": 0.6989379272000971,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1128931,
+          "fp": 366626,
+          "fn": 1001006,
+          "tn": 16052380,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2496563,
+            "f1": 3625494,
+            "precision": 1495557,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4521940764162571,
+            "f1": 0.6227736137475335,
+            "precision": 0.7548565517730184,
+            "recall": 0.5300302309411029
+          }
+        }
+      }
+    },
+    {
+      "variant": "lvd1689m",
+      "seed": 123,
+      "directory": "experiments/uav_A_dinov3_linear_lvd1689m_seed123_0h5fzgnq",
+      "run_json_sha256": "65b2c1aabfafebe55d0a937f5ed644a0872f8804a6d2c95c361d0166596db993",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_dinov3_linear_lvd1689m_seed123_0h5fzgnq/best.pt",
+          "sha256": "8df1c2031ebbe51e8d921e9d64f5af9f9ae83c0a9c70b069f7e5e66f99d201f9",
+          "bytes": 31381
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_dinov3_linear_lvd1689m_seed123_0h5fzgnq/last.pt",
+          "sha256": "5da22cfce12f4fc8643d060665b1c8239b11c25c44893d434101d39092ea08a0",
+          "bytes": 31381
+        }
+      },
+      "best_epoch": 96,
+      "best_validation_iou": 0.44967636552376883,
+      "best_validation": {
+        "loss": 0.7014990146125197,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1119347,
+          "fp": 359291,
+          "fn": 1010590,
+          "tn": 16059715,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2489228,
+            "f1": 3608575,
+            "precision": 1478638,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.44967636552376883,
+            "f1": 0.6203817296301172,
+            "precision": 0.7570121963590818,
+            "recall": 0.5255305673360292
+          }
+        }
+      },
+      "last_epoch": 100,
+      "last_validation": {
+        "loss": 0.7034792072217818,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1113171,
+          "fp": 352856,
+          "fn": 1016766,
+          "tn": 16066150,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2482793,
+            "f1": 3595964,
+            "precision": 1466027,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4483543332045805,
+            "f1": 0.6191224383781373,
+            "precision": 0.7593113905814831,
+            "recall": 0.5226309510562989
+          }
+        }
+      }
+    },
+    {
+      "variant": "sat493m",
+      "seed": 17,
+      "directory": "experiments/uav_A_dinov3_linear_sat493m_seed17_y1__6_sh",
+      "run_json_sha256": "d1252119889673d887dfdc3001700db668fdda5985633efcb0781dd848a810fb",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_dinov3_linear_sat493m_seed17_y1__6_sh/best.pt",
+          "sha256": "f8e3484b18b5c107b4514a7234efb99021015ad6a5a68b056f963de6ad84a75e",
+          "bytes": 31381
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_dinov3_linear_sat493m_seed17_y1__6_sh/last.pt",
+          "sha256": "25279c87db30c19568227b81c480a590129d380a5bc2df5d825e6611e4a24fc5",
+          "bytes": 31381
+        }
+      },
+      "best_epoch": 99,
+      "best_validation_iou": 0.4689847150521308,
+      "best_validation": {
+        "loss": 0.6950135952533947,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1158275,
+          "fp": 339813,
+          "fn": 971662,
+          "tn": 16079193,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2469750,
+            "f1": 3628025,
+            "precision": 1498088,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4689847150521308,
+            "f1": 0.638515445731493,
+            "precision": 0.7731688659144189,
+            "recall": 0.5438071642494591
+          }
+        }
+      },
+      "last_epoch": 100,
+      "last_validation": {
+        "loss": 0.695274488232766,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1156599,
+          "fp": 337144,
+          "fn": 973338,
+          "tn": 16081862,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2467081,
+            "f1": 3623680,
+            "precision": 1493743,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4688127386170134,
+            "f1": 0.6383560358530554,
+            "precision": 0.7742958460725841,
+            "recall": 0.5430202865155167
+          }
+        }
+      }
+    },
+    {
+      "variant": "sat493m",
+      "seed": 42,
+      "directory": "experiments/uav_A_dinov3_linear_sat493m_seed42_uw22775g",
+      "run_json_sha256": "aa588a0778985daaf00164cdbc7def3d83fc5e995cac0dfe0a07680177bb05d8",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_dinov3_linear_sat493m_seed42_uw22775g/best.pt",
+          "sha256": "82afe59cdae751c32f78338a47d321a6fdd5e957fb766b23b8cf75f7f3991362",
+          "bytes": 31381
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_dinov3_linear_sat493m_seed42_uw22775g/last.pt",
+          "sha256": "a624aad7d9657d9aa85bb25f31bbbda4eca3ee90a06d13246c7b6b622af67bed",
+          "bytes": 31381
+        }
+      },
+      "best_epoch": 100,
+      "best_validation_iou": 0.4685571506252076,
+      "best_validation": {
+        "loss": 0.694627946624974,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1155528,
+          "fp": 336204,
+          "fn": 974409,
+          "tn": 16082802,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2466141,
+            "f1": 3621669,
+            "precision": 1491732,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4685571506252076,
+            "f1": 0.6381190550544514,
+            "precision": 0.7746217148924874,
+            "recall": 0.5425174547416192
+          }
+        }
+      },
+      "last_epoch": 100,
+      "last_validation": {
+        "loss": 0.694627946624974,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1155528,
+          "fp": 336204,
+          "fn": 974409,
+          "tn": 16082802,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2466141,
+            "f1": 3621669,
+            "precision": 1491732,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4685571506252076,
+            "f1": 0.6381190550544514,
+            "precision": 0.7746217148924874,
+            "recall": 0.5425174547416192
+          }
+        }
+      }
+    },
+    {
+      "variant": "sat493m",
+      "seed": 123,
+      "directory": "experiments/uav_A_dinov3_linear_sat493m_seed123_ekwkz7tq",
+      "run_json_sha256": "15d128d732415c8cd6f7be1de57235f5054dc9739aad26e4c7415118d9443a99",
+      "checkpoints": {
+        "best.pt": {
+          "path": "experiments/uav_A_dinov3_linear_sat493m_seed123_ekwkz7tq/best.pt",
+          "sha256": "6099d719ecfa116b4b2dee313b289de0453885b23c56c0328760eb5c391ea49b",
+          "bytes": 31381
+        },
+        "last.pt": {
+          "path": "experiments/uav_A_dinov3_linear_sat493m_seed123_ekwkz7tq/last.pt",
+          "sha256": "a6abdc12b084572aeeed3afd22980c245e0a49539ad409714391205fba940aaf",
+          "bytes": 31381
+        }
+      },
+      "best_epoch": 97,
+      "best_validation_iou": 0.46749792820736036,
+      "best_validation": {
+        "loss": 0.6960127748677576,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1151374,
+          "fp": 332906,
+          "fn": 978563,
+          "tn": 16086100,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2462843,
+            "f1": 3614217,
+            "precision": 1484280,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.46749792820736036,
+            "f1": 0.6371360657093915,
+            "precision": 0.7757121297868327,
+            "recall": 0.5405671623151295
+          }
+        }
+      },
+      "last_epoch": 100,
+      "last_validation": {
+        "loss": 0.6968952712719982,
+        "threshold": 0.5,
+        "confusion": {
+          "aggregation": "pooled_pixels",
+          "tp": 1145583,
+          "fp": 323768,
+          "fn": 984354,
+          "tn": 16095238,
+          "valid_pixels": 18548943,
+          "samples": 71,
+          "empty_samples": 0,
+          "denominators": {
+            "iou": 2453705,
+            "f1": 3599288,
+            "precision": 1469351,
+            "recall": 2129937
+          },
+          "metrics": {
+            "iou": 0.4668788627809782,
+            "f1": 0.6365608975997475,
+            "precision": 0.7796523771379337,
+            "recall": 0.5378483025554277
+          }
+        }
+      }
+    }
+  ],
+  "summaries": {
+    "lvd1689m": {
+      "best_validation_iou_mean": 0.4513652076355384,
+      "best_validation_iou_sample_sd": 0.0014626628566172023
+    },
+    "sat493m": {
+      "best_validation_iou_mean": 0.46834659796156625,
+      "best_validation_iou_sample_sd": 0.000765430008929919
+    }
+  },
+  "limitations": [
+    "Encoder frozen; only 1025 decoder parameters trained.",
+    "Validation used for checkpoint selection.",
+    "No DINOv3 test inference performed by this script.",
+    "Not a controlled initialization-only comparison with fully trained random baselines."
+  ]
+}

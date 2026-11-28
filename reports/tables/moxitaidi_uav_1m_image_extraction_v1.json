@@ -1,0 +1,2966 @@
+{
+  "purpose": "Geometry-only relative scale verification; labels not extracted",
+  "archive": "data/raw/CAS/Moxitaidi (UAV-1m).zip",
+  "destination": "data/raw/CAS/Moxitaidi_UAV_1m/img",
+  "image_count": 483,
+  "total_bytes": 379914276,
+  "metadata_examples": [
+    {
+      "filename": "Luding_1m_UAV001.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "bands": 3,
+      "dtypes": [
+        "uint8",
+        "uint8",
+        "uint8"
+      ],
+      "colorinterp": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "crs": null
+    },
+    {
+      "filename": "Luding_1m_UAV251.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "bands": 3,
+      "dtypes": [
+        "uint8",
+        "uint8",
+        "uint8"
+      ],
+      "colorinterp": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "crs": null
+    },
+    {
+      "filename": "Luding_1m_UAV504.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "bands": 3,
+      "dtypes": [
+        "uint8",
+        "uint8",
+        "uint8"
+      ],
+      "colorinterp": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "crs": null
+    }
+  ],
+  "files": [
+    {
+      "filename": "Luding_1m_UAV001.tif",
+      "zip_member": "img/Luding_1m_UAV001.tif",
+      "bytes": 786572,
+      "sha256": "6aa482eae898b63b4d9cdbd9cdc4373871346a4524f4412d541d367e4f16351c"
+    },
+    {
+      "filename": "Luding_1m_UAV002.tif",
+      "zip_member": "img/Luding_1m_UAV002.tif",
+      "bytes": 786572,
+      "sha256": "f263326babecfd765549096a5086f0d98d98c3d0721dc3f0cb1eb1f4cc0bb1b6"
+    },
+    {
+      "filename": "Luding_1m_UAV003.tif",
+      "zip_member": "img/Luding_1m_UAV003.tif",
+      "bytes": 786572,
+      "sha256": "ea58741ffbb8dec65baebe826ed32317af4af1a20f6aa9f12254e87959ba089d"
+    },
+    {
+      "filename": "Luding_1m_UAV004.tif",
+      "zip_member": "img/Luding_1m_UAV004.tif",
+      "bytes": 786572,
+      "sha256": "282cd0b3da0334059b8035cc3bea06a2fac9a3eaa2dea3d0bdd79eaa4eff56d9"
+    },
+    {
+      "filename": "Luding_1m_UAV005.tif",
+      "zip_member": "img/Luding_1m_UAV005.tif",
+      "bytes": 786572,
+      "sha256": "53f09c7a956dd01a881bc7b933f403fa870391b682f982eef50f9aba32ed3a72"
+    },
+    {
+      "filename": "Luding_1m_UAV006.tif",
+      "zip_member": "img/Luding_1m_UAV006.tif",
+      "bytes": 786572,
+      "sha256": "603680d086e5f0ed8c0dd2d35c38a0d32ffd1013a84eabc4fb15bd07a5de0711"
+    },
+    {
+      "filename": "Luding_1m_UAV007.tif",
+      "zip_member": "img/Luding_1m_UAV007.tif",
+      "bytes": 786572,
+      "sha256": "a91eb388c46d6bc7a27cbadf0d38a3c31a509c3ca79c8560748b71ae7cd8485c"
+    },
+    {
+      "filename": "Luding_1m_UAV008.tif",
+      "zip_member": "img/Luding_1m_UAV008.tif",
+      "bytes": 786572,
+      "sha256": "02b58228d4ccdc69ebbb9ed71d11d5ce759cb8735bb0c4cfe3335eb6bd1e959b"
+    },
+    {
+      "filename": "Luding_1m_UAV009.tif",
+      "zip_member": "img/Luding_1m_UAV009.tif",
+      "bytes": 786572,
+      "sha256": "47be2216ebe0a7cd7f7a572e71be4c392f45b678c3983c11406754b5cccf5b4d"
+    },
+    {
+      "filename": "Luding_1m_UAV010.tif",
+      "zip_member": "img/Luding_1m_UAV010.tif",
+      "bytes": 786572,
+      "sha256": "63a72b44e26965e6c664473d71525e353c2e272102935f70dfaa3ca442119303"
+    },
+    {
+      "filename": "Luding_1m_UAV011.tif",
+      "zip_member": "img/Luding_1m_UAV011.tif",
+      "bytes": 786572,
+      "sha256": "dcc01713cead455a3dbe15a6d1431adee20e7453c7d4d07f16cb432501c9a623"
+    },
+    {
+      "filename": "Luding_1m_UAV012.tif",
+      "zip_member": "img/Luding_1m_UAV012.tif",
+      "bytes": 786572,
+      "sha256": "7c2e0326e69e2b52e1fce3ed73767b0908f26ddc93ffb2a6338bbaef3563169e"
+    },
+    {
+      "filename": "Luding_1m_UAV013.tif",
+      "zip_member": "img/Luding_1m_UAV013.tif",
+      "bytes": 786572,
+      "sha256": "957b8eefb0dfa655ae57744cd2d9e3b2c4c8a0d6ec3f16d004601a7bb7ec5e9a"
+    },
+    {
+      "filename": "Luding_1m_UAV014.tif",
+      "zip_member": "img/Luding_1m_UAV014.tif",
+      "bytes": 786572,
+      "sha256": "fdffa33bbf5031733d8d9fbf309b0d4b60f1d56aa0cdf0862661a087e963c19c"
+    },
+    {
+      "filename": "Luding_1m_UAV015.tif",
+      "zip_member": "img/Luding_1m_UAV015.tif",
+      "bytes": 786572,
+      "sha256": "0003872efcf6037bbbb799a25f3143919a547d886f43a92d671fc42d6fb0aff2"
+    },
+    {
+      "filename": "Luding_1m_UAV016.tif",
+      "zip_member": "img/Luding_1m_UAV016.tif",
+      "bytes": 786572,
+      "sha256": "135bbf8ce218476c0241b869b3569d525ee32396e7674789a6c0cf9b9ca9a945"
+    },
+    {
+      "filename": "Luding_1m_UAV017.tif",
+      "zip_member": "img/Luding_1m_UAV017.tif",
+      "bytes": 786572,
+      "sha256": "ea0c2099e05efa2cb23eeb27db5117ce42a7c2ca9255ac649c44ea6dcd6f7d51"
+    },
+    {
+      "filename": "Luding_1m_UAV018.tif",
+      "zip_member": "img/Luding_1m_UAV018.tif",
+      "bytes": 786572,
+      "sha256": "fc01a7bb5c516ac721d9af906c82fd33ae6f9d3f7e6e8a7bbb4cf61bb054a67d"
+    },
+    {
+      "filename": "Luding_1m_UAV019.tif",
+      "zip_member": "img/Luding_1m_UAV019.tif",
+      "bytes": 786572,
+      "sha256": "f4b4a12221b6879ec708ebbdcd65d58edd44ab95171ff33fdaa08127487171fc"
+    },
+    {
+      "filename": "Luding_1m_UAV020.tif",
+      "zip_member": "img/Luding_1m_UAV020.tif",
+      "bytes": 786572,
+      "sha256": "f9b58769e2032df679d3c5163bc75af4c59fab61e5367df875ce5035951f9fdf"
+    },
+    {
+      "filename": "Luding_1m_UAV021.tif",
+      "zip_member": "img/Luding_1m_UAV021.tif",
+      "bytes": 786572,
+      "sha256": "d8d0b2262cd2b6efea7e318daa9b01084e28c2e3610fd70497c77f7115f51653"
+    },
+    {
+      "filename": "Luding_1m_UAV023.tif",
+      "zip_member": "img/Luding_1m_UAV023.tif",
+      "bytes": 786572,
+      "sha256": "4e5282aaa37539b800a854ec759f1d3d7f6b81e281393130579bd711cde9643d"
+    },
+    {
+      "filename": "Luding_1m_UAV024.tif",
+      "zip_member": "img/Luding_1m_UAV024.tif",
+      "bytes": 786572,
+      "sha256": "c7b09d5c7c91f94373f7f22796f515f82b14e5638c034c208ac0141f8a6aa1fe"
+    },
+    {
+      "filename": "Luding_1m_UAV025.tif",
+      "zip_member": "img/Luding_1m_UAV025.tif",
+      "bytes": 786572,
+      "sha256": "ec4c7cc9e461df7ca0164f45da985b4a828cd328cd4c682cfbac98135f8f57cb"
+    },
+    {
+      "filename": "Luding_1m_UAV026.tif",
+      "zip_member": "img/Luding_1m_UAV026.tif",
+      "bytes": 786572,
+      "sha256": "c446ac2efd23226562fb8ab21b6ff6bd2fbdd0541ad48adc42671c48850646c9"
+    },
+    {
+      "filename": "Luding_1m_UAV027.tif",
+      "zip_member": "img/Luding_1m_UAV027.tif",
+      "bytes": 786572,
+      "sha256": "fef054fb5945d7c8dc6aedfb343f9125f145da154f4a0a34a85690771f288c26"
+    },
+    {
+      "filename": "Luding_1m_UAV028.tif",
+      "zip_member": "img/Luding_1m_UAV028.tif",
+      "bytes": 786572,
+      "sha256": "d1bec6f23ce586c30e100ab3d039c9e2e1fc7b974a6f6f093bc6b0e25d71f402"
+    },
+    {
+      "filename": "Luding_1m_UAV029.tif",
+      "zip_member": "img/Luding_1m_UAV029.tif",
+      "bytes": 786572,
+      "sha256": "5150970cde60196bc0d36bce3efd7f5c224138cbbd2f94ade330607d4c6dd3a8"
+    },
+    {
+      "filename": "Luding_1m_UAV030.tif",
+      "zip_member": "img/Luding_1m_UAV030.tif",
+      "bytes": 786572,
+      "sha256": "0e11d980b48a8df9cb55b9901f33848957e6525cc21aa110f919ab75c38cbac8"
+    },
+    {
+      "filename": "Luding_1m_UAV031.tif",
+      "zip_member": "img/Luding_1m_UAV031.tif",
+      "bytes": 786572,
+      "sha256": "7b9902d262529d9b7bcddcbc54bb39a60531edc090c77f0f506bf38f87182916"
+    },
+    {
+      "filename": "Luding_1m_UAV032.tif",
+      "zip_member": "img/Luding_1m_UAV032.tif",
+      "bytes": 786572,
+      "sha256": "cc4830e9dfd52a504b47911b25e074457339028eed51674a4d69f397b1e702dd"
+    },
+    {
+      "filename": "Luding_1m_UAV033.tif",
+      "zip_member": "img/Luding_1m_UAV033.tif",
+      "bytes": 786572,
+      "sha256": "aead6a4d447748dc93eda20f203c1e45a8e763453f39afc385dd47a26aba0ef3"
+    },
+    {
+      "filename": "Luding_1m_UAV034.tif",
+      "zip_member": "img/Luding_1m_UAV034.tif",
+      "bytes": 786572,
+      "sha256": "b995017b8e5516a386615f1d657d605e79b6c7a1abf9afbd8ae9e14590592f5a"
+    },
+    {
+      "filename": "Luding_1m_UAV035.tif",
+      "zip_member": "img/Luding_1m_UAV035.tif",
+      "bytes": 786572,
+      "sha256": "415a3da3c18be91e43e6234ee9792e7d2887825136f2bb3c3998a0b85232e78b"
+    },
+    {
+      "filename": "Luding_1m_UAV036.tif",
+      "zip_member": "img/Luding_1m_UAV036.tif",
+      "bytes": 786572,
+      "sha256": "c67f272faa148829e7fcc8371105a4807b7a51ad60398f26b962e1bcec8950d0"
+    },
+    {
+      "filename": "Luding_1m_UAV037.tif",
+      "zip_member": "img/Luding_1m_UAV037.tif",
+      "bytes": 786572,
+      "sha256": "90c6f6f980a19753c8904ee8878322c2933735f8168d7e313c4cc2aa0824aa0c"
+    },
+    {
+      "filename": "Luding_1m_UAV038.tif",
+      "zip_member": "img/Luding_1m_UAV038.tif",
+      "bytes": 786572,
+      "sha256": "9cf4b03c417dbf5c59cc9218c9d8b7177c0bd6cebbe775938e1d441886378bd8"
+    },
+    {
+      "filename": "Luding_1m_UAV039.tif",
+      "zip_member": "img/Luding_1m_UAV039.tif",
+      "bytes": 786572,
+      "sha256": "316f591459b7359b1bec516ee615579269f326bb0a83dba9e4d3f22b20735377"
+    },
+    {
+      "filename": "Luding_1m_UAV040.tif",
+      "zip_member": "img/Luding_1m_UAV040.tif",
+      "bytes": 786572,
+      "sha256": "5a8f52f031a0db91cdf55479fc1155b03c4fdf607d004dc8b08ef144952d1652"
+    },
+    {
+      "filename": "Luding_1m_UAV041.tif",
+      "zip_member": "img/Luding_1m_UAV041.tif",
+      "bytes": 786572,
+      "sha256": "86e07188c8357467c54e4139dd6ebf48e96d86628a695d600c4f1c4c35ccb76e"
+    },
+    {
+      "filename": "Luding_1m_UAV042.tif",
+      "zip_member": "img/Luding_1m_UAV042.tif",
+      "bytes": 786572,
+      "sha256": "e27c25a46e33de3d6f46ea6ef25331607c40f00a3580797b791765b4f8543575"
+    },
+    {
+      "filename": "Luding_1m_UAV043.tif",
+      "zip_member": "img/Luding_1m_UAV043.tif",
+      "bytes": 786572,
+      "sha256": "06361e66b660af04aba8a522e6364c5f3973bab4a5be38d1736d2194c2fedfaa"
+    },
+    {
+      "filename": "Luding_1m_UAV044.tif",
+      "zip_member": "img/Luding_1m_UAV044.tif",
+      "bytes": 786572,
+      "sha256": "51ef111d7a071da6e56a79bbd09464694b6305d92eca2114a9fe0df5c0241c47"
+    },
+    {
+      "filename": "Luding_1m_UAV045.tif",
+      "zip_member": "img/Luding_1m_UAV045.tif",
+      "bytes": 786572,
+      "sha256": "efc28c887d092a1a9a5a6f5917e31830f2ddba3f95fb56517352e41e0b991a69"
+    },
+    {
+      "filename": "Luding_1m_UAV046.tif",
+      "zip_member": "img/Luding_1m_UAV046.tif",
+      "bytes": 786572,
+      "sha256": "5099c8c9750580dc2489b44fdd99347bea45772ff08b61524e284f665967fa1e"
+    },
+    {
+      "filename": "Luding_1m_UAV047.tif",
+      "zip_member": "img/Luding_1m_UAV047.tif",
+      "bytes": 786572,
+      "sha256": "95b44c426f9ab560fbde84520a8fe369e3406a2d83f468faff5c47c6aa802fea"
+    },
+    {
+      "filename": "Luding_1m_UAV048.tif",
+      "zip_member": "img/Luding_1m_UAV048.tif",
+      "bytes": 786572,
+      "sha256": "dc18bc10846f6c26ac3599a79d3ca617174250fdbdc2e5d23258a451d0eb0269"
+    },
+    {
+      "filename": "Luding_1m_UAV049.tif",
+      "zip_member": "img/Luding_1m_UAV049.tif",
+      "bytes": 786572,
+      "sha256": "7e6e50658e1b6d99d625972bf83b24de6c1dfdffefb7ff58190ce85f1e9e8c56"
+    },
+    {
+      "filename": "Luding_1m_UAV050.tif",
+      "zip_member": "img/Luding_1m_UAV050.tif",
+      "bytes": 786572,
+      "sha256": "310d8653a7fce892f73125acf4f6c2d7125f927306471809328d0dd06b0da337"
+    },
+    {
+      "filename": "Luding_1m_UAV051.tif",
+      "zip_member": "img/Luding_1m_UAV051.tif",
+      "bytes": 786572,
+      "sha256": "a8221e3baae918f4146358bce81376d125a03e324fa207bbc1701937f1e0275c"
+    },
+    {
+      "filename": "Luding_1m_UAV052.tif",
+      "zip_member": "img/Luding_1m_UAV052.tif",
+      "bytes": 786572,
+      "sha256": "3980dddd1a179c430d753bc9b3db004e6b01d1a4bbcd5730d039d3c5da4ec91b"
+    },
+    {
+      "filename": "Luding_1m_UAV053.tif",
+      "zip_member": "img/Luding_1m_UAV053.tif",
+      "bytes": 786572,
+      "sha256": "b95e3a144c1a777243d239dab53637106ceee2a91203b2deeabb1e69a453fe6f"
+    },
+    {
+      "filename": "Luding_1m_UAV054.tif",
+      "zip_member": "img/Luding_1m_UAV054.tif",
+      "bytes": 786572,
+      "sha256": "e58136625d948dec5c542fea40b2b29ea2f8881e839868649b7f0a19f15be19c"
+    },
+    {
+      "filename": "Luding_1m_UAV055.tif",
+      "zip_member": "img/Luding_1m_UAV055.tif",
+      "bytes": 786572,
+      "sha256": "ccb5dcf41b6db2f5663c9b4e4547dc512360856909342c3887a5a369bb42edd1"
+    },
+    {
+      "filename": "Luding_1m_UAV056.tif",
+      "zip_member": "img/Luding_1m_UAV056.tif",
+      "bytes": 786572,
+      "sha256": "a68a32b83cc6c72b7c3a70b94d5991c9cec8e57b070cfa27e9d9714846d40f3e"
+    },
+    {
+      "filename": "Luding_1m_UAV057.tif",
+      "zip_member": "img/Luding_1m_UAV057.tif",
+      "bytes": 786572,
+      "sha256": "13cca2013292e2dc00182db0bda2c3168120d805a54ebfbf9e4a82c6fa96a23b"
+    },
+    {
+      "filename": "Luding_1m_UAV058.tif",
+      "zip_member": "img/Luding_1m_UAV058.tif",
+      "bytes": 786572,
+      "sha256": "4ae21f37853f2740ef67ee3753418536b7a0803e0ed7d055b5eeca0339a462cb"
+    },
+    {
+      "filename": "Luding_1m_UAV059.tif",
+      "zip_member": "img/Luding_1m_UAV059.tif",
+      "bytes": 786572,
+      "sha256": "eb3dd685f9af805396fb486a27cadea63e934b9ed17cca6f97e28380cb0d3b1f"
+    },
+    {
+      "filename": "Luding_1m_UAV060.tif",
+      "zip_member": "img/Luding_1m_UAV060.tif",
+      "bytes": 786572,
+      "sha256": "ac8261cca65c4faef76d00d496d78f2d747288ecc84a73f2947b671b0d05f7af"
+    },
+    {
+      "filename": "Luding_1m_UAV061.tif",
+      "zip_member": "img/Luding_1m_UAV061.tif",
+      "bytes": 786572,
+      "sha256": "3760d1a3ccb448fb233395975305d71029bbfa5b965a86d40589231eacf8df3d"
+    },
+    {
+      "filename": "Luding_1m_UAV062.tif",
+      "zip_member": "img/Luding_1m_UAV062.tif",
+      "bytes": 786572,
+      "sha256": "d2758e1689aa4930ad953c3a574adcf73a6dcc8d73dac77c210647ece4c2c84e"
+    },
+    {
+      "filename": "Luding_1m_UAV063.tif",
+      "zip_member": "img/Luding_1m_UAV063.tif",
+      "bytes": 786572,
+      "sha256": "c9393cab8f9e6b5f065e184b7f647f389f173639508eadb49ed0d9f9a532567e"
+    },
+    {
+      "filename": "Luding_1m_UAV064.tif",
+      "zip_member": "img/Luding_1m_UAV064.tif",
+      "bytes": 786572,
+      "sha256": "567d66247411fee7129210d217a50767ec2a6afb76a441cf198e6cbc6dd3988c"
+    },
+    {
+      "filename": "Luding_1m_UAV065.tif",
+      "zip_member": "img/Luding_1m_UAV065.tif",
+      "bytes": 786572,
+      "sha256": "9ebbe5868e973c8c4238cfc6f70e44376d4e0df13dd2573591f7060748cf66f7"
+    },
+    {
+      "filename": "Luding_1m_UAV066.tif",
+      "zip_member": "img/Luding_1m_UAV066.tif",
+      "bytes": 786572,
+      "sha256": "dff3637c6b7972af6c7341fd7e59550e0e933662c6580c8f48508974a6742dd9"
+    },
+    {
+      "filename": "Luding_1m_UAV067.tif",
+      "zip_member": "img/Luding_1m_UAV067.tif",
+      "bytes": 786572,
+      "sha256": "550284be5f2bd921ca28fe121b4862633714ea16c1f6956ba9bf2e9ed97c1111"
+    },
+    {
+      "filename": "Luding_1m_UAV068.tif",
+      "zip_member": "img/Luding_1m_UAV068.tif",
+      "bytes": 786572,
+      "sha256": "2d5640eceac36864fb4ec011b838b1627273d0773fa1ffa94b008c89c9a3a763"
+    },
+    {
+      "filename": "Luding_1m_UAV069.tif",
+      "zip_member": "img/Luding_1m_UAV069.tif",
+      "bytes": 786572,
+      "sha256": "5a2a6d95df21a199fd802db84c7ad0076d600f8883320c170ba0d0173f4a4481"
+    },
+    {
+      "filename": "Luding_1m_UAV070.tif",
+      "zip_member": "img/Luding_1m_UAV070.tif",
+      "bytes": 786572,
+      "sha256": "8b04821b01572929efd4ab3ef2a9ec7e9b4d5f320eb13a1d0344fd9e2c0eb20d"
+    },
+    {
+      "filename": "Luding_1m_UAV071.tif",
+      "zip_member": "img/Luding_1m_UAV071.tif",
+      "bytes": 786572,
+      "sha256": "aa5fc16ce46f3f7571eef32ac0802e573a78f9bf5f3957688d2f6573eb3d4cf5"
+    },
+    {
+      "filename": "Luding_1m_UAV072.tif",
+      "zip_member": "img/Luding_1m_UAV072.tif",
+      "bytes": 786572,
+      "sha256": "db350e6323ca36cc2fd34de184310a9c1e03775364dd9a1d664e45b157e9b1ca"
+    },
+    {
+      "filename": "Luding_1m_UAV073.tif",
+      "zip_member": "img/Luding_1m_UAV073.tif",
+      "bytes": 786572,
+      "sha256": "562f031fa98ab5bbc043644a69c095d52bc5034b3b6f5add843ca4002571201d"
+    },
+    {
+      "filename": "Luding_1m_UAV074.tif",
+      "zip_member": "img/Luding_1m_UAV074.tif",
+      "bytes": 786572,
+      "sha256": "4ae3b181b551cc5b6aedd1c9df21646e7c3a42172f199e7abb97437822b2edeb"
+    },
+    {
+      "filename": "Luding_1m_UAV075.tif",
+      "zip_member": "img/Luding_1m_UAV075.tif",
+      "bytes": 786572,
+      "sha256": "5b111555a4b054211780f33e4a538c49fdd3c40e8fa27bc9b62551e4a6da5919"
+    },
+    {
+      "filename": "Luding_1m_UAV076.tif",
+      "zip_member": "img/Luding_1m_UAV076.tif",
+      "bytes": 786572,
+      "sha256": "0c9044b347ffc2ad975fe630e7ee62c07c176e82e4e37794651665a883a5310d"
+    },
+    {
+      "filename": "Luding_1m_UAV077.tif",
+      "zip_member": "img/Luding_1m_UAV077.tif",
+      "bytes": 786572,
+      "sha256": "53d3ac2e082f60d7218d97931782702ad5962c95a0069a3e368318433dd9cf5f"
+    },
+    {
+      "filename": "Luding_1m_UAV078.tif",
+      "zip_member": "img/Luding_1m_UAV078.tif",
+      "bytes": 786572,
+      "sha256": "ab39d41072508692635e871957a2c334d4c12aa10a018dbbb89d721174d3bb52"
+    },
+    {
+      "filename": "Luding_1m_UAV079.tif",
+      "zip_member": "img/Luding_1m_UAV079.tif",
+      "bytes": 786572,
+      "sha256": "b640f035a1e46eca806aa02c019dbe3758a7ca474bfe2f1a937a0e890ab6bfde"
+    },
+    {
+      "filename": "Luding_1m_UAV080.tif",
+      "zip_member": "img/Luding_1m_UAV080.tif",
+      "bytes": 786572,
+      "sha256": "acc6087b6bf851d024d10e4c1b370690e6c282e1c25184dc34964b3cf91da5c6"
+    },
+    {
+      "filename": "Luding_1m_UAV081.tif",
+      "zip_member": "img/Luding_1m_UAV081.tif",
+      "bytes": 786572,
+      "sha256": "8b0a3186863965bbfa4f1a4f05c96898582e3076ee673cad846af5ea4d474099"
+    },
+    {
+      "filename": "Luding_1m_UAV083.tif",
+      "zip_member": "img/Luding_1m_UAV083.tif",
+      "bytes": 786572,
+      "sha256": "3d27aeba314e3fe3cbf104399723920dd73f3ebd8aafa6fe3b37e4e4372d125d"
+    },
+    {
+      "filename": "Luding_1m_UAV084.tif",
+      "zip_member": "img/Luding_1m_UAV084.tif",
+      "bytes": 786572,
+      "sha256": "1dec2c451b9a2d2eacbc64d61d2c2e7cbebcd346a1646a1ee17a195ac93f14d7"
+    },
+    {
+      "filename": "Luding_1m_UAV085.tif",
+      "zip_member": "img/Luding_1m_UAV085.tif",
+      "bytes": 786572,
+      "sha256": "e49186177536407f9bfbbaa8dc8b1cadc7ec1871b38521a973b40d7390bfe93e"
+    },
+    {
+      "filename": "Luding_1m_UAV086.tif",
+      "zip_member": "img/Luding_1m_UAV086.tif",
+      "bytes": 786572,
+      "sha256": "db41ed9cca14f49f8409a58943a94e5cf93d09d1332eaf297b0fa48c562098e0"
+    },
+    {
+      "filename": "Luding_1m_UAV087.tif",
+      "zip_member": "img/Luding_1m_UAV087.tif",
+      "bytes": 786572,
+      "sha256": "493069dc6fb23d12b7a1f6be7bb8be4b5513f467d16cdb26a35bc40d6e2d1d3b"
+    },
+    {
+      "filename": "Luding_1m_UAV088.tif",
+      "zip_member": "img/Luding_1m_UAV088.tif",
+      "bytes": 786572,
+      "sha256": "f56144616e1485ad8c7aa5af5db65c31be0f5f63b33bd446826e2912c27563d9"
+    },
+    {
+      "filename": "Luding_1m_UAV089.tif",
+      "zip_member": "img/Luding_1m_UAV089.tif",
+      "bytes": 786572,
+      "sha256": "8fbbd8b7ddf4d6a0f49059d7a150727c727d80140cbb56e8260a44a77cb4d919"
+    },
+    {
+      "filename": "Luding_1m_UAV091.tif",
+      "zip_member": "img/Luding_1m_UAV091.tif",
+      "bytes": 786572,
+      "sha256": "0de1b066feebf799de696120e41ff5b1f309ab3da803c89f4e1ed9ba7a4c0702"
+    },
+    {
+      "filename": "Luding_1m_UAV092.tif",
+      "zip_member": "img/Luding_1m_UAV092.tif",
+      "bytes": 786572,
+      "sha256": "ba29f8c5680ad66335eb32eadd0812942f793a6cbd4466ea8b7655e7a64bc32e"
+    },
+    {
+      "filename": "Luding_1m_UAV093.tif",
+      "zip_member": "img/Luding_1m_UAV093.tif",
+      "bytes": 786572,
+      "sha256": "c50bfb35040a7d6a2e34ef1fe3bb3d4a9e3fa9d720d90be9508fbb3555096f6f"
+    },
+    {
+      "filename": "Luding_1m_UAV094.tif",
+      "zip_member": "img/Luding_1m_UAV094.tif",
+      "bytes": 786572,
+      "sha256": "e6aca46a4de23c3e73eaa3f5529f72f561312ab8977298e5ddcd028307f2d0bd"
+    },
+    {
+      "filename": "Luding_1m_UAV095.tif",
+      "zip_member": "img/Luding_1m_UAV095.tif",
+      "bytes": 786572,
+      "sha256": "526c5424a9371fe9ef3a273b728ac247734e3e99a5ee7f507b688b5be016e585"
+    },
+    {
+      "filename": "Luding_1m_UAV096.tif",
+      "zip_member": "img/Luding_1m_UAV096.tif",
+      "bytes": 786572,
+      "sha256": "e638f3fbfee7a3ba73902c11bbe7be4727dc311f41bec38a352d776cf1baa2a1"
+    },
+    {
+      "filename": "Luding_1m_UAV097.tif",
+      "zip_member": "img/Luding_1m_UAV097.tif",
+      "bytes": 786572,
+      "sha256": "1c22fc112a7018c941523962688365891313a93a8fd9dbf28485580d9c5948a6"
+    },
+    {
+      "filename": "Luding_1m_UAV098.tif",
+      "zip_member": "img/Luding_1m_UAV098.tif",
+      "bytes": 786572,
+      "sha256": "4838abdf5b971287122d3e0d672c6f83994b0684fa5dd5bd8a0ac31fb41c49d4"
+    },
+    {
+      "filename": "Luding_1m_UAV099.tif",
+      "zip_member": "img/Luding_1m_UAV099.tif",
+      "bytes": 786572,
+      "sha256": "455bd965fae11132cff83fc3fbf0f3b1a41d06fbb54dcdf9c460dfe963d79cee"
+    },
+    {
+      "filename": "Luding_1m_UAV100.tif",
+      "zip_member": "img/Luding_1m_UAV100.tif",
+      "bytes": 786572,
+      "sha256": "d67decf7fb38029b76a3cf37994cfc607018374a539f611a17f5631d7e106876"
+    },
+    {
+      "filename": "Luding_1m_UAV101.tif",
+      "zip_member": "img/Luding_1m_UAV101.tif",
+      "bytes": 786572,
+      "sha256": "49583022501c018ea26504bd69377546c64092bcac642749366068988b194be6"
+    },
+    {
+      "filename": "Luding_1m_UAV102.tif",
+      "zip_member": "img/Luding_1m_UAV102.tif",
+      "bytes": 786572,
+      "sha256": "53ae113428b3a33cf0b647e8dd78a32243eefb4035477d615d82adcd5aa932ed"
+    },
+    {
+      "filename": "Luding_1m_UAV103.tif",
+      "zip_member": "img/Luding_1m_UAV103.tif",
+      "bytes": 786572,
+      "sha256": "a61afa5f61e330befbfd50ea29a0254dcd7b538282c54891af1a67ccae708d7d"
+    },
+    {
+      "filename": "Luding_1m_UAV104.tif",
+      "zip_member": "img/Luding_1m_UAV104.tif",
+      "bytes": 786572,
+      "sha256": "e21cd1fd7aa03d817b704c334037110cdad40e43eec5c89fb85a325fdcd66fc5"
+    },
+    {
+      "filename": "Luding_1m_UAV106.tif",
+      "zip_member": "img/Luding_1m_UAV106.tif",
+      "bytes": 786572,
+      "sha256": "3b92b2095a6e6ac07a68c1c44a8846bbb7530e25502b13ed76b4b46c0407a128"
+    },
+    {
+      "filename": "Luding_1m_UAV107.tif",
+      "zip_member": "img/Luding_1m_UAV107.tif",
+      "bytes": 786572,
+      "sha256": "4fa0860cfdd370bc4d4dca08537461c89234688a56be2abb0f2b3deff983808a"
+    },
+    {
+      "filename": "Luding_1m_UAV108.tif",
+      "zip_member": "img/Luding_1m_UAV108.tif",
+      "bytes": 786572,
+      "sha256": "1f302683d6c08b77204bdffb22d09874f1eb4675df5e9529c6ecb94ce6a6537a"
+    },
+    {
+      "filename": "Luding_1m_UAV109.tif",
+      "zip_member": "img/Luding_1m_UAV109.tif",
+      "bytes": 786572,
+      "sha256": "d5aad081c1ba30be648e9eef520ffd4909d5e99a1dea832b3ada1be5080d6a28"
+    },
+    {
+      "filename": "Luding_1m_UAV110.tif",
+      "zip_member": "img/Luding_1m_UAV110.tif",
+      "bytes": 786572,
+      "sha256": "18d2d95467034b9f758dece2d39ac3d1fdd7c5c3998e03738e830faf62029aaa"
+    },
+    {
+      "filename": "Luding_1m_UAV111.tif",
+      "zip_member": "img/Luding_1m_UAV111.tif",
+      "bytes": 786572,
+      "sha256": "66b20e116c0b9d098a4d2f8a8dcee8b252efaac2d60ee615b95e62ca580f1478"
+    },
+    {
+      "filename": "Luding_1m_UAV112.tif",
+      "zip_member": "img/Luding_1m_UAV112.tif",
+      "bytes": 786572,
+      "sha256": "ac7357a1be4fcce9e81895a56025de48ca3f3abe65b705a5b42f4ec30831d1e1"
+    },
+    {
+      "filename": "Luding_1m_UAV113.tif",
+      "zip_member": "img/Luding_1m_UAV113.tif",
+      "bytes": 786572,
+      "sha256": "c17140b7d25d1f6131593d88117bd499456656e1851e6de99c4715f8862abc69"
+    },
+    {
+      "filename": "Luding_1m_UAV114.tif",
+      "zip_member": "img/Luding_1m_UAV114.tif",
+      "bytes": 786572,
+      "sha256": "5f77c7c2fc38be195b9f66fcedcf856b845a3e084d284af63a0733a221259fc5"
+    },
+    {
+      "filename": "Luding_1m_UAV115.tif",
+      "zip_member": "img/Luding_1m_UAV115.tif",
+      "bytes": 786572,
+      "sha256": "e70f88ac7b4f676d88187c9441fa47e9ec27f1e6d8ccfab9f7dd066df0b69530"
+    },
+    {
+      "filename": "Luding_1m_UAV116.tif",
+      "zip_member": "img/Luding_1m_UAV116.tif",
+      "bytes": 786572,
+      "sha256": "0dfaeca151e7c9104e757923b414d3bbaa0f67f352758e7cf4b70fad89a8231d"
+    },
+    {
+      "filename": "Luding_1m_UAV117.tif",
+      "zip_member": "img/Luding_1m_UAV117.tif",
+      "bytes": 786572,
+      "sha256": "aa1147929a0ed07b705240d50d26e9d03d20b29ffb0c696a7cbf2a3f226a4493"
+    },
+    {
+      "filename": "Luding_1m_UAV118.tif",
+      "zip_member": "img/Luding_1m_UAV118.tif",
+      "bytes": 786572,
+      "sha256": "11dcaec9f4e3b8736062bf2d2c20d0476f54e0c3cb4af2ab88335af92ed0290a"
+    },
+    {
+      "filename": "Luding_1m_UAV119.tif",
+      "zip_member": "img/Luding_1m_UAV119.tif",
+      "bytes": 786572,
+      "sha256": "28f61e2f6e0fd124add9b7a037d64494a383d80481214e993902f7248c6512c1"
+    },
+    {
+      "filename": "Luding_1m_UAV120.tif",
+      "zip_member": "img/Luding_1m_UAV120.tif",
+      "bytes": 786572,
+      "sha256": "48f10947930e2355720380835eba4c20ffb6f233ec5bbceaa043e7170842e769"
+    },
+    {
+      "filename": "Luding_1m_UAV121.tif",
+      "zip_member": "img/Luding_1m_UAV121.tif",
+      "bytes": 786572,
+      "sha256": "9c352306d52acd5201bcc9e7f49fb07b6ed8cef6befddf3f23017ccaf6365e70"
+    },
+    {
+      "filename": "Luding_1m_UAV122.tif",
+      "zip_member": "img/Luding_1m_UAV122.tif",
+      "bytes": 786572,
+      "sha256": "cb7ddc03caad028af12c08bdb2c2e8e410c30deb368658a88377524d1eea8806"
+    },
+    {
+      "filename": "Luding_1m_UAV123.tif",
+      "zip_member": "img/Luding_1m_UAV123.tif",
+      "bytes": 786572,
+      "sha256": "6c35e3adcb00309b89aeb4029ad796e05c8e678367a5d071fb6f3db9db23999e"
+    },
+    {
+      "filename": "Luding_1m_UAV124.tif",
+      "zip_member": "img/Luding_1m_UAV124.tif",
+      "bytes": 786572,
+      "sha256": "1931b4373133437f0478487acd8a8fa436f447e225c0873eaae8cc994723fa78"
+    },
+    {
+      "filename": "Luding_1m_UAV125.tif",
+      "zip_member": "img/Luding_1m_UAV125.tif",
+      "bytes": 786572,
+      "sha256": "87ce8d9901c8aeee1db9d89b2533a53d56578361594265d3af3fb985aa33f5c7"
+    },
+    {
+      "filename": "Luding_1m_UAV126.tif",
+      "zip_member": "img/Luding_1m_UAV126.tif",
+      "bytes": 786572,
+      "sha256": "55bef42c795a33c73d6f0ff78dcfd31955a620b44307c6de33aa0f2012a8a94a"
+    },
+    {
+      "filename": "Luding_1m_UAV127.tif",
+      "zip_member": "img/Luding_1m_UAV127.tif",
+      "bytes": 786572,
+      "sha256": "d53278981f8b00be7b30e809ffd334cd86e36f00a3ae307693e5f1a884f751fd"
+    },
+    {
+      "filename": "Luding_1m_UAV128.tif",
+      "zip_member": "img/Luding_1m_UAV128.tif",
+      "bytes": 786572,
+      "sha256": "0c3d2237f239088204de6dc362f83624ecef5236c30f17b70294b54f12ee7425"
+    },
+    {
+      "filename": "Luding_1m_UAV129.tif",
+      "zip_member": "img/Luding_1m_UAV129.tif",
+      "bytes": 786572,
+      "sha256": "328fc9d8da45a62d9f07582720bd45785fdd87746d8723ac7f6a42e4b0243174"
+    },
+    {
+      "filename": "Luding_1m_UAV130.tif",
+      "zip_member": "img/Luding_1m_UAV130.tif",
+      "bytes": 786572,
+      "sha256": "77a8a5dd1b44b8970559b9963fc61f224e30029635412155c4e525161804e56e"
+    },
+    {
+      "filename": "Luding_1m_UAV131.tif",
+      "zip_member": "img/Luding_1m_UAV131.tif",
+      "bytes": 786572,
+      "sha256": "6a0bf6c0b10782d58fe6e8613c9872be805d1557ae4cc565ac4ce7a2db247462"
+    },
+    {
+      "filename": "Luding_1m_UAV132.tif",
+      "zip_member": "img/Luding_1m_UAV132.tif",
+      "bytes": 786572,
+      "sha256": "f418446fe7c1f77799f2814d9069ddaeed16bb331f5a29592f542ca3e3044f7e"
+    },
+    {
+      "filename": "Luding_1m_UAV133.tif",
+      "zip_member": "img/Luding_1m_UAV133.tif",
+      "bytes": 786572,
+      "sha256": "0b41dd3b79bd289dc70c43a3966a9ec6dec566fc846d2f182ef6f3d35988cbd2"
+    },
+    {
+      "filename": "Luding_1m_UAV134.tif",
+      "zip_member": "img/Luding_1m_UAV134.tif",
+      "bytes": 786572,
+      "sha256": "04a87b775d955096b8d3614dbdcc196bfa36d9fd8732adc63e89a9d30aef47c0"
+    },
+    {
+      "filename": "Luding_1m_UAV135.tif",
+      "zip_member": "img/Luding_1m_UAV135.tif",
+      "bytes": 786572,
+      "sha256": "a6569e8420918538af264315aebfb6e2af0fb88fa08f99ff99f8409fc2f1c579"
+    },
+    {
+      "filename": "Luding_1m_UAV136.tif",
+      "zip_member": "img/Luding_1m_UAV136.tif",
+      "bytes": 786572,
+      "sha256": "8081bb52124daebd5234909207ad5d662569e261762fe340e6fae7e9a83d4df6"
+    },
+    {
+      "filename": "Luding_1m_UAV137.tif",
+      "zip_member": "img/Luding_1m_UAV137.tif",
+      "bytes": 786572,
+      "sha256": "aa1d1d788c3d6d31aafa8a7751e1343c76cb8e0c98cd7dba1ecca699ae52dfad"
+    },
+    {
+      "filename": "Luding_1m_UAV138.tif",
+      "zip_member": "img/Luding_1m_UAV138.tif",
+      "bytes": 786572,
+      "sha256": "7b7f217b21ffbd6770e88c5cbc03a0bf32909d905bbfecd108f8c56a58897f2c"
+    },
+    {
+      "filename": "Luding_1m_UAV139.tif",
+      "zip_member": "img/Luding_1m_UAV139.tif",
+      "bytes": 786572,
+      "sha256": "05115469e34b54d1829bf0e64cdec928c68cc03d38eccce884098208e86beceb"
+    },
+    {
+      "filename": "Luding_1m_UAV140.tif",
+      "zip_member": "img/Luding_1m_UAV140.tif",
+      "bytes": 786572,
+      "sha256": "7b9535fb4cfa97ea9d9b2b59714295365e55ec70ff9ae0abb329d1fab229af78"
+    },
+    {
+      "filename": "Luding_1m_UAV141.tif",
+      "zip_member": "img/Luding_1m_UAV141.tif",
+      "bytes": 786572,
+      "sha256": "d408a1fc522f05039736a8cd6524fed58fba9b6872533936daee8041f245dead"
+    },
+    {
+      "filename": "Luding_1m_UAV142.tif",
+      "zip_member": "img/Luding_1m_UAV142.tif",
+      "bytes": 786572,
+      "sha256": "c9127fe2a7f29a14f06c19c5a263ec4eef1bee00503246ea746419a410f6ef6e"
+    },
+    {
+      "filename": "Luding_1m_UAV143.tif",
+      "zip_member": "img/Luding_1m_UAV143.tif",
+      "bytes": 786572,
+      "sha256": "6d5a4171cd3ba4cceb8c4b2c8bc3f0fcecbc0cfe3a6bb1afce41365a75120573"
+    },
+    {
+      "filename": "Luding_1m_UAV145.tif",
+      "zip_member": "img/Luding_1m_UAV145.tif",
+      "bytes": 786572,
+      "sha256": "d847121c2635dd888204d40eabaf570c8790a1f7c400e28328b87f05028b774d"
+    },
+    {
+      "filename": "Luding_1m_UAV146.tif",
+      "zip_member": "img/Luding_1m_UAV146.tif",
+      "bytes": 786572,
+      "sha256": "a90234fe0798bd4a3253fbde47d74ab84a55c1ab6cf8a3aada353bbb86615fe0"
+    },
+    {
+      "filename": "Luding_1m_UAV147.tif",
+      "zip_member": "img/Luding_1m_UAV147.tif",
+      "bytes": 786572,
+      "sha256": "a554e6e0f43f38ae9882c2e56b5215793f27ce17f229c6f9d786e36f97655384"
+    },
+    {
+      "filename": "Luding_1m_UAV148.tif",
+      "zip_member": "img/Luding_1m_UAV148.tif",
+      "bytes": 786572,
+      "sha256": "1968b68b51ea926163d8e8df369c7982f163e8ca2f3a10d0e099fab7f63cc6cc"
+    },
+    {
+      "filename": "Luding_1m_UAV149.tif",
+      "zip_member": "img/Luding_1m_UAV149.tif",
+      "bytes": 786572,
+      "sha256": "814f5edbf6475d4f44c9f04d307ad2d6820db5e8967a777cb4f7d7a985c10420"
+    },
+    {
+      "filename": "Luding_1m_UAV150.tif",
+      "zip_member": "img/Luding_1m_UAV150.tif",
+      "bytes": 786572,
+      "sha256": "920563c609522bb7a137a717784111bc62bf39a05cc33b96aaa9113596bde528"
+    },
+    {
+      "filename": "Luding_1m_UAV151.tif",
+      "zip_member": "img/Luding_1m_UAV151.tif",
+      "bytes": 786572,
+      "sha256": "78c6054d6826f82eac394fab1cde6652f485b76fde3c310d80b9307a68d36318"
+    },
+    {
+      "filename": "Luding_1m_UAV152.tif",
+      "zip_member": "img/Luding_1m_UAV152.tif",
+      "bytes": 786572,
+      "sha256": "52726c502e70c50c4d886b3c72d8c76cbc89e56b21bd4265205baf3d576e0318"
+    },
+    {
+      "filename": "Luding_1m_UAV153.tif",
+      "zip_member": "img/Luding_1m_UAV153.tif",
+      "bytes": 786572,
+      "sha256": "57fb74466b3a266f721db65949ad2d2f25e2915a4536d254a788037d014e8e7e"
+    },
+    {
+      "filename": "Luding_1m_UAV154.tif",
+      "zip_member": "img/Luding_1m_UAV154.tif",
+      "bytes": 786572,
+      "sha256": "3bc470fc0d7d9553c7f75a6f35882d3a872f66045f268d1ca6239f51d043a2a3"
+    },
+    {
+      "filename": "Luding_1m_UAV155.tif",
+      "zip_member": "img/Luding_1m_UAV155.tif",
+      "bytes": 786572,
+      "sha256": "556fe0812784b5222c1a0fc84535cf5f87950b3f6abd7c3222db14de95a47f09"
+    },
+    {
+      "filename": "Luding_1m_UAV156.tif",
+      "zip_member": "img/Luding_1m_UAV156.tif",
+      "bytes": 786572,
+      "sha256": "094ac3e4be4812d8a39f159a9fed6303b63c328fae6b2089d357b6987b3442a1"
+    },
+    {
+      "filename": "Luding_1m_UAV157.tif",
+      "zip_member": "img/Luding_1m_UAV157.tif",
+      "bytes": 786572,
+      "sha256": "83d9ab973779b01d6b3a9b8ed311a9a5d57ea7c50be98cf5d853c2c48b2e6cd7"
+    },
+    {
+      "filename": "Luding_1m_UAV158.tif",
+      "zip_member": "img/Luding_1m_UAV158.tif",
+      "bytes": 786572,
+      "sha256": "5791423d89ab46c4a0e43319d7ed0a17d4f694a0047e7861eca68ec4886adcd7"
+    },
+    {
+      "filename": "Luding_1m_UAV159.tif",
+      "zip_member": "img/Luding_1m_UAV159.tif",
+      "bytes": 786572,
+      "sha256": "2a6765f1c253c51b54260950a8f68297d1357e2ee2afc7ee02cebf39308149b6"
+    },
+    {
+      "filename": "Luding_1m_UAV160.tif",
+      "zip_member": "img/Luding_1m_UAV160.tif",
+      "bytes": 786572,
+      "sha256": "23b24389a17f9be5e8a68b625f9da4a67cf42a798cc6b8a6fdec6bc428078cef"
+    },
+    {
+      "filename": "Luding_1m_UAV161.tif",
+      "zip_member": "img/Luding_1m_UAV161.tif",
+      "bytes": 786572,
+      "sha256": "a8109ba978073ef9d7a5b1488c803134e269a20f7d47c79d8751423618d34934"
+    },
+    {
+      "filename": "Luding_1m_UAV162.tif",
+      "zip_member": "img/Luding_1m_UAV162.tif",
+      "bytes": 786572,
+      "sha256": "432439d80b5c221a18bf13aa3c7af5dcfc7ca7aff84368a52303e40437dfeb8a"
+    },
+    {
+      "filename": "Luding_1m_UAV163.tif",
+      "zip_member": "img/Luding_1m_UAV163.tif",
+      "bytes": 786572,
+      "sha256": "95a94b5baa2bf6110b41a53986fa6b4a225f25e383799548c204b8a5d0ebec99"
+    },
+    {
+      "filename": "Luding_1m_UAV164.tif",
+      "zip_member": "img/Luding_1m_UAV164.tif",
+      "bytes": 786572,
+      "sha256": "8587423bc4775bff35e144241e3df78341507d6e6377a7c933eafb9f896331bf"
+    },
+    {
+      "filename": "Luding_1m_UAV165.tif",
+      "zip_member": "img/Luding_1m_UAV165.tif",
+      "bytes": 786572,
+      "sha256": "1ba12882f13aa5ce694e04b6bba0f6d5c234061c2dbf5d873c0302348735421f"
+    },
+    {
+      "filename": "Luding_1m_UAV166.tif",
+      "zip_member": "img/Luding_1m_UAV166.tif",
+      "bytes": 786572,
+      "sha256": "43be69efa0afa87b0d4e697b06f6b970e7123fb54b33be6e7c035a0e1b1dcaa9"
+    },
+    {
+      "filename": "Luding_1m_UAV167.tif",
+      "zip_member": "img/Luding_1m_UAV167.tif",
+      "bytes": 786572,
+      "sha256": "899cab6766a9c3eb82e8062d40d96bae74124ea0e5c6bca7df83bba460230ae3"
+    },
+    {
+      "filename": "Luding_1m_UAV168.tif",
+      "zip_member": "img/Luding_1m_UAV168.tif",
+      "bytes": 786572,
+      "sha256": "4d5a52a7aa0097fa84947e17e67c1905f6492af204e5a0a81cb3eba9a0327b86"
+    },
+    {
+      "filename": "Luding_1m_UAV169.tif",
+      "zip_member": "img/Luding_1m_UAV169.tif",
+      "bytes": 786572,
+      "sha256": "5b704643b124ec8ef647111df40de0dada7861e02f2d2e7e4f669cd0d1cdd8a2"
+    },
+    {
+      "filename": "Luding_1m_UAV170.tif",
+      "zip_member": "img/Luding_1m_UAV170.tif",
+      "bytes": 786572,
+      "sha256": "67842c1ce916bf90b1047e4d65a9424507de26282cf216780ecad375308d83cd"
+    },
+    {
+      "filename": "Luding_1m_UAV171.tif",
+      "zip_member": "img/Luding_1m_UAV171.tif",
+      "bytes": 786572,
+      "sha256": "40164526f2cc9da329a2d821ad309f40330d96ad46f76e2265cca2a8131b43d8"
+    },
+    {
+      "filename": "Luding_1m_UAV172.tif",
+      "zip_member": "img/Luding_1m_UAV172.tif",
+      "bytes": 786572,
+      "sha256": "adfd0aa7fb78283ecb173833fe8fba3c2ebebccadfe4e8431abad12d9fc04eb9"
+    },
+    {
+      "filename": "Luding_1m_UAV173.tif",
+      "zip_member": "img/Luding_1m_UAV173.tif",
+      "bytes": 786572,
+      "sha256": "eb707419384fb09d4900bbf4b4693f22528d5f3a5c686638bbaba5345834e54c"
+    },
+    {
+      "filename": "Luding_1m_UAV174.tif",
+      "zip_member": "img/Luding_1m_UAV174.tif",
+      "bytes": 786572,
+      "sha256": "c78d882aaa51c0d45a55cf7712934689ab65d1c1405d57d70e81a0583eb59784"
+    },
+    {
+      "filename": "Luding_1m_UAV175.tif",
+      "zip_member": "img/Luding_1m_UAV175.tif",
+      "bytes": 786572,
+      "sha256": "aff22b495dd92953a4ffff54d58b58052ba3b7fbe3934dc6de4a0f6a447f818c"
+    },
+    {
+      "filename": "Luding_1m_UAV176.tif",
+      "zip_member": "img/Luding_1m_UAV176.tif",
+      "bytes": 786572,
+      "sha256": "617cb784e84d207ceddf039ddede82c0c64f9885e6153bd1645a8826c4722a5a"
+    },
+    {
+      "filename": "Luding_1m_UAV177.tif",
+      "zip_member": "img/Luding_1m_UAV177.tif",
+      "bytes": 786572,
+      "sha256": "31d38b319e4062515487ce6498bc995da044d62660d2c765a4665bf5468aa383"
+    },
+    {
+      "filename": "Luding_1m_UAV179.tif",
+      "zip_member": "img/Luding_1m_UAV179.tif",
+      "bytes": 786572,
+      "sha256": "c34ea4c50d22b93957d008eddf687daf21bf1decf2d9f8c25adedf3a21ba9e05"
+    },
+    {
+      "filename": "Luding_1m_UAV180.tif",
+      "zip_member": "img/Luding_1m_UAV180.tif",
+      "bytes": 786572,
+      "sha256": "2779f8885d2c2bd8e3169b1f0dc98b1ab648dab104fba0c87b093ad6e6ec6348"
+    },
+    {
+      "filename": "Luding_1m_UAV181.tif",
+      "zip_member": "img/Luding_1m_UAV181.tif",
+      "bytes": 786572,
+      "sha256": "af448d8a01888e53934cb761d3260d6692d788257a5f5c5cf3c8c3b5b2f12cee"
+    },
+    {
+      "filename": "Luding_1m_UAV182.tif",
+      "zip_member": "img/Luding_1m_UAV182.tif",
+      "bytes": 786572,
+      "sha256": "e7403d5ff7a4c6021566666afa411c4617b76c25039b5962570560eb296b35a4"
+    },
+    {
+      "filename": "Luding_1m_UAV183.tif",
+      "zip_member": "img/Luding_1m_UAV183.tif",
+      "bytes": 786572,
+      "sha256": "8b2d9b6cf04705db1e6725c6657a37f5d1b8680a49629d243613357e58931c6e"
+    },
+    {
+      "filename": "Luding_1m_UAV184.tif",
+      "zip_member": "img/Luding_1m_UAV184.tif",
+      "bytes": 786572,
+      "sha256": "a162bb25017d2d8bbdbd3eeb36b2cb9ee54e1355e6220c2efcc22355d760fdab"
+    },
+    {
+      "filename": "Luding_1m_UAV185.tif",
+      "zip_member": "img/Luding_1m_UAV185.tif",
+      "bytes": 786572,
+      "sha256": "44e03ab57289dbd47254042e093ed89050c73c022726d60774bb694ba9c719e3"
+    },
+    {
+      "filename": "Luding_1m_UAV186.tif",
+      "zip_member": "img/Luding_1m_UAV186.tif",
+      "bytes": 786572,
+      "sha256": "b82260da68b5eef4f7441a6f4a9b6482615274bbbfa5a9aef061c72d2f55e189"
+    },
+    {
+      "filename": "Luding_1m_UAV187.tif",
+      "zip_member": "img/Luding_1m_UAV187.tif",
+      "bytes": 786572,
+      "sha256": "84a4313f0900faa6a4b7269b2cbf508cb442821fc2c89d6d1d895cccd26a1584"
+    },
+    {
+      "filename": "Luding_1m_UAV188.tif",
+      "zip_member": "img/Luding_1m_UAV188.tif",
+      "bytes": 786572,
+      "sha256": "6d5760f1a4417b0e8408af5b2d359f916dba0522f958b64afd86f8651448cb4c"
+    },
+    {
+      "filename": "Luding_1m_UAV189.tif",
+      "zip_member": "img/Luding_1m_UAV189.tif",
+      "bytes": 786572,
+      "sha256": "73f3649d85aaa12be47d57deb9ceb71855f90d64911c33c0b4d58877cb2e2fce"
+    },
+    {
+      "filename": "Luding_1m_UAV190.tif",
+      "zip_member": "img/Luding_1m_UAV190.tif",
+      "bytes": 786572,
+      "sha256": "17e1f66113643496ee9eee2460447b0ef6650cc3b22dcd157e00668717a1a35b"
+    },
+    {
+      "filename": "Luding_1m_UAV191.tif",
+      "zip_member": "img/Luding_1m_UAV191.tif",
+      "bytes": 786572,
+      "sha256": "2cac6478d668f64dc2e316e0cc05af2f765f95916a8ce4157dffcde1b4544471"
+    },
+    {
+      "filename": "Luding_1m_UAV192.tif",
+      "zip_member": "img/Luding_1m_UAV192.tif",
+      "bytes": 786572,
+      "sha256": "e02f06508f98646eb8c8c60a3566887b0cef5d2c5e5bc316e91c77ecfc1651a5"
+    },
+    {
+      "filename": "Luding_1m_UAV193.tif",
+      "zip_member": "img/Luding_1m_UAV193.tif",
+      "bytes": 786572,
+      "sha256": "6f5815fdf77469a5b8f49843e38f916e36f7d49518069ba92c7741e7eb14994b"
+    },
+    {
+      "filename": "Luding_1m_UAV194.tif",
+      "zip_member": "img/Luding_1m_UAV194.tif",
+      "bytes": 786572,
+      "sha256": "969ee8a2bec372d1a030111117dbbb035dfaa67024e4540c490e8e71b1af51d4"
+    },
+    {
+      "filename": "Luding_1m_UAV195.tif",
+      "zip_member": "img/Luding_1m_UAV195.tif",
+      "bytes": 786572,
+      "sha256": "adfaf3b8ab3633fc33aa875b18bc56f2272b7d0feae0564049116ecf4890561f"
+    },
+    {
+      "filename": "Luding_1m_UAV196.tif",
+      "zip_member": "img/Luding_1m_UAV196.tif",
+      "bytes": 786572,
+      "sha256": "e15c336472ef93188ea3b4ccb7002cd593fcb69d6f43cd3ad5a34be830eebc5e"
+    },
+    {
+      "filename": "Luding_1m_UAV197.tif",
+      "zip_member": "img/Luding_1m_UAV197.tif",
+      "bytes": 786572,
+      "sha256": "f93b0b8b2daf6528278ec287868fd1f42b473912eda54935e3477c87f5d1cf07"
+    },
+    {
+      "filename": "Luding_1m_UAV198.tif",
+      "zip_member": "img/Luding_1m_UAV198.tif",
+      "bytes": 786572,
+      "sha256": "60248744df8f59bb2144c1fff06c496581e5ce0e3d2ebc4e6bd71349d634c3b7"
+    },
+    {
+      "filename": "Luding_1m_UAV200.tif",
+      "zip_member": "img/Luding_1m_UAV200.tif",
+      "bytes": 786572,
+      "sha256": "e8439baa595d93d6e8adaaf2186466d816cc0af5efbe2db6584abc91f719b894"
+    },
+    {
+      "filename": "Luding_1m_UAV201.tif",
+      "zip_member": "img/Luding_1m_UAV201.tif",
+      "bytes": 786572,
+      "sha256": "7cdb960b462895ca189e1507e9da4e5bc2689412b83f6434bea52632b9d76a10"
+    },
+    {
+      "filename": "Luding_1m_UAV202.tif",
+      "zip_member": "img/Luding_1m_UAV202.tif",
+      "bytes": 786572,
+      "sha256": "097795b2f42d0a2985aee742dce453a5cb7e8b2e9a07a607248b85c6f8707017"
+    },
+    {
+      "filename": "Luding_1m_UAV203.tif",
+      "zip_member": "img/Luding_1m_UAV203.tif",
+      "bytes": 786572,
+      "sha256": "4a8de00fc8198f74e30f40f8d6ac9e746c11cb7de613be10e9b2290dde78b6d2"
+    },
+    {
+      "filename": "Luding_1m_UAV204.tif",
+      "zip_member": "img/Luding_1m_UAV204.tif",
+      "bytes": 786572,
+      "sha256": "6fb57eaeafd9850f59d28bd2cee0d9a584c3740f82561f2da99c207a5b2480de"
+    },
+    {
+      "filename": "Luding_1m_UAV205.tif",
+      "zip_member": "img/Luding_1m_UAV205.tif",
+      "bytes": 786572,
+      "sha256": "4022d42e995609e7678f427bd928efc06cf5746b8e04d05cb988fe328db8312f"
+    },
+    {
+      "filename": "Luding_1m_UAV206.tif",
+      "zip_member": "img/Luding_1m_UAV206.tif",
+      "bytes": 786572,
+      "sha256": "587ac4118fae367113a34c47c33a61c6d3921a1bfc94ed70c48c528edd02a65f"
+    },
+    {
+      "filename": "Luding_1m_UAV207.tif",
+      "zip_member": "img/Luding_1m_UAV207.tif",
+      "bytes": 786572,
+      "sha256": "7b122427811e2ca350c6e98758e89731248977c93e0139c7b75e3fadb02b0c7f"
+    },
+    {
+      "filename": "Luding_1m_UAV208.tif",
+      "zip_member": "img/Luding_1m_UAV208.tif",
+      "bytes": 786572,
+      "sha256": "a27b495ffce937233e2622f165b0be9cf4b436a42678bd32df68cad461a3368d"
+    },
+    {
+      "filename": "Luding_1m_UAV209.tif",
+      "zip_member": "img/Luding_1m_UAV209.tif",
+      "bytes": 786572,
+      "sha256": "526f694f65e438c3a25140c823fc11bbbf138341fa0abc911f1c5876454e2c8b"
+    },
+    {
+      "filename": "Luding_1m_UAV210.tif",
+      "zip_member": "img/Luding_1m_UAV210.tif",
+      "bytes": 786572,
+      "sha256": "7f9c58804fdef3534597ab5b92c9e1ffed576e63f9f68032750a1b31476511d6"
+    },
+    {
+      "filename": "Luding_1m_UAV211.tif",
+      "zip_member": "img/Luding_1m_UAV211.tif",
+      "bytes": 786572,
+      "sha256": "7a2fe482628406853f32b4631993d3fcaf4f431bc60bc3a03bac0ca3714ad757"
+    },
+    {
+      "filename": "Luding_1m_UAV212.tif",
+      "zip_member": "img/Luding_1m_UAV212.tif",
+      "bytes": 786572,
+      "sha256": "9160f38f40750360c10418b51d8e746db7bc8967f589c1f380315b834774203d"
+    },
+    {
+      "filename": "Luding_1m_UAV213.tif",
+      "zip_member": "img/Luding_1m_UAV213.tif",
+      "bytes": 786572,
+      "sha256": "75fc92f65b797fdf235922686bb24be8e0f5d7d45d7942889aaef7b7014a5338"
+    },
+    {
+      "filename": "Luding_1m_UAV214.tif",
+      "zip_member": "img/Luding_1m_UAV214.tif",
+      "bytes": 786572,
+      "sha256": "4d6492f9dc1e7655583bc11306998ef78f8943a16920689d07d6f088376f00f4"
+    },
+    {
+      "filename": "Luding_1m_UAV215.tif",
+      "zip_member": "img/Luding_1m_UAV215.tif",
+      "bytes": 786572,
+      "sha256": "17f5364d2c6efca07d97f499aadd2114b9e64dcaa44cdfa6799df764d1cfaf34"
+    },
+    {
+      "filename": "Luding_1m_UAV216.tif",
+      "zip_member": "img/Luding_1m_UAV216.tif",
+      "bytes": 786572,
+      "sha256": "1d2fe0d305b45007aba5673cca566657b34deb61f1ef6e29aa599d3d8e325365"
+    },
+    {
+      "filename": "Luding_1m_UAV217.tif",
+      "zip_member": "img/Luding_1m_UAV217.tif",
+      "bytes": 786572,
+      "sha256": "f67787d7d5b0f9029e34d69ed439cc0158ee474957f72ab19ad8ea9e3670eb6c"
+    },
+    {
+      "filename": "Luding_1m_UAV218.tif",
+      "zip_member": "img/Luding_1m_UAV218.tif",
+      "bytes": 786572,
+      "sha256": "ac6a561ede2d8a297da8f083ba97049a1a8a13a2157b4aea052a7fc238ca5a4e"
+    },
+    {
+      "filename": "Luding_1m_UAV219.tif",
+      "zip_member": "img/Luding_1m_UAV219.tif",
+      "bytes": 786572,
+      "sha256": "58be3476aca7bf1eb738663a9e53458b4f01325ac0bf189b48f9a5885fe73c50"
+    },
+    {
+      "filename": "Luding_1m_UAV220.tif",
+      "zip_member": "img/Luding_1m_UAV220.tif",
+      "bytes": 786572,
+      "sha256": "9a834501c893085eef953f0c8bcd3d74f8a1d1434af8975a122036e7000b9186"
+    },
+    {
+      "filename": "Luding_1m_UAV221.tif",
+      "zip_member": "img/Luding_1m_UAV221.tif",
+      "bytes": 786572,
+      "sha256": "43970cd89ba1eda8667738ca008573e1917757d20a59f03b81b0867946b808b8"
+    },
+    {
+      "filename": "Luding_1m_UAV222.tif",
+      "zip_member": "img/Luding_1m_UAV222.tif",
+      "bytes": 786572,
+      "sha256": "bfaa4a9c1519c0faf346ddf11d7cb3a3744d8cf4e59be0c7794a594f421501cc"
+    },
+    {
+      "filename": "Luding_1m_UAV223.tif",
+      "zip_member": "img/Luding_1m_UAV223.tif",
+      "bytes": 786572,
+      "sha256": "6faf769ba1df71b43bbb03100e139faa7c622ee80524771ee447d4336bd32d26"
+    },
+    {
+      "filename": "Luding_1m_UAV224.tif",
+      "zip_member": "img/Luding_1m_UAV224.tif",
+      "bytes": 786572,
+      "sha256": "28dfb82b46f6e979377c914759f85d25d033c468b8440cd462547fc588c70fec"
+    },
+    {
+      "filename": "Luding_1m_UAV225.tif",
+      "zip_member": "img/Luding_1m_UAV225.tif",
+      "bytes": 786572,
+      "sha256": "00c65d79a942bf56acbdbc3648c06c0f465a44c88ac86532e13c406b43816055"
+    },
+    {
+      "filename": "Luding_1m_UAV226.tif",
+      "zip_member": "img/Luding_1m_UAV226.tif",
+      "bytes": 786572,
+      "sha256": "2be705a869573e5c16a2ec3975480144421d2f2e8ec6efc485a6ee674eb410e0"
+    },
+    {
+      "filename": "Luding_1m_UAV227.tif",
+      "zip_member": "img/Luding_1m_UAV227.tif",
+      "bytes": 786572,
+      "sha256": "b74a10f937d1be3f4815f3fb8a76d343894b0e93c36855919ab9a8973c8c9f60"
+    },
+    {
+      "filename": "Luding_1m_UAV228.tif",
+      "zip_member": "img/Luding_1m_UAV228.tif",
+      "bytes": 786572,
+      "sha256": "00fda7b8b0edf9a4de12b158ac83a9a5c8259ed8847bec57b5d80cb2cf66e028"
+    },
+    {
+      "filename": "Luding_1m_UAV229.tif",
+      "zip_member": "img/Luding_1m_UAV229.tif",
+      "bytes": 786572,
+      "sha256": "15958a272b8e3e339bad92d40a9821dc61d9f7b4230a1dd428f6588d27275821"
+    },
+    {
+      "filename": "Luding_1m_UAV230.tif",
+      "zip_member": "img/Luding_1m_UAV230.tif",
+      "bytes": 786572,
+      "sha256": "f80f0a840d869db211d7862321aa421a9c4b362658fb9f6ad0d66566d3c92783"
+    },
+    {
+      "filename": "Luding_1m_UAV231.tif",
+      "zip_member": "img/Luding_1m_UAV231.tif",
+      "bytes": 786572,
+      "sha256": "0c74f28ce5afdde8957be3cfaefd1e1868a94b118256060388b1e4bc9f402c3c"
+    },
+    {
+      "filename": "Luding_1m_UAV232.tif",
+      "zip_member": "img/Luding_1m_UAV232.tif",
+      "bytes": 786572,
+      "sha256": "ac823d3a5ce678c5174e149d271c1374f2fe0fefbfd2a5d537c8d010065ea589"
+    },
+    {
+      "filename": "Luding_1m_UAV233.tif",
+      "zip_member": "img/Luding_1m_UAV233.tif",
+      "bytes": 786572,
+      "sha256": "29d08bbae22ae923a61b50631c503dfcb23688eaea044f413734e3e75845372d"
+    },
+    {
+      "filename": "Luding_1m_UAV234.tif",
+      "zip_member": "img/Luding_1m_UAV234.tif",
+      "bytes": 786572,
+      "sha256": "ee94fe622f171520776148130929a2938ff46ea2fbd2f690db4a0302ec2aff94"
+    },
+    {
+      "filename": "Luding_1m_UAV235.tif",
+      "zip_member": "img/Luding_1m_UAV235.tif",
+      "bytes": 786572,
+      "sha256": "51637c15ec9bfdac49df10153bc19cc6b377e971761a948afd15970f3e8b4e09"
+    },
+    {
+      "filename": "Luding_1m_UAV236.tif",
+      "zip_member": "img/Luding_1m_UAV236.tif",
+      "bytes": 786572,
+      "sha256": "6adcecc13cf5397f53e8931b8611061a0815a62a976ba6c44f1c9909804f79fa"
+    },
+    {
+      "filename": "Luding_1m_UAV237.tif",
+      "zip_member": "img/Luding_1m_UAV237.tif",
+      "bytes": 786572,
+      "sha256": "f21aecf3337904bba3c27f56f649ae00b6cc16aa5ba0bb609f9f9532c59f131f"
+    },
+    {
+      "filename": "Luding_1m_UAV238.tif",
+      "zip_member": "img/Luding_1m_UAV238.tif",
+      "bytes": 786572,
+      "sha256": "bb2f5edaafdba559206e8054457740b17ef1a091eae9dfbd5916910a776d6960"
+    },
+    {
+      "filename": "Luding_1m_UAV239.tif",
+      "zip_member": "img/Luding_1m_UAV239.tif",
+      "bytes": 786572,
+      "sha256": "e945921df919bb1e087bdd599f7cd62be145acc98b400a714f9c420887536f19"
+    },
+    {
+      "filename": "Luding_1m_UAV240.tif",
+      "zip_member": "img/Luding_1m_UAV240.tif",
+      "bytes": 786572,
+      "sha256": "6c3a3e5c82d8b9b3a6a5629b3e97c81e09f4f7610ae150c07f07778031163218"
+    },
+    {
+      "filename": "Luding_1m_UAV243.tif",
+      "zip_member": "img/Luding_1m_UAV243.tif",
+      "bytes": 786572,
+      "sha256": "ea4aee51475dfcae19df3167176d90c75ab5cce5f0a7eecf280b629878fb0b53"
+    },
+    {
+      "filename": "Luding_1m_UAV244.tif",
+      "zip_member": "img/Luding_1m_UAV244.tif",
+      "bytes": 786572,
+      "sha256": "6c2f783c3786c802293945617e6ce7b8c54affbe4dd91032a9a4bce76f55a39f"
+    },
+    {
+      "filename": "Luding_1m_UAV245.tif",
+      "zip_member": "img/Luding_1m_UAV245.tif",
+      "bytes": 786572,
+      "sha256": "eee716bcc7aad1cb2f7f921a00445c8a85326ade7282106ea49195e847bd8261"
+    },
+    {
+      "filename": "Luding_1m_UAV246.tif",
+      "zip_member": "img/Luding_1m_UAV246.tif",
+      "bytes": 786572,
+      "sha256": "0096f59c46081aec1549b94987046292bec68069ca974112cf9a6e0b158710e7"
+    },
+    {
+      "filename": "Luding_1m_UAV247.tif",
+      "zip_member": "img/Luding_1m_UAV247.tif",
+      "bytes": 786572,
+      "sha256": "fbae7958ad5e16020519912f159e0039f6cb118fbe7f1ad75773d2ece31b7b5b"
+    },
+    {
+      "filename": "Luding_1m_UAV248.tif",
+      "zip_member": "img/Luding_1m_UAV248.tif",
+      "bytes": 786572,
+      "sha256": "35e41a600ef76ec45dcd542044e7d0e65a8cdf72133e6b2d4874224d1d9e6804"
+    },
+    {
+      "filename": "Luding_1m_UAV249.tif",
+      "zip_member": "img/Luding_1m_UAV249.tif",
+      "bytes": 786572,
+      "sha256": "a338a88433d99517745af7ce9c6d45782fac2349d92dfa03e238f55084a818ea"
+    },
+    {
+      "filename": "Luding_1m_UAV250.tif",
+      "zip_member": "img/Luding_1m_UAV250.tif",
+      "bytes": 786572,
+      "sha256": "0a46698b1b21aacd4a44d1509886b758276e5d62306a48fe465e80f197eb560c"
+    },
+    {
+      "filename": "Luding_1m_UAV251.tif",
+      "zip_member": "img/Luding_1m_UAV251.tif",
+      "bytes": 786572,
+      "sha256": "c5b7b8ca8940fe59362c18d095bf112a57ddba87a6b804c81e8725c344420b82"
+    },
+    {
+      "filename": "Luding_1m_UAV252.tif",
+      "zip_member": "img/Luding_1m_UAV252.tif",
+      "bytes": 786572,
+      "sha256": "3f17c465bda5a56b0467ee5581d3d136502f163e9641f122f0b3daeacab8e00e"
+    },
+    {
+      "filename": "Luding_1m_UAV255.tif",
+      "zip_member": "img/Luding_1m_UAV255.tif",
+      "bytes": 786572,
+      "sha256": "6a3a005ae63c108f8489abd06412d0d0a5903f9e3ccc9e8c8d19611c01301e96"
+    },
+    {
+      "filename": "Luding_1m_UAV256.tif",
+      "zip_member": "img/Luding_1m_UAV256.tif",
+      "bytes": 786572,
+      "sha256": "10c294db1845c5e130720ccfe2326980d93321860669f7ab0607e742416b3a22"
+    },
+    {
+      "filename": "Luding_1m_UAV257.tif",
+      "zip_member": "img/Luding_1m_UAV257.tif",
+      "bytes": 786572,
+      "sha256": "e9621d53dc89f83f067a8ab58cfb12b3dba02a42ce01f1e32f2f3ff2ba25385f"
+    },
+    {
+      "filename": "Luding_1m_UAV258.tif",
+      "zip_member": "img/Luding_1m_UAV258.tif",
+      "bytes": 786572,
+      "sha256": "0d7b236e26207b241430602038f48a65d37d735da22fa0dc013dcc9f0dfe6e78"
+    },
+    {
+      "filename": "Luding_1m_UAV259.tif",
+      "zip_member": "img/Luding_1m_UAV259.tif",
+      "bytes": 786572,
+      "sha256": "46193603d63ef7889917a736c788f49fce0e6122cdc562cbc8ec677dbe677b8c"
+    },
+    {
+      "filename": "Luding_1m_UAV260.tif",
+      "zip_member": "img/Luding_1m_UAV260.tif",
+      "bytes": 786572,
+      "sha256": "95f9424b8c7a807864114baee6ab25caa73d397cf4a8275f10a3c5f2eb9dee33"
+    },
+    {
+      "filename": "Luding_1m_UAV261.tif",
+      "zip_member": "img/Luding_1m_UAV261.tif",
+      "bytes": 786572,
+      "sha256": "d2eb3934f495a2bc76878be826743c92e418cf70b0a3db4a2e6c06b2d483c9da"
+    },
+    {
+      "filename": "Luding_1m_UAV262.tif",
+      "zip_member": "img/Luding_1m_UAV262.tif",
+      "bytes": 786572,
+      "sha256": "7c54b1b3c0ab7cbb3ae7264b1de433322136f814c3315f44584cd8c0b9f651e5"
+    },
+    {
+      "filename": "Luding_1m_UAV263.tif",
+      "zip_member": "img/Luding_1m_UAV263.tif",
+      "bytes": 786572,
+      "sha256": "4feeb4421b122ba2abfa7bc7185feda366ea2d48dcbffb1b6f47288f902d7ce5"
+    },
+    {
+      "filename": "Luding_1m_UAV265.tif",
+      "zip_member": "img/Luding_1m_UAV265.tif",
+      "bytes": 786572,
+      "sha256": "6a4fcb90c55782c796e14bdf5cd54e4c742d38c997a7d44bee8e8c011dfa8878"
+    },
+    {
+      "filename": "Luding_1m_UAV266.tif",
+      "zip_member": "img/Luding_1m_UAV266.tif",
+      "bytes": 786572,
+      "sha256": "a318daddcd01db058a9d8fd5325003ae3c5fa05237f5eb6a1a82b4fd60ce7028"
+    },
+    {
+      "filename": "Luding_1m_UAV267.tif",
+      "zip_member": "img/Luding_1m_UAV267.tif",
+      "bytes": 786572,
+      "sha256": "71c176121ef54737413fe1a123e94c07247d3198815d1058da8281eced3255b6"
+    },
+    {
+      "filename": "Luding_1m_UAV268.tif",
+      "zip_member": "img/Luding_1m_UAV268.tif",
+      "bytes": 786572,
+      "sha256": "10edf5741eb9c055072a0b6aa6169a1fcde747d5a35fa6f7f08c28722fdd634f"
+    },
+    {
+      "filename": "Luding_1m_UAV269.tif",
+      "zip_member": "img/Luding_1m_UAV269.tif",
+      "bytes": 786572,
+      "sha256": "8ecbe7d5f55044fc2a5d51c6bbbf1316c24afa01903ff7e83ca94ded91fc3635"
+    },
+    {
+      "filename": "Luding_1m_UAV270.tif",
+      "zip_member": "img/Luding_1m_UAV270.tif",
+      "bytes": 786572,
+      "sha256": "41d2f46a42b6c77db83665ed459eb8b297f60c848b340e2503ba332206a4db81"
+    },
+    {
+      "filename": "Luding_1m_UAV271.tif",
+      "zip_member": "img/Luding_1m_UAV271.tif",
+      "bytes": 786572,
+      "sha256": "bbf181ec3384582b9cba8e4df89b4c2a48e2c4ac9ac8d4c4e7fad711494bd057"
+    },
+    {
+      "filename": "Luding_1m_UAV272.tif",
+      "zip_member": "img/Luding_1m_UAV272.tif",
+      "bytes": 786572,
+      "sha256": "132047ad579dd2a5007a311a1cac21bc6599de21d4448f267092e7c2d6b8c6f8"
+    },
+    {
+      "filename": "Luding_1m_UAV273.tif",
+      "zip_member": "img/Luding_1m_UAV273.tif",
+      "bytes": 786572,
+      "sha256": "b8f6bd3d971a98b1ca39adf595bb6064c4c0b73d41cceb9bd1a7c3c129a6a372"
+    },
+    {
+      "filename": "Luding_1m_UAV274.tif",
+      "zip_member": "img/Luding_1m_UAV274.tif",
+      "bytes": 786572,
+      "sha256": "a25b1ccf37f7f793608c32d489fa0597bbd3ce5950f22fc0a4b5e2f0f85a6239"
+    },
+    {
+      "filename": "Luding_1m_UAV275.tif",
+      "zip_member": "img/Luding_1m_UAV275.tif",
+      "bytes": 786572,
+      "sha256": "53493d189f98d183bbec5e09b10f8c6e6acedb575a5244c64db6da5e94f2439e"
+    },
+    {
+      "filename": "Luding_1m_UAV277.tif",
+      "zip_member": "img/Luding_1m_UAV277.tif",
+      "bytes": 786572,
+      "sha256": "7cc99fbd26cd12e26ad0c2d6aa768ec7763edead341677776236001622dc0df9"
+    },
+    {
+      "filename": "Luding_1m_UAV278.tif",
+      "zip_member": "img/Luding_1m_UAV278.tif",
+      "bytes": 786572,
+      "sha256": "8ead5b9aff33574d1b3d5a9a758dfe50d2a2ba500ff9eeabab3810872d789b66"
+    },
+    {
+      "filename": "Luding_1m_UAV279.tif",
+      "zip_member": "img/Luding_1m_UAV279.tif",
+      "bytes": 786572,
+      "sha256": "0b123e1434592b8899eee0bd3e2ac9d096fc936a8cffcb15e3601978cd3f9137"
+    },
+    {
+      "filename": "Luding_1m_UAV280.tif",
+      "zip_member": "img/Luding_1m_UAV280.tif",
+      "bytes": 786572,
+      "sha256": "b56720ccde73ac8abd7c3dcadd25339cfd8defa5b546c0eda83427cdb1f95a6c"
+    },
+    {
+      "filename": "Luding_1m_UAV281.tif",
+      "zip_member": "img/Luding_1m_UAV281.tif",
+      "bytes": 786572,
+      "sha256": "7dfcfe7067f5b52d4557b73a1e8f113bd56a7c9df9f7b3bc20b64fcc81acef1c"
+    },
+    {
+      "filename": "Luding_1m_UAV282.tif",
+      "zip_member": "img/Luding_1m_UAV282.tif",
+      "bytes": 786572,
+      "sha256": "b9c549b70564b24d07a85beb4f017405b9630ab0f9549105e3424165c0262e47"
+    },
+    {
+      "filename": "Luding_1m_UAV283.tif",
+      "zip_member": "img/Luding_1m_UAV283.tif",
+      "bytes": 786572,
+      "sha256": "32d936d18a736023ab15a32b3cf96ac246d7633267446d46a0780bd554ddccf1"
+    },
+    {
+      "filename": "Luding_1m_UAV284.tif",
+      "zip_member": "img/Luding_1m_UAV284.tif",
+      "bytes": 786572,
+      "sha256": "47795500c36b7ad54808ef2e53f9b05d286a927e7427a22d2ab2bcc4f0d794fd"
+    },
+    {
+      "filename": "Luding_1m_UAV285.tif",
+      "zip_member": "img/Luding_1m_UAV285.tif",
+      "bytes": 786572,
+      "sha256": "af5aedf6cb1fbf44ce456a99b31896e99dc95ca7187202c7402197cbf250e6cd"
+    },
+    {
+      "filename": "Luding_1m_UAV286.tif",
+      "zip_member": "img/Luding_1m_UAV286.tif",
+      "bytes": 786572,
+      "sha256": "2c42c16289fb9e914d274c9c29afbb83abd5fe7db22aff588186da35f38c9359"
+    },
+    {
+      "filename": "Luding_1m_UAV289.tif",
+      "zip_member": "img/Luding_1m_UAV289.tif",
+      "bytes": 786572,
+      "sha256": "d4be2666d9fe75df8c7c4568d7cd81273c59699233c527a11cfa7701c9543059"
+    },
+    {
+      "filename": "Luding_1m_UAV290.tif",
+      "zip_member": "img/Luding_1m_UAV290.tif",
+      "bytes": 786572,
+      "sha256": "6369f6048d95f10cbb24e2fb99ac54ed014eac9a65556f16b29a520a80afbced"
+    },
+    {
+      "filename": "Luding_1m_UAV291.tif",
+      "zip_member": "img/Luding_1m_UAV291.tif",
+      "bytes": 786572,
+      "sha256": "1caea9585c51d60c8811f163bfcfb88b53d5267ec30263cecde9085d5b8db9d4"
+    },
+    {
+      "filename": "Luding_1m_UAV292.tif",
+      "zip_member": "img/Luding_1m_UAV292.tif",
+      "bytes": 786572,
+      "sha256": "5c4ea71f68b78b612378447b68df0df87ba14a6f25b87e19d1ca9afac1bca9a9"
+    },
+    {
+      "filename": "Luding_1m_UAV293.tif",
+      "zip_member": "img/Luding_1m_UAV293.tif",
+      "bytes": 786572,
+      "sha256": "8393f1f4206f11aca3a93108dd11de9cbd05f14f977ac5c05272371b4ebd6e00"
+    },
+    {
+      "filename": "Luding_1m_UAV295.tif",
+      "zip_member": "img/Luding_1m_UAV295.tif",
+      "bytes": 786572,
+      "sha256": "726f7902c254682ba9439e5fb6c7e9397c02944d58092c5a0c93e1d0355d3d72"
+    },
+    {
+      "filename": "Luding_1m_UAV296.tif",
+      "zip_member": "img/Luding_1m_UAV296.tif",
+      "bytes": 786572,
+      "sha256": "ae9c210b146c029a5111bffaa35d2bee4e2b8b2589eea30688ee129c5eca7aae"
+    },
+    {
+      "filename": "Luding_1m_UAV297.tif",
+      "zip_member": "img/Luding_1m_UAV297.tif",
+      "bytes": 786572,
+      "sha256": "5c817fe55d6b6ff3a042298491829c06c8cb1e687e15c08d29ba99e44f9b22d0"
+    },
+    {
+      "filename": "Luding_1m_UAV298.tif",
+      "zip_member": "img/Luding_1m_UAV298.tif",
+      "bytes": 786572,
+      "sha256": "4b98732099c97877efd406ff2723dad51b287119b80e5c36aca5cf7f7743f6db"
+    },
+    {
+      "filename": "Luding_1m_UAV299.tif",
+      "zip_member": "img/Luding_1m_UAV299.tif",
+      "bytes": 786572,
+      "sha256": "9867bf36f57a2107de465b01a898abdefbeb5743c5be4ea879a818786bb7cfaf"
+    },
+    {
+      "filename": "Luding_1m_UAV300.tif",
+      "zip_member": "img/Luding_1m_UAV300.tif",
+      "bytes": 786572,
+      "sha256": "98f4785dc84420e00f624d40eda5ea005554f23057297dc02d67f5daa244d88b"
+    },
+    {
+      "filename": "Luding_1m_UAV301.tif",
+      "zip_member": "img/Luding_1m_UAV301.tif",
+      "bytes": 786572,
+      "sha256": "296e1153fa3bcc66a348975542030e60ccbcb86e7b16d172823e1b0eea23ea9a"
+    },
+    {
+      "filename": "Luding_1m_UAV302.tif",
+      "zip_member": "img/Luding_1m_UAV302.tif",
+      "bytes": 786572,
+      "sha256": "90bdc5a1ef95f50422275d319590e5a6c79767f47a56c3289cd903ae62e73f2b"
+    },
+    {
+      "filename": "Luding_1m_UAV303.tif",
+      "zip_member": "img/Luding_1m_UAV303.tif",
+      "bytes": 786572,
+      "sha256": "e54988f13ae9f4bfff775b24b793edc616a285e788d42cac6f31dd7df152b0f3"
+    },
+    {
+      "filename": "Luding_1m_UAV304.tif",
+      "zip_member": "img/Luding_1m_UAV304.tif",
+      "bytes": 786572,
+      "sha256": "f063ba1b65c2863ff25ffa382df04c6880ac2ec3feb4186cedc6b6af274ddc19"
+    },
+    {
+      "filename": "Luding_1m_UAV305.tif",
+      "zip_member": "img/Luding_1m_UAV305.tif",
+      "bytes": 786572,
+      "sha256": "4b06585e5735e2a2aaeb9785eefab5eed92c668c3b50b19d98916093c3484b3a"
+    },
+    {
+      "filename": "Luding_1m_UAV306.tif",
+      "zip_member": "img/Luding_1m_UAV306.tif",
+      "bytes": 786572,
+      "sha256": "4eb0760cb779932880b310b28690d77b454b3741dbd0475f1492c6fb3381d171"
+    },
+    {
+      "filename": "Luding_1m_UAV307.tif",
+      "zip_member": "img/Luding_1m_UAV307.tif",
+      "bytes": 786572,
+      "sha256": "3ef391a5eec09bd4ce9103db358723c8b553bbfc7b9cd5275157fb18e9ff91bd"
+    },
+    {
+      "filename": "Luding_1m_UAV308.tif",
+      "zip_member": "img/Luding_1m_UAV308.tif",
+      "bytes": 786572,
+      "sha256": "3f4052e2c33fd4370d12937f5162c20e9cbfbb31ac46d566bb9b90c6a1939000"
+    },
+    {
+      "filename": "Luding_1m_UAV309.tif",
+      "zip_member": "img/Luding_1m_UAV309.tif",
+      "bytes": 786572,
+      "sha256": "d55068682c34b3db6b1e5a04712a34e8020f32a96f87d9ecec925d56a975ddf2"
+    },
+    {
+      "filename": "Luding_1m_UAV310.tif",
+      "zip_member": "img/Luding_1m_UAV310.tif",
+      "bytes": 786572,
+      "sha256": "db7d9ef6f6afbedf861a01ddb1b8598ac6d8c896900c0cd8d57acfde6d9133b7"
+    },
+    {
+      "filename": "Luding_1m_UAV311.tif",
+      "zip_member": "img/Luding_1m_UAV311.tif",
+      "bytes": 786572,
+      "sha256": "ffa3396b7cf713293d887030f1e0de0f1d0f0c66a3f4fa1540241910cf973215"
+    },
+    {
+      "filename": "Luding_1m_UAV314.tif",
+      "zip_member": "img/Luding_1m_UAV314.tif",
+      "bytes": 786572,
+      "sha256": "c112578ce8953ad51a1fd7b29140647d75cda10dfcb7ba0fa22bd595e2121df3"
+    },
+    {
+      "filename": "Luding_1m_UAV315.tif",
+      "zip_member": "img/Luding_1m_UAV315.tif",
+      "bytes": 786572,
+      "sha256": "fb5e6c2cb8f210f36688f423de7685e162c31503ab2d7754215a9c1012986ef1"
+    },
+    {
+      "filename": "Luding_1m_UAV316.tif",
+      "zip_member": "img/Luding_1m_UAV316.tif",
+      "bytes": 786572,
+      "sha256": "a236661214fe480fb19b87173367e01a1eb1dbb7309c33ad0b7a79f06ef80ab7"
+    },
+    {
+      "filename": "Luding_1m_UAV317.tif",
+      "zip_member": "img/Luding_1m_UAV317.tif",
+      "bytes": 786572,
+      "sha256": "4602331129e95a1477ad34d3dad55f19be9dcd807399a700eeba12639cb293eb"
+    },
+    {
+      "filename": "Luding_1m_UAV318.tif",
+      "zip_member": "img/Luding_1m_UAV318.tif",
+      "bytes": 786572,
+      "sha256": "919e9a5377c3f16dc584f3a0d3376b817b5f5b59d909c0f57b0ab5878114ef57"
+    },
+    {
+      "filename": "Luding_1m_UAV319.tif",
+      "zip_member": "img/Luding_1m_UAV319.tif",
+      "bytes": 786572,
+      "sha256": "dec8e4ed0d9ed7e0f99c9fe723af4868dc84d4becd8d22cced3dd14807954ee3"
+    },
+    {
+      "filename": "Luding_1m_UAV320.tif",
+      "zip_member": "img/Luding_1m_UAV320.tif",
+      "bytes": 786572,
+      "sha256": "63a42757b8bb6f4a3d0a450b93ae7d6e8c5baaeaebc621566b27689959a92e55"
+    },
+    {
+      "filename": "Luding_1m_UAV321.tif",
+      "zip_member": "img/Luding_1m_UAV321.tif",
+      "bytes": 786572,
+      "sha256": "6a8e0bf4872ac89fba74f8305d9a9657712dd6fc974de99ebc82fcc1dc5eee4b"
+    },
+    {
+      "filename": "Luding_1m_UAV322.tif",
+      "zip_member": "img/Luding_1m_UAV322.tif",
+      "bytes": 786572,
+      "sha256": "1b9902a685f59f4cdd1f8e01555e0671040765672ccf97be4d150c11c73ce5b6"
+    },
+    {
+      "filename": "Luding_1m_UAV323.tif",
+      "zip_member": "img/Luding_1m_UAV323.tif",
+      "bytes": 786572,
+      "sha256": "cca02e4363f5ee0e4088a0f0ab29c5f23693a17a229abeabaa6b839ee5f5d414"
+    },
+    {
+      "filename": "Luding_1m_UAV324.tif",
+      "zip_member": "img/Luding_1m_UAV324.tif",
+      "bytes": 786572,
+      "sha256": "d8d6893b9cb523645d9b21f769df0cbeec8aa0060621eb988e96b2da2b57d4f8"
+    },
+    {
+      "filename": "Luding_1m_UAV325.tif",
+      "zip_member": "img/Luding_1m_UAV325.tif",
+      "bytes": 786572,
+      "sha256": "bdb5ef6538e43e91261321d990e9b012092848663cd1c3ec123790a861605829"
+    },
+    {
+      "filename": "Luding_1m_UAV326.tif",
+      "zip_member": "img/Luding_1m_UAV326.tif",
+      "bytes": 786572,
+      "sha256": "9be093b3f25d46cde46636016a2af52c2667d92f9b8fcfc4d21d409b2d9ce3c0"
+    },
+    {
+      "filename": "Luding_1m_UAV327.tif",
+      "zip_member": "img/Luding_1m_UAV327.tif",
+      "bytes": 786572,
+      "sha256": "8058046dbcf029c1912b2df0b8e936b6a7f7d9b72bcde9347690a14691dfa79f"
+    },
+    {
+      "filename": "Luding_1m_UAV328.tif",
+      "zip_member": "img/Luding_1m_UAV328.tif",
+      "bytes": 786572,
+      "sha256": "b50f6ae11a97dbdbb6cde2be21e07fd35bc28cf9a035ba07184f4fc371be7cff"
+    },
+    {
+      "filename": "Luding_1m_UAV329.tif",
+      "zip_member": "img/Luding_1m_UAV329.tif",
+      "bytes": 786572,
+      "sha256": "70b26d88ee68e386d04b3fb8a372598bf6917445d931b106b094cbdf37602e85"
+    },
+    {
+      "filename": "Luding_1m_UAV330.tif",
+      "zip_member": "img/Luding_1m_UAV330.tif",
+      "bytes": 786572,
+      "sha256": "97d70863a9b0ffaa2ad7a6f4af8bdcd7243c906e8027b8b845a464f48141c87f"
+    },
+    {
+      "filename": "Luding_1m_UAV331.tif",
+      "zip_member": "img/Luding_1m_UAV331.tif",
+      "bytes": 786572,
+      "sha256": "5960948cd04e0bf38b5b66f760147e4adcce3141ec9519b63cc2f9a14a08466e"
+    },
+    {
+      "filename": "Luding_1m_UAV332.tif",
+      "zip_member": "img/Luding_1m_UAV332.tif",
+      "bytes": 786572,
+      "sha256": "7222120959ed7ed90c5b09bbc0b56fcc1170b8c2173dcc4cfe2d7a679d9beaaa"
+    },
+    {
+      "filename": "Luding_1m_UAV333.tif",
+      "zip_member": "img/Luding_1m_UAV333.tif",
+      "bytes": 786572,
+      "sha256": "432ae09167997d1fb3f55df022795e0e75c2378293393878060015ca603dd5e6"
+    },
+    {
+      "filename": "Luding_1m_UAV334.tif",
+      "zip_member": "img/Luding_1m_UAV334.tif",
+      "bytes": 786572,
+      "sha256": "10b08b62c4bc1988cee80daac7e64f56a4bcaae533b5b0c353817c687a928258"
+    },
+    {
+      "filename": "Luding_1m_UAV335.tif",
+      "zip_member": "img/Luding_1m_UAV335.tif",
+      "bytes": 786572,
+      "sha256": "616fcab582ba722ea9a4439d441e3176962bfa741f3aa7773957757700f14bf5"
+    },
+    {
+      "filename": "Luding_1m_UAV336.tif",
+      "zip_member": "img/Luding_1m_UAV336.tif",
+      "bytes": 786572,
+      "sha256": "2994f1eed77b524ed56263d245d9ac03adf0251192196a5a03bf06bed02eef8b"
+    },
+    {
+      "filename": "Luding_1m_UAV337.tif",
+      "zip_member": "img/Luding_1m_UAV337.tif",
+      "bytes": 786572,
+      "sha256": "90b86a7d1c96932a225a783dc2ae715fb527032513fff755ef2a57efd2edf6ac"
+    },
+    {
+      "filename": "Luding_1m_UAV338.tif",
+      "zip_member": "img/Luding_1m_UAV338.tif",
+      "bytes": 786572,
+      "sha256": "0f96a554b14eab4a38a8f258f018eaa6ed9c75526636cef4a7e2d9dd63c6fa71"
+    },
+    {
+      "filename": "Luding_1m_UAV339.tif",
+      "zip_member": "img/Luding_1m_UAV339.tif",
+      "bytes": 786572,
+      "sha256": "853a436f7dca7c54e589ad3114622092db105b2a9902d1f84afae0d798861342"
+    },
+    {
+      "filename": "Luding_1m_UAV340.tif",
+      "zip_member": "img/Luding_1m_UAV340.tif",
+      "bytes": 786572,
+      "sha256": "2cb6c1cf95507e1804ac047b6a7a80112d33e6831dba1cc39e86321634343f19"
+    },
+    {
+      "filename": "Luding_1m_UAV341.tif",
+      "zip_member": "img/Luding_1m_UAV341.tif",
+      "bytes": 786572,
+      "sha256": "6decaa67335a958cb40e673a84eb5489af2389998c83124c7904621a8d8e01e9"
+    },
+    {
+      "filename": "Luding_1m_UAV342.tif",
+      "zip_member": "img/Luding_1m_UAV342.tif",
+      "bytes": 786572,
+      "sha256": "bf22a6389e6937e5df5df1fa81182984509e2438cbee1c5540e04f4e83aa4e43"
+    },
+    {
+      "filename": "Luding_1m_UAV343.tif",
+      "zip_member": "img/Luding_1m_UAV343.tif",
+      "bytes": 786572,
+      "sha256": "6347f26fbfad274cbe3903fbedce162fcaae0668534357f9bd83d2128c1f6813"
+    },
+    {
+      "filename": "Luding_1m_UAV344.tif",
+      "zip_member": "img/Luding_1m_UAV344.tif",
+      "bytes": 786572,
+      "sha256": "b263ff7c50856f81dbbfe569eae7611cd677aa928be98e7644c65b9a7f8d66e1"
+    },
+    {
+      "filename": "Luding_1m_UAV345.tif",
+      "zip_member": "img/Luding_1m_UAV345.tif",
+      "bytes": 786572,
+      "sha256": "a9162c1950aef2b43f5d215556305b3f5688158bcfa56ce667735223613796e1"
+    },
+    {
+      "filename": "Luding_1m_UAV346.tif",
+      "zip_member": "img/Luding_1m_UAV346.tif",
+      "bytes": 786572,
+      "sha256": "739ec293145e3099f8e27829be389f93b11becf15def408177b0a8d4346858b7"
+    },
+    {
+      "filename": "Luding_1m_UAV347.tif",
+      "zip_member": "img/Luding_1m_UAV347.tif",
+      "bytes": 786572,
+      "sha256": "e1780cb5429bfc038ee4f8cd33767f6ef7a4a85d0523d48ebb5f337a7ba126e0"
+    },
+    {
+      "filename": "Luding_1m_UAV348.tif",
+      "zip_member": "img/Luding_1m_UAV348.tif",
+      "bytes": 786572,
+      "sha256": "0d7bc32c836fa76a8969fc1033bf8b07243f05df8f2dc2d3b2622e72de2f571f"
+    },
+    {
+      "filename": "Luding_1m_UAV349.tif",
+      "zip_member": "img/Luding_1m_UAV349.tif",
+      "bytes": 786572,
+      "sha256": "105859b15ba8eec3b6b350d8663ad5fcd5aa5b804a814063c3d25120ff3807d2"
+    },
+    {
+      "filename": "Luding_1m_UAV350.tif",
+      "zip_member": "img/Luding_1m_UAV350.tif",
+      "bytes": 786572,
+      "sha256": "7c0074081297ed499930c2b34b1b3cc5d86258a426d19da609fc998e525ca9ba"
+    },
+    {
+      "filename": "Luding_1m_UAV351.tif",
+      "zip_member": "img/Luding_1m_UAV351.tif",
+      "bytes": 786572,
+      "sha256": "032f6390c33696740269af10decfbdad8c26ec1118c6bbe05f6c0400d6c172db"
+    },
+    {
+      "filename": "Luding_1m_UAV352.tif",
+      "zip_member": "img/Luding_1m_UAV352.tif",
+      "bytes": 786572,
+      "sha256": "5ec7db1afa597c9947fef05d7c98b632947e7624c13cbb9744002b7b1c58de4b"
+    },
+    {
+      "filename": "Luding_1m_UAV353.tif",
+      "zip_member": "img/Luding_1m_UAV353.tif",
+      "bytes": 786572,
+      "sha256": "8e7280987b6edfead52ec059b441424525387f4742b3836e084e182b78b26117"
+    },
+    {
+      "filename": "Luding_1m_UAV354.tif",
+      "zip_member": "img/Luding_1m_UAV354.tif",
+      "bytes": 786572,
+      "sha256": "f3d45c540779f1aa5a83188945787bc914e80f485ab3ba5eca298f7851e82b91"
+    },
+    {
+      "filename": "Luding_1m_UAV355.tif",
+      "zip_member": "img/Luding_1m_UAV355.tif",
+      "bytes": 786572,
+      "sha256": "f9638736a483621b4d545ab3803f3858a6ac2b1abd70b1267ea44048408517a7"
+    },
+    {
+      "filename": "Luding_1m_UAV356.tif",
+      "zip_member": "img/Luding_1m_UAV356.tif",
+      "bytes": 786572,
+      "sha256": "5a3e70f97f4e04e65814a5c7e744a79dc84cec28fcc87e033e58d2390fcf6e38"
+    },
+    {
+      "filename": "Luding_1m_UAV357.tif",
+      "zip_member": "img/Luding_1m_UAV357.tif",
+      "bytes": 786572,
+      "sha256": "f9ad633bd503bc9bcc4b296098dc2190acebf0d68fc84b18b19be9e8ff4771b1"
+    },
+    {
+      "filename": "Luding_1m_UAV358.tif",
+      "zip_member": "img/Luding_1m_UAV358.tif",
+      "bytes": 786572,
+      "sha256": "131bba952ff77f90401cf95d6e7bab4880b12653be9544f82f4fb4ce22d7a333"
+    },
+    {
+      "filename": "Luding_1m_UAV359.tif",
+      "zip_member": "img/Luding_1m_UAV359.tif",
+      "bytes": 786572,
+      "sha256": "9683855d2c5632f9e5a17c758b252e07dcd261f34cf1c12c99e0ab545c1a92fc"
+    },
+    {
+      "filename": "Luding_1m_UAV360.tif",
+      "zip_member": "img/Luding_1m_UAV360.tif",
+      "bytes": 786572,
+      "sha256": "c2d9a73ebfbe7d8cb311104a29b8e084a547cbdeb6d9151c57602dd4cd5d6c8b"
+    },
+    {
+      "filename": "Luding_1m_UAV361.tif",
+      "zip_member": "img/Luding_1m_UAV361.tif",
+      "bytes": 786572,
+      "sha256": "e04319d7aec6390488a83d5b46de864aef1ce31acd5452e23d6082d09d382ccc"
+    },
+    {
+      "filename": "Luding_1m_UAV362.tif",
+      "zip_member": "img/Luding_1m_UAV362.tif",
+      "bytes": 786572,
+      "sha256": "01c0258f9e78d23dd12b50eb3a69919ede89939d3cf56646d173cd1c792182ac"
+    },
+    {
+      "filename": "Luding_1m_UAV363.tif",
+      "zip_member": "img/Luding_1m_UAV363.tif",
+      "bytes": 786572,
+      "sha256": "1c3456f9a503c6359c9f8a46365a225fe452ffaabb969d315db739a3a3185cbb"
+    },
+    {
+      "filename": "Luding_1m_UAV364.tif",
+      "zip_member": "img/Luding_1m_UAV364.tif",
+      "bytes": 786572,
+      "sha256": "7c8bf02a81dcb3419f070b94e0bd2ca4512c5d99772c90dc5dfe3564a325b4b5"
+    },
+    {
+      "filename": "Luding_1m_UAV365.tif",
+      "zip_member": "img/Luding_1m_UAV365.tif",
+      "bytes": 786572,
+      "sha256": "c28b4da7e907422740284722588dd81e4d22692ead254ad16c8d4b1374bcab46"
+    },
+    {
+      "filename": "Luding_1m_UAV366.tif",
+      "zip_member": "img/Luding_1m_UAV366.tif",
+      "bytes": 786572,
+      "sha256": "e3928fc8ced90c5875ebbb09a546dd3b60ccdd0eac7689c79fb688ed9b1fc094"
+    },
+    {
+      "filename": "Luding_1m_UAV367.tif",
+      "zip_member": "img/Luding_1m_UAV367.tif",
+      "bytes": 786572,
+      "sha256": "460945b889d1ab54db61c0767b6f7be0e46de00a0f5aad33fa6a81ebab3067ed"
+    },
+    {
+      "filename": "Luding_1m_UAV368.tif",
+      "zip_member": "img/Luding_1m_UAV368.tif",
+      "bytes": 786572,
+      "sha256": "b48f6b5c5be03bc92b15ab645bed10949b847c9b53148cb7658bed99e91072b7"
+    },
+    {
+      "filename": "Luding_1m_UAV369.tif",
+      "zip_member": "img/Luding_1m_UAV369.tif",
+      "bytes": 786572,
+      "sha256": "2e509f6e2dfc906d6583770c647ccff34187783b20eb95e3dcbcd08b4ac53ae3"
+    },
+    {
+      "filename": "Luding_1m_UAV370.tif",
+      "zip_member": "img/Luding_1m_UAV370.tif",
+      "bytes": 786572,
+      "sha256": "d9cb7c7f2b636494cbdfcd29a77df0680f33ee910fc8a9f729edc46649b399b4"
+    },
+    {
+      "filename": "Luding_1m_UAV371.tif",
+      "zip_member": "img/Luding_1m_UAV371.tif",
+      "bytes": 786572,
+      "sha256": "4fc7bcf40e012376cef96427aaaced28c69a1d8031f8a6a39bd9b8843c7530c3"
+    },
+    {
+      "filename": "Luding_1m_UAV372.tif",
+      "zip_member": "img/Luding_1m_UAV372.tif",
+      "bytes": 786572,
+      "sha256": "3f69fe9017c9687111d72d853b6d12a5e6d25c5f1bfcd5d77ec44282a58cbfac"
+    },
+    {
+      "filename": "Luding_1m_UAV373.tif",
+      "zip_member": "img/Luding_1m_UAV373.tif",
+      "bytes": 786572,
+      "sha256": "714a7925d47800c646a65fa33f09211b53310c10dcf53ab05ddde2f81bbf95b6"
+    },
+    {
+      "filename": "Luding_1m_UAV374.tif",
+      "zip_member": "img/Luding_1m_UAV374.tif",
+      "bytes": 786572,
+      "sha256": "5ec0ed95601a23984d86e6d69226fc3b59b6b17edeb4b44adaa083cb87b51967"
+    },
+    {
+      "filename": "Luding_1m_UAV375.tif",
+      "zip_member": "img/Luding_1m_UAV375.tif",
+      "bytes": 786572,
+      "sha256": "3368674538ef2cde9a97e01380ff1035d10f0516024924de88c285f11f9de44a"
+    },
+    {
+      "filename": "Luding_1m_UAV376.tif",
+      "zip_member": "img/Luding_1m_UAV376.tif",
+      "bytes": 786572,
+      "sha256": "ef384ca45e3fa50f0305984639d3d7913237c5d1859f720f06793aed1275b1c3"
+    },
+    {
+      "filename": "Luding_1m_UAV377.tif",
+      "zip_member": "img/Luding_1m_UAV377.tif",
+      "bytes": 786572,
+      "sha256": "d2adc415dc60287256208a5d99f16312b9cc2e7651b861171cb7ab3c82b3c4ee"
+    },
+    {
+      "filename": "Luding_1m_UAV378.tif",
+      "zip_member": "img/Luding_1m_UAV378.tif",
+      "bytes": 786572,
+      "sha256": "6050ec53e5ac7b541d7edd5a7292c6f8f899426446d1768faee1e34fe5316da5"
+    },
+    {
+      "filename": "Luding_1m_UAV379.tif",
+      "zip_member": "img/Luding_1m_UAV379.tif",
+      "bytes": 786572,
+      "sha256": "0fe3fcb2af9343581b77ad061d07caef5d9e7e3568edbfe72a5efadc1f9cac50"
+    },
+    {
+      "filename": "Luding_1m_UAV381.tif",
+      "zip_member": "img/Luding_1m_UAV381.tif",
+      "bytes": 786572,
+      "sha256": "ae15c8f00a46063c3bfc7fb507f90618b634fce022d69c1506f7f77b687740ae"
+    },
+    {
+      "filename": "Luding_1m_UAV382.tif",
+      "zip_member": "img/Luding_1m_UAV382.tif",
+      "bytes": 786572,
+      "sha256": "a143f50906aac2fafdf81eb2b2207a7ba295db2a3136715dfa9f43f78b10fa0e"
+    },
+    {
+      "filename": "Luding_1m_UAV383.tif",
+      "zip_member": "img/Luding_1m_UAV383.tif",
+      "bytes": 786572,
+      "sha256": "0f52ab30e6fb60c5a1b90cf971e35e864fba59c831eee7f4094b06d107f8234d"
+    },
+    {
+      "filename": "Luding_1m_UAV384.tif",
+      "zip_member": "img/Luding_1m_UAV384.tif",
+      "bytes": 786572,
+      "sha256": "191ec5ad1792468f249164599cadf348c78a782634dd08b83ec56c64e6c61467"
+    },
+    {
+      "filename": "Luding_1m_UAV385.tif",
+      "zip_member": "img/Luding_1m_UAV385.tif",
+      "bytes": 786572,
+      "sha256": "fe475746c9516caa7784bfeacbb07e66e38b0014a81df181d7f0aa444a8f097b"
+    },
+    {
+      "filename": "Luding_1m_UAV386.tif",
+      "zip_member": "img/Luding_1m_UAV386.tif",
+      "bytes": 786572,
+      "sha256": "497cf8d2859d11d64c1feef68e0ce22c04b108accc32141de23208c60541a54e"
+    },
+    {
+      "filename": "Luding_1m_UAV387.tif",
+      "zip_member": "img/Luding_1m_UAV387.tif",
+      "bytes": 786572,
+      "sha256": "79117c156da8f6099f4ba95b20132f6949f22ed46825094b7e7a7448be0a08e1"
+    },
+    {
+      "filename": "Luding_1m_UAV388.tif",
+      "zip_member": "img/Luding_1m_UAV388.tif",
+      "bytes": 786572,
+      "sha256": "bd5f4a2d662cdb7a35c4ce5184cf2b9b476bb58dfeffb1117aa61a54be817a7d"
+    },
+    {
+      "filename": "Luding_1m_UAV389.tif",
+      "zip_member": "img/Luding_1m_UAV389.tif",
+      "bytes": 786572,
+      "sha256": "af7850c1600e268f5e971f74a8c670629a3431db595339a04f951def777a0536"
+    },
+    {
+      "filename": "Luding_1m_UAV390.tif",
+      "zip_member": "img/Luding_1m_UAV390.tif",
+      "bytes": 786572,
+      "sha256": "49b97d26b393dc10914d8070df67ebc08c02f101a09842620be5b4c416dd723b"
+    },
+    {
+      "filename": "Luding_1m_UAV391.tif",
+      "zip_member": "img/Luding_1m_UAV391.tif",
+      "bytes": 786572,
+      "sha256": "b738b88285c5da437ce1bbbc8391dae9cf21d0067aef61062a5d6fd1ad93f626"
+    },
+    {
+      "filename": "Luding_1m_UAV392.tif",
+      "zip_member": "img/Luding_1m_UAV392.tif",
+      "bytes": 786572,
+      "sha256": "12051fa52afa68c9584df7ca980e022ef0aefc76f1856060d970988d10a4d53a"
+    },
+    {
+      "filename": "Luding_1m_UAV393.tif",
+      "zip_member": "img/Luding_1m_UAV393.tif",
+      "bytes": 786572,
+      "sha256": "780a209f8382a3dc301ec0e097417abb024f50b3453a057613dc8676d7152417"
+    },
+    {
+      "filename": "Luding_1m_UAV394.tif",
+      "zip_member": "img/Luding_1m_UAV394.tif",
+      "bytes": 786572,
+      "sha256": "8fa730794f8436e1d30515c3c457888c7a5a01647d47133e6ca28443cc73d472"
+    },
+    {
+      "filename": "Luding_1m_UAV395.tif",
+      "zip_member": "img/Luding_1m_UAV395.tif",
+      "bytes": 786572,
+      "sha256": "631ed766aa9b7cb3958421005d2277b318313f977cb2bd046f22eaa6bd88ff91"
+    },
+    {
+      "filename": "Luding_1m_UAV396.tif",
+      "zip_member": "img/Luding_1m_UAV396.tif",
+      "bytes": 786572,
+      "sha256": "cf661668b1b6b0eb65e6da45b5712a335a8eae1872dcd466cd815ff818746e9b"
+    },
+    {
+      "filename": "Luding_1m_UAV397.tif",
+      "zip_member": "img/Luding_1m_UAV397.tif",
+      "bytes": 786572,
+      "sha256": "4fbfe79b0c60b77358fb12895bf3ff06e69d96bf14cee341342dbf7cab8e8146"
+    },
+    {
+      "filename": "Luding_1m_UAV398.tif",
+      "zip_member": "img/Luding_1m_UAV398.tif",
+      "bytes": 786572,
+      "sha256": "8fa71b07807a51b753e2eebe9b44c945fdaae6e61a97c6fd7245c31fde160a49"
+    },
+    {
+      "filename": "Luding_1m_UAV399.tif",
+      "zip_member": "img/Luding_1m_UAV399.tif",
+      "bytes": 786572,
+      "sha256": "71aa7d6d3e29f3775d6778635e4c7581bba5d5eb0981e06367ec98d0927e7e78"
+    },
+    {
+      "filename": "Luding_1m_UAV400.tif",
+      "zip_member": "img/Luding_1m_UAV400.tif",
+      "bytes": 786572,
+      "sha256": "867d9b8fbe19a18f3d5b376e29c9bab5e5a689d9563d751182a392395d9ca080"
+    },
+    {
+      "filename": "Luding_1m_UAV401.tif",
+      "zip_member": "img/Luding_1m_UAV401.tif",
+      "bytes": 786572,
+      "sha256": "276f08847efe2875590c64a2b1b47d3f75c40ce1e075310d4c00dce8c421c019"
+    },
+    {
+      "filename": "Luding_1m_UAV402.tif",
+      "zip_member": "img/Luding_1m_UAV402.tif",
+      "bytes": 786572,
+      "sha256": "b3e356873bf3d287824bee06a39dc364c3109f337551d67bde7527dcd6bef3f0"
+    },
+    {
+      "filename": "Luding_1m_UAV404.tif",
+      "zip_member": "img/Luding_1m_UAV404.tif",
+      "bytes": 786572,
+      "sha256": "8686816f5cb2ad6e7b5c05808167722da042befdfae4cb32a95fbae51eb84a11"
+    },
+    {
+      "filename": "Luding_1m_UAV405.tif",
+      "zip_member": "img/Luding_1m_UAV405.tif",
+      "bytes": 786572,
+      "sha256": "92067ac32eee4310c9c3a312cbd5e3f8ad39d1992d857c036be556bec1df1c77"
+    },
+    {
+      "filename": "Luding_1m_UAV406.tif",
+      "zip_member": "img/Luding_1m_UAV406.tif",
+      "bytes": 786572,
+      "sha256": "b30fa418c27f671f45ad454167dcb4aa7c02eed9aefa61bd8342fe96a553ce46"
+    },
+    {
+      "filename": "Luding_1m_UAV407.tif",
+      "zip_member": "img/Luding_1m_UAV407.tif",
+      "bytes": 786572,
+      "sha256": "8d8c8b9c6b381f497c8b244e92e3419f37af8fc8094ad2de0455c8903c0ec99d"
+    },
+    {
+      "filename": "Luding_1m_UAV408.tif",
+      "zip_member": "img/Luding_1m_UAV408.tif",
+      "bytes": 786572,
+      "sha256": "6c72f5b0d85f5b5721bd0a4edd380b084fb9f4318de6561830d30227cef1ca9d"
+    },
+    {
+      "filename": "Luding_1m_UAV409.tif",
+      "zip_member": "img/Luding_1m_UAV409.tif",
+      "bytes": 786572,
+      "sha256": "febfb707c83c92fd2c5b1be232959170166b77aa81753de20479d6e55e089cee"
+    },
+    {
+      "filename": "Luding_1m_UAV410.tif",
+      "zip_member": "img/Luding_1m_UAV410.tif",
+      "bytes": 786572,
+      "sha256": "b05668209873917514a421785a08e3fec807e37fef0c9a7358d96b63ca88cbd7"
+    },
+    {
+      "filename": "Luding_1m_UAV411.tif",
+      "zip_member": "img/Luding_1m_UAV411.tif",
+      "bytes": 786572,
+      "sha256": "35916aa1cc07b45cc62db85e136af8e55fbaaa879be7b340e09a7685b86f89d4"
+    },
+    {
+      "filename": "Luding_1m_UAV412.tif",
+      "zip_member": "img/Luding_1m_UAV412.tif",
+      "bytes": 786572,
+      "sha256": "01979c69ed1dacb09518697cd79a9e0b95dfb2f3f56491d17f19cada49d7dbd8"
+    },
+    {
+      "filename": "Luding_1m_UAV413.tif",
+      "zip_member": "img/Luding_1m_UAV413.tif",
+      "bytes": 786572,
+      "sha256": "173b890a8b660f5277ae36853b2b766cba5a830219d80f6e8c7510f874a4d1bc"
+    },
+    {
+      "filename": "Luding_1m_UAV414.tif",
+      "zip_member": "img/Luding_1m_UAV414.tif",
+      "bytes": 786572,
+      "sha256": "1d2343ac54631eb6f019dc7fbfe048dc666e1c1e9b4493fbe15735ee52067c0c"
+    },
+    {
+      "filename": "Luding_1m_UAV415.tif",
+      "zip_member": "img/Luding_1m_UAV415.tif",
+      "bytes": 786572,
+      "sha256": "60a29db3b1d85d10805825721323802083654e07148755bef02e1cf220ce29e2"
+    },
+    {
+      "filename": "Luding_1m_UAV416.tif",
+      "zip_member": "img/Luding_1m_UAV416.tif",
+      "bytes": 786572,
+      "sha256": "a35c16eb5fb6420f2de8b917cdba8ec7ccd7c0f3dd5b6cdb95adfcf78be24cbf"
+    },
+    {
+      "filename": "Luding_1m_UAV417.tif",
+      "zip_member": "img/Luding_1m_UAV417.tif",
+      "bytes": 786572,
+      "sha256": "84de10b73689ea94b9a897366e1f6b2793f24e47e9856107e5dd04415ad196a1"
+    },
+    {
+      "filename": "Luding_1m_UAV418.tif",
+      "zip_member": "img/Luding_1m_UAV418.tif",
+      "bytes": 786572,
+      "sha256": "47a24bcd91572640bbabe5bfc30f7e0eb0f8ea38709936f4825b62a94bbf96c7"
+    },
+    {
+      "filename": "Luding_1m_UAV419.tif",
+      "zip_member": "img/Luding_1m_UAV419.tif",
+      "bytes": 786572,
+      "sha256": "cf4b2eb9a092aabf3c92f88a0b596d12ba1bc9ea376e649b894e6d225f14c02e"
+    },
+    {
+      "filename": "Luding_1m_UAV420.tif",
+      "zip_member": "img/Luding_1m_UAV420.tif",
+      "bytes": 786572,
+      "sha256": "1b1813ba0f9fe129b40b13c03b252c83158b2a85cc09174b1ca6db239a12172c"
+    },
+    {
+      "filename": "Luding_1m_UAV421.tif",
+      "zip_member": "img/Luding_1m_UAV421.tif",
+      "bytes": 786572,
+      "sha256": "40418f15e57dc91114f01d318b8c558c46176ea190d98ba8ccc0a98c4ce7a5bd"
+    },
+    {
+      "filename": "Luding_1m_UAV422.tif",
+      "zip_member": "img/Luding_1m_UAV422.tif",
+      "bytes": 786572,
+      "sha256": "53f270925f499d6af33f46140d65368b0402d018ef431998605a8de351b66ce0"
+    },
+    {
+      "filename": "Luding_1m_UAV423.tif",
+      "zip_member": "img/Luding_1m_UAV423.tif",
+      "bytes": 786572,
+      "sha256": "0ac101039350dcbd5a889ababf63b3c116462689d28fedf19d62aeeb3f26d6c7"
+    },
+    {
+      "filename": "Luding_1m_UAV424.tif",
+      "zip_member": "img/Luding_1m_UAV424.tif",
+      "bytes": 786572,
+      "sha256": "6673e1bd5f88c7b07c2c8b4a2be99b454d26db4defb7982653e5179918415009"
+    },
+    {
+      "filename": "Luding_1m_UAV425.tif",
+      "zip_member": "img/Luding_1m_UAV425.tif",
+      "bytes": 786572,
+      "sha256": "bca464bc5e81be4c5d69d96d58333f8e86ff8a83ade9494eb458adb87724a91e"
+    },
+    {
+      "filename": "Luding_1m_UAV426.tif",
+      "zip_member": "img/Luding_1m_UAV426.tif",
+      "bytes": 786572,
+      "sha256": "2b0e18d7e19ed0546c395497fc68426d2a6d97d98585f93925c230e69062aeb6"
+    },
+    {
+      "filename": "Luding_1m_UAV427.tif",
+      "zip_member": "img/Luding_1m_UAV427.tif",
+      "bytes": 786572,
+      "sha256": "6f246a692a858aeb899b409bfebd68981db3737632545540190639ea4aaf8ad4"
+    },
+    {
+      "filename": "Luding_1m_UAV428.tif",
+      "zip_member": "img/Luding_1m_UAV428.tif",
+      "bytes": 786572,
+      "sha256": "eecb28cd2cba5ccc4da812959831df42e6452f9d9e8cb4078d322e856ba0e36e"
+    },
+    {
+      "filename": "Luding_1m_UAV429.tif",
+      "zip_member": "img/Luding_1m_UAV429.tif",
+      "bytes": 786572,
+      "sha256": "8930e57fee991d7074599f8a8550004ec490607ea6dfcf8b311a40c70a816c04"
+    },
+    {
+      "filename": "Luding_1m_UAV430.tif",
+      "zip_member": "img/Luding_1m_UAV430.tif",
+      "bytes": 786572,
+      "sha256": "868178fa26ae99246b8792bf1eca1a204cbc13e4f1de4a64931446d96a979e63"
+    },
+    {
+      "filename": "Luding_1m_UAV431.tif",
+      "zip_member": "img/Luding_1m_UAV431.tif",
+      "bytes": 786572,
+      "sha256": "eb034f6676bffd3c90bf1553e1c0ffcd06202515cf7717c00ffe37f08d4b3b33"
+    },
+    {
+      "filename": "Luding_1m_UAV432.tif",
+      "zip_member": "img/Luding_1m_UAV432.tif",
+      "bytes": 786572,
+      "sha256": "f84fe2b6aa704b78670b82dedced8476f98c6fd25f4612cad070bce2f6b31983"
+    },
+    {
+      "filename": "Luding_1m_UAV433.tif",
+      "zip_member": "img/Luding_1m_UAV433.tif",
+      "bytes": 786572,
+      "sha256": "8477eadf002162dbea85e88abc49c67a6bb82af415f599e42be9a959f8742b05"
+    },
+    {
+      "filename": "Luding_1m_UAV434.tif",
+      "zip_member": "img/Luding_1m_UAV434.tif",
+      "bytes": 786572,
+      "sha256": "ed2a450db8b5b89a672b4f2c2b36c9d43fc49a3f9b2ffa2b78b551ff4b8d7865"
+    },
+    {
+      "filename": "Luding_1m_UAV435.tif",
+      "zip_member": "img/Luding_1m_UAV435.tif",
+      "bytes": 786572,
+      "sha256": "984971f6a3e030e47c98fbd400ec77bda8a9d6488315a712708db233dc4db037"
+    },
+    {
+      "filename": "Luding_1m_UAV436.tif",
+      "zip_member": "img/Luding_1m_UAV436.tif",
+      "bytes": 786572,
+      "sha256": "98e1eebc0c4269bbdf2ad0927c406b4c1507c4d24fdd3684e69d3fff05712551"
+    },
+    {
+      "filename": "Luding_1m_UAV437.tif",
+      "zip_member": "img/Luding_1m_UAV437.tif",
+      "bytes": 786572,
+      "sha256": "db6ff0f1e900f1c63119b838396304079bb2b384bba4a9fdd6899ef196f44b35"
+    },
+    {
+      "filename": "Luding_1m_UAV438.tif",
+      "zip_member": "img/Luding_1m_UAV438.tif",
+      "bytes": 786572,
+      "sha256": "222600be7e23d1a075a50faa003b25ee5bda19f7379bc48807a60f30a13a1012"
+    },
+    {
+      "filename": "Luding_1m_UAV439.tif",
+      "zip_member": "img/Luding_1m_UAV439.tif",
+      "bytes": 786572,
+      "sha256": "a3ef3f6d34ee7679275a92a575b3d922ba351c7c254d0c5b97154369e912683d"
+    },
+    {
+      "filename": "Luding_1m_UAV440.tif",
+      "zip_member": "img/Luding_1m_UAV440.tif",
+      "bytes": 786572,
+      "sha256": "1da7f6ec4138b42099ab5c056dbfa3df8f0f8b4ed126cc79c84203f2ebce1236"
+    },
+    {
+      "filename": "Luding_1m_UAV441.tif",
+      "zip_member": "img/Luding_1m_UAV441.tif",
+      "bytes": 786572,
+      "sha256": "9438aeeb1761acb538d8ced606307e763c82e88a29a11aa34f1511783d863f5b"
+    },
+    {
+      "filename": "Luding_1m_UAV442.tif",
+      "zip_member": "img/Luding_1m_UAV442.tif",
+      "bytes": 786572,
+      "sha256": "10cc4146dffcd58c21c2d36957a46eb367de36be1af60c0571d387d73828d784"
+    },
+    {
+      "filename": "Luding_1m_UAV443.tif",
+      "zip_member": "img/Luding_1m_UAV443.tif",
+      "bytes": 786572,
+      "sha256": "0abc3f6dbb2f036147b2fae3cb5c0739494570a7016fb963a6e73b111fdb6fc0"
+    },
+    {
+      "filename": "Luding_1m_UAV444.tif",
+      "zip_member": "img/Luding_1m_UAV444.tif",
+      "bytes": 786572,
+      "sha256": "6945a52b588042e3a4b40cfc4125eece2900e31db97c80a2ae05727b290093c3"
+    },
+    {
+      "filename": "Luding_1m_UAV445.tif",
+      "zip_member": "img/Luding_1m_UAV445.tif",
+      "bytes": 786572,
+      "sha256": "08d05790fc1f9951e29391311a0b8462d3adcec4e3196aa6682cc8c2248243ae"
+    },
+    {
+      "filename": "Luding_1m_UAV446.tif",
+      "zip_member": "img/Luding_1m_UAV446.tif",
+      "bytes": 786572,
+      "sha256": "8bee7a96b2823a013710a10d108acd506cb12f211eddff56ee43e18af2970a59"
+    },
+    {
+      "filename": "Luding_1m_UAV447.tif",
+      "zip_member": "img/Luding_1m_UAV447.tif",
+      "bytes": 786572,
+      "sha256": "a9ab3472707d283931f8d8bc31381deff3838d60e0eecafc251a3ddb4407a643"
+    },
+    {
+      "filename": "Luding_1m_UAV448.tif",
+      "zip_member": "img/Luding_1m_UAV448.tif",
+      "bytes": 786572,
+      "sha256": "8ac9fd5bf998280b5930410569b9684547d824aedbc7aa93ab582ce0df919d50"
+    },
+    {
+      "filename": "Luding_1m_UAV449.tif",
+      "zip_member": "img/Luding_1m_UAV449.tif",
+      "bytes": 786572,
+      "sha256": "4ae88a4be71dbc99e93260f1b33dc2eeecf14436ff976622c5a30525eecdadb2"
+    },
+    {
+      "filename": "Luding_1m_UAV450.tif",
+      "zip_member": "img/Luding_1m_UAV450.tif",
+      "bytes": 786572,
+      "sha256": "920a9dadaaf9ff55f0e2fd18af3259f4328173dbf545ae41b4195acdef6fbfee"
+    },
+    {
+      "filename": "Luding_1m_UAV451.tif",
+      "zip_member": "img/Luding_1m_UAV451.tif",
+      "bytes": 786572,
+      "sha256": "8ba52401b75e7976f66e94a50a59af68c45182830ebd688c1f4e8843298ecec2"
+    },
+    {
+      "filename": "Luding_1m_UAV452.tif",
+      "zip_member": "img/Luding_1m_UAV452.tif",
+      "bytes": 786572,
+      "sha256": "5c890bbacf3020dcf8c6c8809c38045cada56b54b12bb3d605ceb7adcb657dab"
+    },
+    {
+      "filename": "Luding_1m_UAV453.tif",
+      "zip_member": "img/Luding_1m_UAV453.tif",
+      "bytes": 786572,
+      "sha256": "74f0c851dfe20d167e17977769f847fc2af98809aa3e81b92229e56e26c9edf4"
+    },
+    {
+      "filename": "Luding_1m_UAV454.tif",
+      "zip_member": "img/Luding_1m_UAV454.tif",
+      "bytes": 786572,
+      "sha256": "e2e1671c68298a379b98897482c32a62539c3e9cbae0203f9a7e388c66095b56"
+    },
+    {
+      "filename": "Luding_1m_UAV455.tif",
+      "zip_member": "img/Luding_1m_UAV455.tif",
+      "bytes": 786572,
+      "sha256": "66906d84896fd5379b11a7dce77e14135bace4b77126069ad977255aeb17f2ba"
+    },
+    {
+      "filename": "Luding_1m_UAV456.tif",
+      "zip_member": "img/Luding_1m_UAV456.tif",
+      "bytes": 786572,
+      "sha256": "ad0c37e2ebb3fbad2de7e303ad83b4f254627467887a1254bb72cfda67bc1c66"
+    },
+    {
+      "filename": "Luding_1m_UAV457.tif",
+      "zip_member": "img/Luding_1m_UAV457.tif",
+      "bytes": 786572,
+      "sha256": "d02e9a07036dcaa303bcd4ee072320fe631a6b3d4f630d3c2ed3b20656c9fe2b"
+    },
+    {
+      "filename": "Luding_1m_UAV458.tif",
+      "zip_member": "img/Luding_1m_UAV458.tif",
+      "bytes": 786572,
+      "sha256": "c512b6b871694c17dd0b74ea3510c0e69c72f51aceb145a5e84423ef8437bf90"
+    },
+    {
+      "filename": "Luding_1m_UAV459.tif",
+      "zip_member": "img/Luding_1m_UAV459.tif",
+      "bytes": 786572,
+      "sha256": "38e2d8aeb6dc46c507c9f61c4b9d3ae6430b4f5629167a24e0af5638bfff6df6"
+    },
+    {
+      "filename": "Luding_1m_UAV460.tif",
+      "zip_member": "img/Luding_1m_UAV460.tif",
+      "bytes": 786572,
+      "sha256": "54217c6c562a1765bade878f001c5e1fa97360bf1019e0d26043d74b5cd4022b"
+    },
+    {
+      "filename": "Luding_1m_UAV461.tif",
+      "zip_member": "img/Luding_1m_UAV461.tif",
+      "bytes": 786572,
+      "sha256": "e1ddba8c9924c3c7acd2b876dc0e4485d98f21d11ef78d9c741a3183a13ca0bb"
+    },
+    {
+      "filename": "Luding_1m_UAV462.tif",
+      "zip_member": "img/Luding_1m_UAV462.tif",
+      "bytes": 786572,
+      "sha256": "2da5fbb5bf093cb985743adea26fee0a9a821dafe2d06542dca819a75d0386bb"
+    },
+    {
+      "filename": "Luding_1m_UAV463.tif",
+      "zip_member": "img/Luding_1m_UAV463.tif",
+      "bytes": 786572,
+      "sha256": "7269e7fdda3ff9162b5a57777e21417766097489889ef864dddd8f2f791e890d"
+    },
+    {
+      "filename": "Luding_1m_UAV464.tif",
+      "zip_member": "img/Luding_1m_UAV464.tif",
+      "bytes": 786572,
+      "sha256": "83caac974c48bd97640e609f3ced22e972af2458489c8e538543934210403fd6"
+    },
+    {
+      "filename": "Luding_1m_UAV465.tif",
+      "zip_member": "img/Luding_1m_UAV465.tif",
+      "bytes": 786572,
+      "sha256": "8b02a13fe00e5476660172b3054bf69895584009c12e9461d40ae7f640ffdbb0"
+    },
+    {
+      "filename": "Luding_1m_UAV466.tif",
+      "zip_member": "img/Luding_1m_UAV466.tif",
+      "bytes": 786572,
+      "sha256": "0051338d26c12daf2f79b4b07927246f10ad9bd8db594cf42e7437a258cf3263"
+    },
+    {
+      "filename": "Luding_1m_UAV467.tif",
+      "zip_member": "img/Luding_1m_UAV467.tif",
+      "bytes": 786572,
+      "sha256": "86877a7a9a31c5410d0f828b8a561e8bbcbfccd197bfb9c7174fda79ee4cbd60"
+    },
+    {
+      "filename": "Luding_1m_UAV468.tif",
+      "zip_member": "img/Luding_1m_UAV468.tif",
+      "bytes": 786572,
+      "sha256": "6ad12263229198b3374181899fca8ea9fcca1f0bcebdc6d50ec1264118474485"
+    },
+    {
+      "filename": "Luding_1m_UAV469.tif",
+      "zip_member": "img/Luding_1m_UAV469.tif",
+      "bytes": 786572,
+      "sha256": "5a2adc4f4b1610a17a0aa1969502328edfd082b9da9a645c31ee65b5ae8439e8"
+    },
+    {
+      "filename": "Luding_1m_UAV470.tif",
+      "zip_member": "img/Luding_1m_UAV470.tif",
+      "bytes": 786572,
+      "sha256": "fa4058fbcd5fd5de33049e8a23d8f942d11d838d23fa8a016e42c745f0367537"
+    },
+    {
+      "filename": "Luding_1m_UAV471.tif",
+      "zip_member": "img/Luding_1m_UAV471.tif",
+      "bytes": 786572,
+      "sha256": "ca1728b122358c5b880a5c0805174abbb8489a7fc62abb2f6458a5bcdd5e978e"
+    },
+    {
+      "filename": "Luding_1m_UAV472.tif",
+      "zip_member": "img/Luding_1m_UAV472.tif",
+      "bytes": 786572,
+      "sha256": "331c107d68ff4288f3af00826b6d122174c95d9f63f78d79be07b56232c44951"
+    },
+    {
+      "filename": "Luding_1m_UAV473.tif",
+      "zip_member": "img/Luding_1m_UAV473.tif",
+      "bytes": 786572,
+      "sha256": "527e6c9cc03a5ff8115a195f45ae258cb2fb4c5d4bcda4ba07e07df6e33330ba"
+    },
+    {
+      "filename": "Luding_1m_UAV474.tif",
+      "zip_member": "img/Luding_1m_UAV474.tif",
+      "bytes": 786572,
+      "sha256": "9f6c62fc218508cdbae3fad4d1a64b8617616911bad6e6b5aba0f3420b75dc9a"
+    },
+    {
+      "filename": "Luding_1m_UAV475.tif",
+      "zip_member": "img/Luding_1m_UAV475.tif",
+      "bytes": 786572,
+      "sha256": "44d79988fe601bdc98c6a27d4fdbff6fd9fb45dd99b0448e1d0a1d1ab9546e1c"
+    },
+    {
+      "filename": "Luding_1m_UAV476.tif",
+      "zip_member": "img/Luding_1m_UAV476.tif",
+      "bytes": 786572,
+      "sha256": "e46fe1b5aa1249145d1b45f10cd2b47ffc83f1af025f6c855a34668c08a2ef92"
+    },
+    {
+      "filename": "Luding_1m_UAV477.tif",
+      "zip_member": "img/Luding_1m_UAV477.tif",
+      "bytes": 786572,
+      "sha256": "0a7c81affd92957041851d5b67ddc223a17463540206844f23a867c3d9920a62"
+    },
+    {
+      "filename": "Luding_1m_UAV478.tif",
+      "zip_member": "img/Luding_1m_UAV478.tif",
+      "bytes": 786572,
+      "sha256": "2632c794c0d69e2c58213d8c391b716968ef9de2a8c5cc26b5db4380c60362d6"
+    },
+    {
+      "filename": "Luding_1m_UAV479.tif",
+      "zip_member": "img/Luding_1m_UAV479.tif",
+      "bytes": 786572,
+      "sha256": "41087e88ab223302f6cb5d1b282b52ad44e4138f696f2fa77bf5b82c7e42c3c1"
+    },
+    {
+      "filename": "Luding_1m_UAV480.tif",
+      "zip_member": "img/Luding_1m_UAV480.tif",
+      "bytes": 786572,
+      "sha256": "54350baa52a06214aa7a607329d70ef9f08a675f4fab7143074fff56214bfb29"
+    },
+    {
+      "filename": "Luding_1m_UAV481.tif",
+      "zip_member": "img/Luding_1m_UAV481.tif",
+      "bytes": 786572,
+      "sha256": "cbfccc766030d9c883b0f887abd3787d0c89c58456507d473df782b505f3fb6d"
+    },
+    {
+      "filename": "Luding_1m_UAV482.tif",
+      "zip_member": "img/Luding_1m_UAV482.tif",
+      "bytes": 786572,
+      "sha256": "ea500dcb5e855e5ae29ffa5f4f3714176c0378ed1eb4f3dbcb27c3bbf7eb64d1"
+    },
+    {
+      "filename": "Luding_1m_UAV483.tif",
+      "zip_member": "img/Luding_1m_UAV483.tif",
+      "bytes": 786572,
+      "sha256": "262d22feecfd61f25a90bb28efe726410b73c6809eb5673c7e4ec6df80731ade"
+    },
+    {
+      "filename": "Luding_1m_UAV484.tif",
+      "zip_member": "img/Luding_1m_UAV484.tif",
+      "bytes": 786572,
+      "sha256": "08ec51afa93b73e40f83c67ffb5a1f399357021a2e6fb9e12686bce4fc903df5"
+    },
+    {
+      "filename": "Luding_1m_UAV485.tif",
+      "zip_member": "img/Luding_1m_UAV485.tif",
+      "bytes": 786572,
+      "sha256": "1cad0079cb7c73f6f233354e5a8d2a3cabda13e94780a97a18034a6a53a0c78c"
+    },
+    {
+      "filename": "Luding_1m_UAV486.tif",
+      "zip_member": "img/Luding_1m_UAV486.tif",
+      "bytes": 786572,
+      "sha256": "79aab655f3d25e80492d9fe4c9f4e6532103c95a5e41c6bf66826c525425837a"
+    },
+    {
+      "filename": "Luding_1m_UAV487.tif",
+      "zip_member": "img/Luding_1m_UAV487.tif",
+      "bytes": 786572,
+      "sha256": "735cc484de6c7b59bb890475cd7fcd2890301b15ee2ab805feec0e2d7618e925"
+    },
+    {
+      "filename": "Luding_1m_UAV488.tif",
+      "zip_member": "img/Luding_1m_UAV488.tif",
+      "bytes": 786572,
+      "sha256": "5199fc583531c352122254292b281cf62004802bd171e1ad6aa413247f23839e"
+    },
+    {
+      "filename": "Luding_1m_UAV489.tif",
+      "zip_member": "img/Luding_1m_UAV489.tif",
+      "bytes": 786572,
+      "sha256": "83d6f4de6e9e65e2273da0a238b023b9116da5bbb477c49d299d07e31b33191c"
+    },
+    {
+      "filename": "Luding_1m_UAV490.tif",
+      "zip_member": "img/Luding_1m_UAV490.tif",
+      "bytes": 786572,
+      "sha256": "f229f05c771b52269e2b028dd5363db26402ddb1f967d93e39ea576086728ce6"
+    },
+    {
+      "filename": "Luding_1m_UAV491.tif",
+      "zip_member": "img/Luding_1m_UAV491.tif",
+      "bytes": 786572,
+      "sha256": "7dd0dd594eed4b60aa045cd59285c0cd0ddef12f13445b96eeba3131395b4799"
+    },
+    {
+      "filename": "Luding_1m_UAV492.tif",
+      "zip_member": "img/Luding_1m_UAV492.tif",
+      "bytes": 786572,
+      "sha256": "9473e3abd5e90ad979920649fe29385faa768cdebacc625a8d45479f33574bab"
+    },
+    {
+      "filename": "Luding_1m_UAV493.tif",
+      "zip_member": "img/Luding_1m_UAV493.tif",
+      "bytes": 786572,
+      "sha256": "838ee0cf7c1ddc3b81893c74e9087fadf8841cd18b5816f76f8248fe4d27f7d3"
+    },
+    {
+      "filename": "Luding_1m_UAV494.tif",
+      "zip_member": "img/Luding_1m_UAV494.tif",
+      "bytes": 786572,
+      "sha256": "233b30db57835ce358ac65788f1a73658711cd95ec36bf819d3dba1191aa314c"
+    },
+    {
+      "filename": "Luding_1m_UAV495.tif",
+      "zip_member": "img/Luding_1m_UAV495.tif",
+      "bytes": 786572,
+      "sha256": "c4d25792d66e6339a5feaa4db38105febab62806baeafadfc5efef84a06be961"
+    },
+    {
+      "filename": "Luding_1m_UAV496.tif",
+      "zip_member": "img/Luding_1m_UAV496.tif",
+      "bytes": 786572,
+      "sha256": "293fb3b5e4b21c06b3bdca4918dabb3b4fd3cb4d70b133c8013ae3e19b885e1d"
+    },
+    {
+      "filename": "Luding_1m_UAV498.tif",
+      "zip_member": "img/Luding_1m_UAV498.tif",
+      "bytes": 786572,
+      "sha256": "6a45f58ea9020f5f4fa16f8a2835e5cd749104c773c4ac5c13296ea91733f742"
+    },
+    {
+      "filename": "Luding_1m_UAV499.tif",
+      "zip_member": "img/Luding_1m_UAV499.tif",
+      "bytes": 786572,
+      "sha256": "422291a9871f6171089b4cd759796719751296ad7687b24d25cba735b1fdae2c"
+    },
+    {
+      "filename": "Luding_1m_UAV500.tif",
+      "zip_member": "img/Luding_1m_UAV500.tif",
+      "bytes": 786572,
+      "sha256": "c1cff738edfee7c522c80e112a8fe3aee6309217439358b47e9e3f2793d21745"
+    },
+    {
+      "filename": "Luding_1m_UAV501.tif",
+      "zip_member": "img/Luding_1m_UAV501.tif",
+      "bytes": 786572,
+      "sha256": "11d57c6ea746adba2a7936bb5bbdc0de3619866f1ddab2dadb5c7dca60065577"
+    },
+    {
+      "filename": "Luding_1m_UAV502.tif",
+      "zip_member": "img/Luding_1m_UAV502.tif",
+      "bytes": 786572,
+      "sha256": "9f1cce48de55413596b2b83a89fef352d410909f1b197cc4fd854e4f200d24a4"
+    },
+    {
+      "filename": "Luding_1m_UAV503.tif",
+      "zip_member": "img/Luding_1m_UAV503.tif",
+      "bytes": 786572,
+      "sha256": "de6fc3408ad2ec92e6da09d2d49acff66f7d7e0cf3accbbde50cb762eda9321d"
+    },
+    {
+      "filename": "Luding_1m_UAV504.tif",
+      "zip_member": "img/Luding_1m_UAV504.tif",
+      "bytes": 786572,
+      "sha256": "773b5bc14866e80c43b8e88321cb29bbe3e1c6065a5dadba4731b6404d71fbfc"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "created_utc": "2026-11-27T00:22:01.220284+00:00",
+  "scope": "A v1, all 484 training tiles, random initialization",
+  "status": "fixed_before_test_inference",
+  "manifest": "data/interim/splits/moxitaidi_uav_spatial_split_formal_v1.csv",
+  "manifest_sha256": "8788ed446d7c2e9573ce1e9e8b77bff8a26eae4c0763d4eea7698889210c45ba",
+  "test_split": "test",
+  "test_count": 149,
+  "component": "2",
+  "runs": [
+    {
+      "seed": 17,
+      "run_json": "experiments/uav_A_v1_seed17_73cm2c39/run.json",
+      "run_json_sha256": "3b87eeacb3cf000ae3111fcbaf8a933ba026877eb0b98a053c7d69962d0b1d59",
+      "checkpoint": "experiments/uav_A_v1_seed17_73cm2c39/best.pt",
+      "checkpoint_sha256": "a671d35a3cb52a2bc730adf22ad44d90ee06e72e6a7f18f9daa4baa33201200f",
+      "best_epoch": 12,
+      "best_validation_iou": 0.4062564071294917
+    },
+    {
+      "seed": 42,
+      "run_json": "experiments/uav_A_v1_seed42_q9ok0ej8/run.json",
+      "run_json_sha256": "95d3f4d984b015d5d21024494663823d1ab4823f29f66f78b817eb40e58a035f",
+      "checkpoint": "experiments/uav_A_v1_seed42_q9ok0ej8/best.pt",
+      "checkpoint_sha256": "ca4a861f5df20f5516d056bfbac37237ec551ade5725d69ad442502ba734cbcb",
+      "best_epoch": 6,
+      "best_validation_iou": 0.3861548101839118
+    },
+    {
+      "seed": 123,
+      "run_json": "experiments/uav_A_v1_seed123_51b_xlmb/run.json",
+      "run_json_sha256": "9c5483ebcf1c0579b229df69574723b30cc2b23c6b3d7cfb32f752decd99493b",
+      "checkpoint": "experiments/uav_A_v1_seed123_51b_xlmb/best.pt",
+      "checkpoint_sha256": "57fe093e3f88ba1578aaf210761592f7c05f52c78a05a09d817f3be631d21551",
+      "best_epoch": 14,
+      "best_validation_iou": 0.389097557530642
+    }
+  ],
+  "inference": {
+    "input": "full 512x512 RGB tile, uint8 divided by 255",
+    "model_mode": "eval",
+    "gradients": false,
+    "test_time_augmentation": false,
+    "threshold": 0.5,
+    "positive_prediction": "mean_probability >= 0.5",
+    "valid_policy": "edge_connected_black_4_neighbors_keep_positive_v1"
+  },
+  "mosaic": {
+    "native_grid_step_pixels": 256,
+    "coordinates": "frozen manifest grid coordinates",
+    "probability_aggregation": "equal mean over valid tile contributions",
+    "validity": "union of valid tile contributions",
+    "label_conflict": "abort if valid overlapping labels disagree",
+    "metrics": "count each covered valid mosaic pixel exactly once",
+    "uncovered_pixels": "excluded"
+  },
+  "reporting": {
+    "metrics": [
+      "iou",
+      "f1",
+      "precision",
+      "recall"
+    ],
+    "zero_denominator": null,
+    "seeds": "report separately, then mean and sample standard deviation",
+    "ensemble": false
+  },
+  "spatial_bootstrap": {
+    "block_side_pixels": 833,
+    "block_grid_origin_native_xy": [
+      0,
+      0
+    ],
+    "nominal_uav_pixel_metres": 0.6,
+    "nominal_block_side_metres": 499.8,
+    "resolution_status": "nominal, not independently verified",
+    "unit": "nonempty blocks on the original component coordinate grid",
+    "sampling": "sample blocks with replacement; pool their confusion counts",
+    "replicates": 10000,
+    "seed": 20261127,
+    "confidence": 0.95,
+    "interval": "percentile",
+    "across_seeds": "use identical block draws; average per-seed metrics",
+    "undefined_replicates": "exclude per metric and report their count",
+    "limitation": "conditional on these checkpoints and this test region"
+  },
+  "source_sha256": {
+    "src/metrics/mosaic_v1.py": "3ef658e14c1790b4a645b2c9e3ac7be862915d1e7c2f136260e9e8dab601ce8c",
+    "src/data/nodata_v1.py": "6ea0a06431975d8a45d58206366647d706704d560558bc466c7ca27494355558",
+    "src/data/uav_data.py": "c1f5fbc2bd9f434a117f31461e68f0e70e1633dc3eea7332589d202fde3fed23",
+    "src/models/deeplabv3plus.py": "51e664c8218dc65b7fb1fd40e260406a8fc7ad0856c34226b96f21a41fd8c2ff",
+    "src/metrics/binary_segmentation.py": "c0695d2301ad0ee13f24e6272b373343bdbcdab3e6a7d9df4099719179642c5b",
+    "src/metrics/boundary_v1.py": "f018cf9511c17421a3fdc590a14360429b045760428c822f14c41a2b19383301",
+    "src/metrics/spatial_bootstrap_v1.py": "d7aded1451e39c7bed61135186b666ecdf9cc46713a79ee3cce7b3882468f8d2"
+  },
+  "constraints": [
+    "No threshold, checkpoint, or hyperparameter selection using test results.",
+    "Training validation scores were tile-pooled without overlap deduplication.",
+    "This A484 result is not an equal-sample factorial comparison.",
+    "Spatial bootstrap does not establish independence of geographic regions."
+  ],
+  "revision": {
+    "version": 2,
+    "created_utc": "2026-11-27T21:27:22.540853+00:00",
+    "previous_protocol": "reports/tables/uav_A_v1_test_protocol.json",
+    "previous_sha256": "da671aa1474895ecbe56b3bb52365acf3dd6940fdfc0eb8234de7b029ede4c44",
+    "reason": "Align with taskbook: 10000 bootstrap draws and Boundary F1.",
+    "checkpoint_selection": "unchanged"
+  },
+  "boundary_evaluation": {
+    "tolerance_pixels": 2,
+    "distance": "Euclidean on original UAV pixel grid",
+    "boundary": "one-pixel inner boundary using 3x3 erosion",
+    "aggregation": "pooled matched boundary counts on deduplicated mosaic",
+    "coverage_edge_policy": "exclude a 3-pixel square erosion band from scored support",
+    "both_boundaries_empty": null,
+    "exactly_one_boundary_empty_f1": 0.0,
+    "reporting": "per-seed score, seed mean and sample standard deviation"
+  }
+}

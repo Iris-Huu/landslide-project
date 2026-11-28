@@ -1,0 +1,303 @@
+{
+  "scope": "DeepLabV3+/ResNet-50 A484, random initialization",
+  "source_run": "experiments/uav_A_v1_test_wg_u2mzu/run.json",
+  "source_run_sha256": "41d22227b495c931245b0c1ef589c4e8fe3be60f515e432cdfc489da6b22466a",
+  "protocol": "reports/tables/uav_A_v1_test_protocol_v2.json",
+  "protocol_sha256": "c2a91f680f4e91eedfadbbca24950117043f82111d728fcfaa87ea379d6bcccc",
+  "evaluation_source_sha256": "47eaf2094ce54c70cf0882c4649071718b34e440e0f69144a88b50e9eb19761e",
+  "environment": {
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "torch": "2.8.0+cu128",
+    "torch_cuda": "12.8",
+    "numpy": "2.3.2",
+    "scipy": "1.18.1",
+    "rasterio": "1.4.4",
+    "smp": "0.5.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "mosaic": {
+    "origin_native_xy": [
+      10240,
+      16896
+    ],
+    "shape_hw": [
+      3584,
+      5888
+    ],
+    "unique_valid_pixels": 12266695,
+    "valid_tile_pixel_contributions": 38605377,
+    "pixels_with_multiple_valid_contributions": 11183343
+  },
+  "results": [
+    {
+      "seed": 17,
+      "checkpoint": "experiments/uav_A_v1_seed17_73cm2c39/best.pt",
+      "checkpoint_sha256": "a671d35a3cb52a2bc730adf22ad44d90ee06e72e6a7f18f9daa4baa33201200f",
+      "selected_epoch": 12,
+      "confusion": {
+        "tp": 374278,
+        "fp": 725025,
+        "fn": 980367,
+        "tn": 10187025
+      },
+      "metrics": {
+        "iou": 0.1799698990705256,
+        "f1": 0.3050415086220246,
+        "precision": 0.3404684604699523,
+        "recall": 0.2762923127461438
+      },
+      "boundary_counts": {
+        "predicted_boundary_pixels": 72750,
+        "true_boundary_pixels": 57964,
+        "matched_predicted_pixels": 5345,
+        "matched_true_pixels": 5177,
+        "scored_support_pixels": 12165660
+      },
+      "boundary_metrics": {
+        "boundary_f1": 0.08062143946909722,
+        "boundary_precision": 0.07347079037800687,
+        "boundary_recall": 0.0893140570008971
+      },
+      "spatial_blocks": 28
+    },
+    {
+      "seed": 42,
+      "checkpoint": "experiments/uav_A_v1_seed42_q9ok0ej8/best.pt",
+      "checkpoint_sha256": "ca4a861f5df20f5516d056bfbac37237ec551ade5725d69ad442502ba734cbcb",
+      "selected_epoch": 6,
+      "confusion": {
+        "tp": 428798,
+        "fp": 1069016,
+        "fn": 925847,
+        "tn": 9843034
+      },
+      "metrics": {
+        "iou": 0.17692160743602345,
+        "f1": 0.30065147299224987,
+        "precision": 0.28628254242516094,
+        "recall": 0.31653901944789964
+      },
+      "boundary_counts": {
+        "predicted_boundary_pixels": 101438,
+        "true_boundary_pixels": 57964,
+        "matched_predicted_pixels": 6669,
+        "matched_true_pixels": 6560,
+        "scored_support_pixels": 12165660
+      },
+      "boundary_metrics": {
+        "boundary_f1": 0.08317269920308648,
+        "boundary_precision": 0.06574459275616633,
+        "boundary_recall": 0.11317369401697605
+      },
+      "spatial_blocks": 28
+    },
+    {
+      "seed": 123,
+      "checkpoint": "experiments/uav_A_v1_seed123_51b_xlmb/best.pt",
+      "checkpoint_sha256": "57fe093e3f88ba1578aaf210761592f7c05f52c78a05a09d817f3be631d21551",
+      "selected_epoch": 14,
+      "confusion": {
+        "tp": 329566,
+        "fp": 752233,
+        "fn": 1025079,
+        "tn": 10159817
+      },
+      "metrics": {
+        "iou": 0.15642386507429476,
+        "f1": 0.27053033026821055,
+        "precision": 0.3046462420468128,
+        "recall": 0.24328587932631796
+      },
+      "boundary_counts": {
+        "predicted_boundary_pixels": 55749,
+        "true_boundary_pixels": 57964,
+        "matched_predicted_pixels": 3646,
+        "matched_true_pixels": 3580,
+        "scored_support_pixels": 12165660
+      },
+      "boundary_metrics": {
+        "boundary_f1": 0.06352934060125898,
+        "boundary_precision": 0.06540027623813881,
+        "boundary_recall": 0.06176247325926437
+      },
+      "spatial_blocks": 28
+    }
+  ],
+  "seed_summary": {
+    "iou": {
+      "seed_mean": 0.1711051238602813,
+      "seed_sample_sd": 0.012805371534167742
+    },
+    "f1": {
+      "seed_mean": 0.29207443729416166,
+      "seed_sample_sd": 0.01878641833524689
+    },
+    "precision": {
+      "seed_mean": 0.3104657483139754,
+      "seed_sample_sd": 0.027557728833929162
+    },
+    "recall": {
+      "seed_mean": 0.2787057371734538,
+      "seed_sample_sd": 0.03668615675589053
+    },
+    "boundary_f1": {
+      "seed_mean": 0.07577449309114756,
+      "seed_sample_sd": 0.010681060396001755
+    }
+  },
+  "spatial_bootstrap": {
+    "replicates": 10000,
+    "seed": 20261127,
+    "block_count": 28,
+    "per_seed": [
+      {
+        "iou": {
+          "percentile_95": [
+            0.12878909417468654,
+            0.2281935776638499
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "f1": {
+          "percentile_95": [
+            0.2281898271982592,
+            0.37159220144074023
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": {
+          "percentile_95": [
+            0.22731759776509525,
+            0.4731483261846877
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": {
+          "percentile_95": [
+            0.20454600575939139,
+            0.3537610151036116
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      {
+        "iou": {
+          "percentile_95": [
+            0.12452074616099945,
+            0.23354251552257432
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "f1": {
+          "percentile_95": [
+            0.22146455980902235,
+            0.37865337003115596
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": {
+          "percentile_95": [
+            0.1807638782991058,
+            0.4266167789883757
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": {
+          "percentile_95": [
+            0.24477071192828606,
+            0.3949736169609724
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      {
+        "iou": {
+          "percentile_95": [
+            0.1053214702017899,
+            0.20813157618351413
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "f1": {
+          "percentile_95": [
+            0.19057165344700472,
+            0.34455117352587084
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": {
+          "percentile_95": [
+            0.1859660659712567,
+            0.4601127148087989
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": {
+          "percentile_95": [
+            0.17130476016362794,
+            0.3207462624435719
+          ],
+          "defined_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    ],
+    "paired_seed_mean": {
+      "iou": {
+        "percentile_95": [
+          0.12144023714110629,
+          0.2209123400159166
+        ],
+        "defined_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "f1": {
+        "percentile_95": [
+          0.21633911655739105,
+          0.3617142652796809
+        ],
+        "defined_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "precision": {
+        "percentile_95": [
+          0.20118021683486256,
+          0.44999097793065057
+        ],
+        "defined_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "recall": {
+        "percentile_95": [
+          0.2111203236107995,
+          0.3544934971057876
+        ],
+        "defined_replicates": 10000,
+        "undefined_replicates": 0
+      }
+    },
+    "limitation": "Conditional on fixed models and this test region."
+  },
+  "spatial_block_counts_sha256": "5aded6efe4eeb211778d0bf6a64b732b414da3e736669379a6c6948f606e19f0",
+  "limitations": [
+    "No threshold, checkpoint, or hyperparameter selection using test results.",
+    "Training validation scores were tile-pooled without overlap deduplication.",
+    "This A484 result is not an equal-sample factorial comparison.",
+    "Spatial bootstrap does not establish independence of geographic regions.",
+    "833 pixels corresponds to about 500 m only under nominal 0.6 m spacing.",
+    "Boundary F1 excludes the protocol-defined coverage-edge band.",
+    "Bootstrap intervals are conditional on this test region and fixed models.",
+    "A484 is not an equal-sample factorial comparison."
+  ]
+}
